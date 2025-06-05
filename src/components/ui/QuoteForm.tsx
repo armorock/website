@@ -201,15 +201,15 @@ const QuoteForm = () => {
           </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`btn btn-primary w-full md:w-auto ${
+            className={`btn btn-primary w-full md:w-auto py-3 px-8 ${
               isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
             }`}
           >
-            {isSubmitting ? 'Submitting...' : 'Request Quote'}
+            {isSubmitting ? 'Submitting...' : 'REQUEST QUOTE'}
           </button>
         </div>
       </form>

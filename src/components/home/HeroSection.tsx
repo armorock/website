@@ -40,10 +40,10 @@ const HeroSection = () => {
           TRUSTED FOR THE FUTURE.
         </motion.h1>
         <div className="flex flex-col sm:flex-row gap-6 mt-6">
-          <Link href="/quote" className="btn btn-primary py-3 px-8 text-lg">
+          <Link href="/quote" className="btn btn-primary py-3 px-8 text-base md:text-lg">
             GET A QUOTE
           </Link>
-          <Link href="/contact" className="btn btn-outline py-3 px-8 text-lg">
+          <Link href="/contact" className="btn btn-outline py-3 px-8 text-base md:text-lg">
             CONNECT WITH US
           </Link>
         </div>

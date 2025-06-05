@@ -55,3 +55,18 @@ model Quote {
   message     String
   createdAt   DateTime @default(now())
 }
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String   @db.Text
+  features    String[] 
+  imageUrl    String
+  specs       String
+  category    String
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

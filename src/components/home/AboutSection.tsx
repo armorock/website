@@ -32,8 +32,8 @@ const AboutSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 uppercase">WHO IS ARMOROCK?</h2>
-              <p className="text-lg mb-8 leading-relaxed">
+              <h2 className="h2-large mb-8">WHO IS ARMOROCK?</h2>
+              <p className="text-lg mb-8">
                 We are an innovative polymer concrete company that provides corrosion-resistant, 
                 sustainable, and long-lasting solutions to common issues within the waste water 
                 industry. We are an innovative polymer concrete company that provides 
