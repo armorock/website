@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const SolutionSection = () => {
   return (
-    <section className="section-solution py-20">
+    <section className="section-solution py-20 bg-[var(--secondary)] text-white">
       <div className="container-custom text-center">
         <motion.div 
           className="mb-8"
@@ -25,7 +25,7 @@ const SolutionSection = () => {
         </motion.div>
         
         <motion.h2 
-          className="text-3xl md:text-4xl font-bold mb-6"
+          className="text-3xl md:text-4xl font-bold mb-6 text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -35,13 +35,13 @@ const SolutionSection = () => {
         </motion.h2>
         
         <motion.p 
-          className="text-lg mb-10 max-w-3xl mx-auto"
+          className="text-lg mb-10 max-w-3xl mx-auto text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          Something inspirational about how amazing Armorock is and the product and all the things.
+          Armorock's revolutionary polymer concrete delivers unmatched durability, corrosion resistance, and sustainability for your infrastructure projects. Our products outperform traditional concrete solutions and are designed to withstand the toughest environmental conditions.
         </motion.p>
         
         <motion.h3 
