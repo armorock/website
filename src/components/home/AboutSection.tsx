@@ -1,0 +1,57 @@
+'use client';
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const AboutSection = () => {
+  return (
+    <section className="section-about py-20">
+      <div className="container-custom">
+        <div className="flex flex-col md:flex-row items-center gap-10">
+          <div className="md:w-1/3">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <Image 
+                src="/armorock-icon.svg" 
+                alt="Armorock Icon" 
+                width={200} 
+                height={200}
+                className="mx-auto md:mx-0"
+              />
+            </motion.div>
+          </div>
+          <div className="md:w-2/3">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">WHO IS ARMOROCK?</h2>
+              <p className="text-lg mb-6">
+                We are an innovative polymer concrete company that provides corrosion-resistant, 
+                sustainable, and long-lasting solutions to common issues within the waste water 
+                industry. We are an innovative polymer concrete company that provides 
+                corrosion-resistant, sustainable, and long-lasting solutions to common issues 
+                within the waste water industry.
+              </p>
+              <p className="text-xl font-semibold mb-8">
+                Sustainable in Design. Proven in Performance. Trusted for the Future.
+              </p>
+              <Link href="/contact" className="btn btn-primary inline-block">
+                CONNECT WITH US
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;

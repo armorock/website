@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #20242A;
+  --primary: #BB2034;
+  --primary-dark: #9D0000;
+  --secondary: #20242A;
+  --tertiary: #7D7B7B;
+  --accent: #8B0000;
+  --white: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-white;
+    font-family: var(--font-roboto), Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-knockout), Arial, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 font-medium transition-colors rounded-md;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-[var(--primary)] hover:bg-[var(--primary-dark)];
+  }
+  
+  .btn-outline {
+    @apply border border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white;
+  }
+  
+  .container-custom {
+    @apply w-full max-w-7xl px-4 mx-auto sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-12 md:py-20;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
