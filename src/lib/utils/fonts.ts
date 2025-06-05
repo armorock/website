@@ -1,20 +1,17 @@
 'use client';
 
-import localFont from 'next/font/local';
+import { Oswald, Open_Sans } from 'next/font/google';
 
-export const knockout = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Knockout-Welterweight.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/Knockout-Welterweight-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-knockout',
+export const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['500', '700'], // Medium and Bold
+  variable: '--font-oswald',
+  display: 'swap',
+});
+
+export const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Regular and Bold
+  variable: '--font-open-sans',
   display: 'swap',
 });

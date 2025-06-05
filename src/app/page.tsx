@@ -1,30 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
+import HeroSection from '@/components/home/HeroSection';
+import AboutSection from '@/components/home/AboutSection';
+import PolymerConcreteSection from '@/components/home/PolymerConcreteSection';
+import CorrosionSection from '@/components/home/CorrosionSection';
+import SolutionSection from '@/components/home/SolutionSection';
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero-background.jpg"
-            alt="Concrete facility"
-            fill
-            className="object-cover opacity-30"
-            priority
-          />
-        </div>
-        <div className="container-custom relative z-10 py-24 md:py-36 flex flex-col items-center text-center">
-          <div className="mb-8">
-            <Image
-              src="/armorock-logo.svg"
-              alt="Armorock Logo"
-              width={300}
-              height={100}
-              className="mb-6"
-            />
-          </div>
+      <HeroSection />
+      <AboutSection />
+      <PolymerConcreteSection />
+      <CorrosionSection />
+      <SolutionSection />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--primary)] mb-8 max-w-4xl">
             SUSTAINABLE IN DESIGN. PROVEN IN PERFORMANCE.
             <br />
