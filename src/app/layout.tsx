@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.variable} ${openSans.variable} antialiased`}
+        className={`${oswald.variable} ${openSans.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow relative">{children}</main>
         <Footer />
       </body>
     </html>

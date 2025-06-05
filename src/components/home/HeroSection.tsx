@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <section className="section-hero py-32 md:py-52 relative">
+    <section className="section-hero py-32 md:py-52 relative mt-0">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/Landing Page - Background 1.webp"
@@ -16,19 +16,19 @@ const HeroSection = () => {
           priority
         />
       </div>
-      <div className="absolute inset-0 bg-black/50 z-[1]"></div>
-      <div className="container-custom relative z-10 flex flex-col items-center text-center">
-        <div className="mb-16">
+      <div className="absolute inset-0 bg-black/60 z-[1]"></div>
+      <div className="container-custom relative z-10 flex flex-col items-center text-center text-white">
+        <div className="mb-16 bg-white/90 p-5 rounded-lg inline-block">
           <Image
             src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
             alt="Armorock Logo"
             width={400}
             height={130}
-            className="mb-8"
+            className="mb-0"
           />
         </div>
         <motion.h1 
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--primary)] mb-12 max-w-4xl uppercase tracking-wide"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-12 max-w-4xl uppercase tracking-wide"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

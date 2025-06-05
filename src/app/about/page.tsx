@@ -39,6 +39,13 @@ const AboutPage = () => {
                 sewer systems has grown into a comprehensive suite of polymer concrete products that 
                 outperform traditional materials in the most demanding environments.
               </p>
+              <p className="text-lg mb-8">
+                Today, Armorock is recognized as an industry leader, with installations across North America that 
+                demonstrate the superior performance and longevity of our polymer concrete solutions.
+              </p>
+              <Link href="/leadership" className="btn btn-primary">
+                MEET OUR LEADERSHIP TEAM
+              </Link>
               <p className="text-lg">
                 Today, Armorock is the leading manufacturer of polymer concrete structures in North America,
                 with installations across the United States, Canada, and beyond.

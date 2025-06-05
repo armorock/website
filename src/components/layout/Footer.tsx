@@ -9,16 +9,16 @@ const Footer = () => {
 
   const footerLinks = {
     aboutUs: [
-      { name: 'Mission and Values', href: '/about/mission' },
-      { name: 'Executive Team', href: '/about/team' },
-      { name: 'Careers', href: '/about/careers' },
-      { name: 'News', href: '/about/news' },
+      { name: 'About Us', href: '/about' },
+      { name: 'Leadership Team', href: '/leadership' },
+      { name: 'Careers', href: '/careers' },
+      { name: 'News', href: '/news' },
     ],
     ourProducts: [
-      { name: 'Overview', href: '/products' },
-      { name: 'H2 System', href: '/products/h2-system' },
-      { name: 'MS Series', href: '/products/ms-series' },
-      { name: 'FRP Rebar', href: '/products/frp-rebar' },
+      { name: 'Products Overview', href: '/products' },
+      { name: 'Manholes', href: '/products#manholes' },
+      { name: 'Structures', href: '/products#structures' },
+      { name: 'Junction Boxes', href: '/products#junction-boxes' },
     ],
     lifeCycle: [
       { name: 'Life Cycle Analysis', href: '/life-cycle-analysis' },
@@ -26,9 +26,10 @@ const Footer = () => {
       { name: 'Corrosion Resistance', href: '/corrosion-resistance' },
     ],
     caseStudies: [
-      { name: 'Case Study 1', href: '/case-studies/1' },
-      { name: 'Case Study 2', href: '/case-studies/2' },
-      { name: 'Case Study 3', href: '/case-studies/3' },
+      { name: 'All Case Studies', href: '/case-studies' },
+      { name: 'Municipal', href: '/case-studies?category=Municipal' },
+      { name: 'Industrial', href: '/case-studies?category=Industrial' },
+      { name: 'Commercial', href: '/case-studies?category=Commercial' },
     ],
     connectWithUs: [
       { name: 'Contact', href: '/contact' },

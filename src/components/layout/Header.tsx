@@ -22,11 +22,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="relative bg-white shadow-sm">
+    <header className="relative bg-[var(--primary)] shadow-lg z-50 text-white">
       <div className="container-custom py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <div className="relative w-48 h-12">
+            <div className="relative w-48 h-12 bg-white p-1 rounded">
               <Image 
                 src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg" 
                 alt="Armorock Logo" 
@@ -43,12 +43,12 @@ const Header = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm uppercase font-medium text-gray-800 hover:text-[var(--primary)] transition-colors"
+                className="text-sm uppercase font-medium text-white hover:text-gray-200 transition-colors"
               >
                 {link.name}
               </Link>
             ))}
-            <Link href="/quote" className="btn btn-primary py-2 px-5 uppercase text-sm font-bold">
+            <Link href="/quote" className="btn bg-white text-[var(--primary)] hover:bg-gray-200 py-2 px-5 uppercase text-sm font-bold">
               GET A QUOTE
             </Link>
           </nav>
@@ -64,17 +64,17 @@ const Header = () => {
             <span className="sr-only">Open main menu</span>
             <div className="w-6 h-6 flex items-center justify-center">
               <span
-                className={`block w-5 h-0.5 bg-gray-800 transition-all ${
+                className={`block w-5 h-0.5 bg-white transition-all ${
                   isOpen ? 'rotate-45 translate-y-0.5' : ''
                 }`}
               ></span>
               <span
-                className={`block w-5 h-0.5 bg-gray-800 transition-all mt-1 ${
+                className={`block w-5 h-0.5 bg-white transition-all mt-1 ${
                   isOpen ? 'opacity-0' : ''
                 }`}
               ></span>
               <span
-                className={`block w-5 h-0.5 bg-gray-800 transition-all mt-1 ${
+                className={`block w-5 h-0.5 bg-white transition-all mt-1 ${
                   isOpen ? '-rotate-45 -translate-y-1.5' : ''
                 }`}
               ></span>
