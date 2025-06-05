@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="relative w-48 h-12 mb-4">
               <Image
-                src="/armorock-logo.svg"
+                src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
                 alt="Armorock Logo"
                 fill
                 style={{ objectFit: 'contain' }}
