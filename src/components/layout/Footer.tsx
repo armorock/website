@@ -41,47 +41,49 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-100 mt-20">
+    <footer className="bg-white border-t border-gray-200 mt-16">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           <div className="lg:col-span-2">
-            <div className="relative w-48 h-12 mb-4">
+            <div className="relative w-40 h-24 mb-4">
               <Image
-                src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
+                src="/logos/Stacked (Logo + Armorock + Polymer Concrete).svg"
                 alt="Armorock Logo"
-                fill
+                width={160}
+                height={100}
                 style={{ objectFit: 'contain' }}
+                className="mb-4"
               />
             </div>
-            <p className="text-gray-600 mb-6 max-w-xs">
+            <p className="text-gray-600 mb-6 max-w-xs italic">
               Sustainable in design. Proven in performance. Trusted for the future.
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--primary)]">
-                <FaLinkedin size={20} />
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:text-[var(--primary-dark)]">
+                <FaLinkedin size={22} />
                 <span className="sr-only">LinkedIn</span>
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--primary)]">
-                <FaFacebook size={20} />
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:text-[var(--primary-dark)]">
+                <FaFacebook size={22} />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--primary)]">
-                <FaTwitter size={20} />
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:text-[var(--primary-dark)]">
+                <FaTwitter size={22} />
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[var(--primary)]">
-                <FaInstagram size={20} />
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:text-[var(--primary-dark)]">
+                <FaInstagram size={22} />
                 <span className="sr-only">Instagram</span>
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4">About Us</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4 tracking-wider">About Us</h3>
+            <ul className="space-y-3">
               {footerLinks.aboutUs.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-600 hover:text-[var(--primary)]">
+                  <Link href={link.href} className="text-sm text-gray-700 hover:text-[var(--primary)]">
                     {link.name}
                   </Link>
                 </li>
@@ -90,11 +92,11 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4">Our Products</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4 tracking-wider">Our Products</h3>
+            <ul className="space-y-3">
               {footerLinks.ourProducts.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-600 hover:text-[var(--primary)]">
+                  <Link href={link.href} className="text-sm text-gray-700 hover:text-[var(--primary)]">
                     {link.name}
                   </Link>
                 </li>
@@ -103,11 +105,11 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4">Life Cycle</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4 tracking-wider">Life Cycle Analysis</h3>
+            <ul className="space-y-3">
               {footerLinks.lifeCycle.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-600 hover:text-[var(--primary)]">
+                  <Link href={link.href} className="text-sm text-gray-700 hover:text-[var(--primary)]">
                     {link.name}
                   </Link>
                 </li>
@@ -116,11 +118,11 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4">Connect With Us</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-bold text-gray-900 uppercase mb-4 tracking-wider">Connect With Us</h3>
+            <ul className="space-y-3">
               {footerLinks.connectWithUs.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-gray-600 hover:text-[var(--primary)]">
+                  <Link href={link.href} className="text-sm text-gray-700 hover:text-[var(--primary)]">
                     {link.name}
                   </Link>
                 </li>

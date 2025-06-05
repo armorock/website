@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
   return (
-    <section className="section-about py-20">
+    <section className="section-about py-20 bg-[var(--secondary)] text-white">
       <div className="container-custom">
-        <div className="flex flex-col md:flex-row items-center gap-10">
+        <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -19,8 +19,8 @@ const AboutSection = () => {
               <Image 
                 src="/logos/Standalone Logo - No Text.svg" 
                 alt="Armorock Icon" 
-                width={200} 
-                height={200}
+                width={180}
+                height={180}
                 className="mx-auto md:mx-0"
               />
             </motion.div>
@@ -32,18 +32,18 @@ const AboutSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">WHO IS ARMOROCK?</h2>
-              <p className="text-lg mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 uppercase">WHO IS ARMOROCK?</h2>
+              <p className="text-lg mb-8 leading-relaxed">
                 We are an innovative polymer concrete company that provides corrosion-resistant, 
                 sustainable, and long-lasting solutions to common issues within the waste water 
                 industry. We are an innovative polymer concrete company that provides 
                 corrosion-resistant, sustainable, and long-lasting solutions to common issues 
                 within the waste water industry.
               </p>
-              <p className="text-xl font-semibold mb-8">
+              <p className="text-xl font-semibold mb-10 italic">
                 Sustainable in Design. Proven in Performance. Trusted for the Future.
               </p>
-              <Link href="/contact" className="btn btn-primary inline-block">
+              <Link href="/contact" className="btn btn-primary inline-block px-8 py-3">
                 CONNECT WITH US
               </Link>
             </motion.div>

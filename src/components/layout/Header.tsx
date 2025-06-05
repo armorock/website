@@ -22,10 +22,10 @@ const Header = () => {
 
   return (
     <header className="relative bg-white shadow-sm">
-      <div className="container-custom py-4">
+      <div className="container-custom py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <div className="relative w-40 h-10">
+            <div className="relative w-48 h-12">
               <Image 
                 src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg" 
                 alt="Armorock Logo" 
@@ -37,17 +37,17 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-gray-800 hover:text-[var(--primary)] transition-colors"
+                className="text-sm uppercase font-medium text-gray-800 hover:text-[var(--primary)] transition-colors"
               >
                 {link.name}
               </Link>
             ))}
-            <Link href="/quote" className="btn btn-primary">
+            <Link href="/quote" className="btn btn-primary py-2 px-5 uppercase text-sm font-bold">
               GET A QUOTE
             </Link>
           </nav>
