@@ -135,7 +135,7 @@ const Footer = () => {
       <div className="border-t border-gray-200">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500">&copy; {currentYear} Armorock. All rights reserved.</p>
-          <div className="mt-4 md:mt-0 flex space-x-6">
+          <div className="mt-4 md:mt-0 flex space-x-8">
             <Link href="/terms" className="text-sm text-gray-500 hover:text-[var(--primary)]">
               Terms
             </Link>
