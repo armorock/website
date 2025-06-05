@@ -4,11 +4,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --primary: #9B2022;
-  --primary-dark: #7A1A1C;
-  --secondary: #333333;
-  --accent: #E9E9E9;
+  --foreground: #20242A;
+  --primary: #BB2034;
+  --primary-dark: #9D0000;
+  --secondary: #20242A;
+  --tertiary: #7D7B7B;
+  --accent: #8B0000;
+  --white: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,7 +23,12 @@
 @layer base {
   body {
     @apply text-gray-800 bg-white;
-    font-family: var(--font-geist-sans);
+    font-family: var(--font-roboto), Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-knockout), Arial, sans-serif;
+    font-weight: 700;
   }
 }
 

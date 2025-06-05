@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(10, 10)">
+        <!-- 'A' Logo -->
+        <path d="M35 0L0 70H15L20 60H50L55 70H70L35 0ZM25 45L35 25L45 45H25Z" fill="#9B2022"/>
+        <!-- Text -->
+        <g transform="translate(80, 30)">
+            <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#333333">ARMOROCK</text>
+            <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" fill="#666666">POLYMER CONCRETE</text>
+        </g>
+    </g>
+</svg>
