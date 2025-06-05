@@ -1,103 +1,174 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col">
+      {/* Hero Section */}
+      <section className="relative bg-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-background.jpg"
+            alt="Concrete facility"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="container-custom relative z-10 py-24 md:py-36 flex flex-col items-center text-center">
+          <div className="mb-8">
+            <Image
+              src="/armorock-logo.svg"
+              alt="Armorock Logo"
+              width={300}
+              height={100}
+              className="mb-6"
+            />
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--primary)] mb-8 max-w-4xl">
+            SUSTAINABLE IN DESIGN. PROVEN IN PERFORMANCE.
+            <br />
+            TRUSTED FOR THE FUTURE.
+          </h1>
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+            <Link href="/quote" className="btn btn-primary">
+              GET A QUOTE
+            </Link>
+            <Link href="/contact" className="btn btn-outline">
+              CONNECT WITH US
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="bg-gray-900 text-white py-20">
+        <div className="container-custom">
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <div className="md:w-1/3">
+              <Image 
+                src="/armorock-icon.svg" 
+                alt="Armorock Icon" 
+                width={200} 
+                height={200}
+                className="mx-auto md:mx-0"
+              />
+            </div>
+            <div className="md:w-2/3">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">WHO IS ARMOROCK?</h2>
+              <p className="text-lg mb-6">
+                We are an innovative polymer concrete company that provides corrosion-resistant, 
+                sustainable, and long-lasting solutions to common issues within the waste water 
+                industry. We are an innovative polymer concrete company that provides 
+                corrosion-resistant, sustainable, and long-lasting solutions to common issues 
+                within the waste water industry.
+              </p>
+              <p className="text-xl font-semibold">
+                Sustainable in Design. Proven in Performance. Trusted for the Future.
+              </p>
+              <Link href="/contact" className="btn btn-primary mt-8 inline-block">
+                CONNECT WITH US
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Polymer Concrete Section */}
+      <section className="py-20">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">WHAT IS POLYMER CONCRETE?</h2>
+          
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/2">
+              <p className="text-lg mb-6">
+                Polymer concrete is a sustainable, corrosion-resistant alternative to traditional precast concrete. 
+                Polymer concrete is a sustainable, corrosion-resistant alternative to traditional precast concrete.
+                Polymer concrete is a sustainable, corrosion-resistant alternative to traditional precast concrete.
+              </p>
+            </div>
+            <div className="md:w-1/2 relative">
+              <div className="bg-gray-200 rounded-full w-64 h-64 mx-auto overflow-hidden">
+                <Image 
+                  src="/images/polymer-concrete.jpg" 
+                  alt="Polymer Concrete Cross Section" 
+                  width={300} 
+                  height={300}
+                  className="object-cover"
+                />
+              </div>
+              
+              <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="bg-[var(--primary)] text-white p-4 text-center font-bold">
+                  RESIN
+                </div>
+                <div className="bg-[var(--primary)] text-white p-4 text-center font-bold">
+                  SAND
+                </div>
+                <div className="bg-[var(--primary)] text-white p-4 text-center font-bold">
+                  AGGREGATE
+                </div>
+                <div className="bg-[var(--primary)] text-white p-4 text-center font-bold">
+                  FRP REBAR
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* H2S Corrosion Section */}
+      <section className="relative py-20 bg-gray-100">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">H2S CORROSION</h2>
+          
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg mb-6">
+              Traditional precast concrete structures corrode when exposed to sulfuric acid, 
+              a common issue in the waste water industry. Corrosion increases rehabilitation costs 
+              of traditional concrete structures, costing municipalities (number for money) over time. 
+              Armorock is the solution.
+            </p>
+            <p className="text-lg mb-6">
+              Rather than using temporary treatments like admixtures, liners, and coatings, 
+              Armorock polymer concrete is the long-lasting solution to corrosion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution Section */}
+      <section className="bg-gray-900 text-white py-20">
+        <div className="container-custom text-center">
+          <div className="mb-8">
+            <Image 
+              src="/armorock-icon.svg" 
+              alt="Armorock Icon" 
+              width={120} 
+              height={120}
+              className="mx-auto"
+            />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">ARMOROCK IS THE SOLUTION</h2>
+          <p className="text-lg mb-10 max-w-3xl mx-auto">
+            Something inspirational about how amazing Armorock is and the product and all the things.
+          </p>
+          
+          <h3 className="text-2xl md:text-3xl font-bold mb-8">
+            SUSTAINABLE IN DESIGN. PROVEN IN PERFORMANCE.<br />
+            TRUSTED FOR THE FUTURE.
+          </h3>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <Link href="/quote" className="btn btn-primary">
+              GET A QUOTE
+            </Link>
+            <Link href="/contact" className="btn btn-outline">
+              CONNECT WITH US
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
