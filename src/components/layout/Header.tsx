@@ -17,6 +17,7 @@ const Header = () => {
     { name: 'Our Products', href: '/products' },
     { name: 'Life Cycle Analysis', href: '/life-cycle-analysis' },
     { name: 'Case Studies', href: '/case-studies' },
+    { name: 'Leadership', href: '/leadership' },
     { name: 'Connect With Us', href: '/contact' },
   ];
 
