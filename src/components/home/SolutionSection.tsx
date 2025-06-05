@@ -16,7 +16,7 @@ const SolutionSection = () => {
           viewport={{ once: true }}
         >
           <Image 
-            src="/armorock-icon.svg" 
+            src="/logos/Standalone Logo - No Text.svg" 
             alt="Armorock Icon" 
             width={120} 
             height={120}

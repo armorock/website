@@ -27,7 +27,7 @@ const Header = () => {
           <Link href="/" className="flex items-center">
             <div className="relative w-40 h-10">
               <Image 
-                src="/armorock-logo.svg" 
+                src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg" 
                 alt="Armorock Logo" 
                 fill
                 style={{ objectFit: 'contain' }}

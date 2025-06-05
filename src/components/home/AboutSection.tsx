@@ -17,7 +17,7 @@ const AboutSection = () => {
               viewport={{ once: true }}
             >
               <Image 
-                src="/armorock-icon.svg" 
+                src="/logos/Standalone Logo - No Text.svg" 
                 alt="Armorock Icon" 
                 width={200} 
                 height={200}

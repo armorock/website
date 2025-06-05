@@ -47,7 +47,7 @@ const PolymerConcreteSection = () => {
           >
             <div className="bg-gray-200 rounded-full w-64 h-64 mx-auto overflow-hidden">
               <Image 
-                src="/images/polymer-concrete.jpg" 
+                src="/products/Landing Page - Polymer Cross Section.webp" 
                 alt="Polymer Concrete Cross Section" 
                 width={300} 
                 height={300}

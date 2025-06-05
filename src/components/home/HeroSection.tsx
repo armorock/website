@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="section-hero py-24 md:py-36 relative">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-background.jpg"
+          src="/images/Landing Page - Background 1.webp"
           alt="Armorock facility"
           fill
           className="object-cover opacity-30"
@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="container-custom relative z-10 flex flex-col items-center text-center">
         <div className="mb-12">
           <Image
-            src="/armorock-logo.svg"
+            src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
             alt="Armorock Logo"
             width={300}
             height={100}

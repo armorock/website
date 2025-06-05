@@ -23,11 +23,11 @@
 @layer base {
   body {
     @apply text-gray-800 bg-white;
-    font-family: var(--font-roboto), Arial, sans-serif;
+    font-family: var(--font-open-sans), 'Open Sans', Arial, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-knockout), Arial, sans-serif;
+    font-family: var(--font-oswald), 'Oswald', Arial, sans-serif;
     font-weight: 700;
   }
 }
@@ -35,6 +35,7 @@
 @layer components {
   .btn {
     @apply px-6 py-3 font-medium transition-colors rounded-md;
+    font-family: var(--font-oswald), 'Oswald', Arial, sans-serif;
   }
   
   .btn-primary {
