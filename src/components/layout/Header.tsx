@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import MobileMenu from './MobileMenu';
 import { getNavigationLinks, shouldUseHeaderLightStyling } from '@/lib/utils/navigation';
+import styles from './header.module.css';
 
 const Header = () => {
   const pathname = usePathname();
@@ -40,14 +41,14 @@ const Header = () => {
   
   return (
     <>
-      <header className={`w-full fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-4'
+      <header className={`${styles.header} ${
+        isScrolled ? styles.headerScrolled : styles.headerTransparent
       }`}>
-        <div className="w-full max-w-[1400px] px-4 mx-auto flex items-center justify-between">
+        <div className={styles.container}>
           {/* Logo */}
-          <div className="logo-container flex-shrink-0">
+          <div className={styles.logoContainer}>
             <Link href="/" className="flex items-center">
-              <div className="relative w-[220px] h-8">
+              <div className={styles.logoImage}>
                 <Image
                   src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
                   alt="Armorock Polymer Concrete Logo"
@@ -61,16 +62,16 @@ const Header = () => {
           </div>
           
           {/* Navigation - Desktop */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 ml-16 mr-16">
-            <div className="flex items-center justify-center gap-x-11">
+          <nav className={styles.desktopNav}>
+            <div className={styles.navLinks}>
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={`
-                    text-[16px] leading-tight font-oswald font-normal no-underline transition-colors duration-200 uppercase tracking-wide
-                    ${pathname === link.href ? 'text-[var(--primary)] font-medium' : ''}
-                    ${useLightStyling && !isScrolled ? 'text-white' : 'text-[#20242A]'}
+                    ${styles.navLink}
+                    ${pathname === link.href ? styles.navLinkActive : ''}
+                    ${useLightStyling && !isScrolled ? styles.navLinkLight : styles.navLinkDark}
                   `}
                 >
                   {link.name}
@@ -80,14 +81,14 @@ const Header = () => {
           </nav>
           
           {/* Get a Quote Button */}
-          <div className="quote-btn-container flex-shrink-0">
+          <div>
             <Link
               href="/quote"
               className={`
-                px-8 py-[6px] border-[2px] text-lg font-oswald font-bold uppercase bg-transparent transition-colors duration-200 tracking-wide inline-block
+                ${styles.quoteButton}
                 ${useLightStyling && !isScrolled 
-                  ? 'border-white text-white hover:bg-white hover:text-[#20242A]' 
-                  : 'border-[#20242A] text-[#20242A] hover:bg-[#20242A] hover:text-white'}
+                  ? styles.quoteButtonLight 
+                  : styles.quoteButtonDark}
               `}
             >
               GET A QUOTE
@@ -96,13 +97,13 @@ const Header = () => {
           
           {/* Mobile Menu Button - Only visible on mobile */}
           <button 
-            className="lg:hidden ml-4" 
+            className={styles.mobileMenuBtn}
             aria-label="Toggle menu"
             onClick={() => setIsMobileMenuOpen(true)}
           >
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
-              className={`h-8 w-8 ${useLightStyling && !isScrolled ? 'text-white' : 'text-[#20242A]'}`} 
+              className={`${styles.mobileMenuBtnIcon} ${useLightStyling && !isScrolled ? styles.navLinkLight : styles.navLinkDark}`} 
               fill="none" 
               viewBox="0 0 24 24" 
               stroke="currentColor"

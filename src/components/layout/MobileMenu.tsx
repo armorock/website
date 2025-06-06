@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from './mobilemenu.module.css';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -43,11 +44,11 @@ const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuProps) =>
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white z-50 flex flex-col">
-      <div className="w-full max-w-[1400px] px-4 mx-auto flex justify-between items-center py-6">
+    <div className={styles.mobileMenuOverlay}>
+      <div className={styles.menuHeader}>
         {/* Logo in mobile menu */}
         <Link href="/" onClick={onClose} className="flex items-center">
-          <div className="relative w-44 sm:w-[220px] h-8 sm:h-8">
+          <div className={styles.logoContainer}>
             <Image
               src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
               alt="Armorock Polymer Concrete Logo"
@@ -67,17 +68,16 @@ const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuProps) =>
         </button>
       </div>
       
-      <div className="border-t border-gray-100"></div>
+      <div className={styles.divider}></div>
       
-      <nav className="flex flex-col items-center justify-center flex-grow py-10">
+      <nav className={styles.navContainer}>
         {navLinks.map((link) => (
           <Link
             key={link.name}
             href={link.href}
             className={`
-              py-4 text-2xl sm:text-3xl font-oswald tracking-wide text-[#20242A] no-underline 
-              hover:text-[var(--primary)] transition-colors duration-200
-              ${pathname === link.href ? 'text-[var(--primary)] font-medium' : ''}
+              ${styles.navLink}
+              ${pathname === link.href ? styles.navLinkActive : ''}
             `}
             onClick={onClose}
           >
@@ -87,7 +87,7 @@ const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuProps) =>
         
         <Link
           href="/quote"
-          className="px-8 py-1.5 border-[3px] text-xl font-oswald font-bold uppercase bg-transparent transition-colors duration-200 tracking-wide mt-10 border-[#20242A] text-[#20242A] hover:bg-[#20242A] hover:text-white"
+          className={styles.quoteButton}
           onClick={onClose}
         >
           GET A QUOTE
