@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variables */
 :root {
   --background: #ffffff;
   --foreground: #20242A;
@@ -20,6 +21,7 @@
   }
 }
 
+/* Base Typography */
 @layer base {
   body {
     @apply text-gray-800 bg-white;
@@ -49,29 +51,80 @@
   }
 }
 
+/* Components */
 @layer components {
+  /* Button styles */
   .btn {
     @apply px-6 py-3 font-bold transition-all duration-300 uppercase tracking-wide rounded-none text-sm;
     font-family: var(--font-oswald), 'Oswald', Arial, sans-serif;
   }
-  
+    
   .btn-primary {
     @apply text-white bg-[var(--primary)] hover:bg-[var(--primary-dark)];
   }
-  
+    
   .btn-outline {
     @apply border-2 border-white text-white hover:bg-white hover:text-[var(--primary)];
   }
-  
+    
   .btn-outline-red {
     @apply border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white;
   }
-  
+
+  /* Container and layout styles */
   .container-custom {
     @apply w-full max-w-7xl px-5 mx-auto sm:px-8 lg:px-10;
   }
-  
+    
   .section {
     @apply py-16 md:py-24;
+  }
+
+  /* Header styles */
+  .header {
+    @apply w-full fixed top-0 left-0 right-0 z-40 transition-all duration-300;
+  }
+
+  .header-scrolled {
+    @apply bg-white shadow-md py-3;
+  }
+
+  .header-transparent {
+    @apply bg-transparent py-6;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply text-[1.25rem] font-oswald font-normal no-underline hover:text-[var(--primary)] transition-colors duration-200;
+  }
+
+  .nav-link-active {
+    @apply text-[var(--primary)] font-medium;
+  }
+
+  /* Form styles */
+  .form-group {
+    @apply mb-4;
+  }
+
+  .form-label {
+    @apply block mb-2 font-medium text-gray-700;
+  }
+
+  .form-input {
+    @apply w-full p-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)];
+  }
+
+  .form-textarea {
+    @apply w-full p-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)];
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .card-bordered {
+    @apply border border-gray-200;
   }
 }

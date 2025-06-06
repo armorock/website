@@ -1,0 +1,50 @@
+/* Card styles */
+.card {
+  @apply bg-white p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
+}
+
+.card-bordered {
+  @apply border border-gray-200;
+}
+
+/* Form styles */
+.form-group {
+  @apply mb-4;
+}
+
+.form-label {
+  @apply block mb-2 font-medium text-gray-700;
+}
+
+.form-input {
+  @apply w-full p-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)];
+}
+
+.form-textarea {
+  @apply w-full p-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)];
+}
+
+.form-select {
+  @apply w-full p-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)];
+}
+
+.form-checkbox {
+  @apply rounded-none text-[var(--primary)] focus:ring-[var(--primary)];
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-primary {
+  @apply bg-[var(--primary)] text-white;
+}
+
+.badge-secondary {
+  @apply bg-[var(--secondary)] text-white;
+}
+
+.badge-outline {
+  @apply bg-transparent border border-current;
+}

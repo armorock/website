@@ -1,0 +1,41 @@
+/* Header styles */
+.header {
+  @apply w-full fixed top-0 left-0 right-0 z-40 transition-all duration-300;
+}
+
+.header-scrolled {
+  @apply bg-white shadow-md py-3;
+}
+
+.header-transparent {
+  @apply bg-transparent py-4;
+}
+
+/* Navigation styles */
+.nav-link {
+  @apply text-[16px] leading-tight font-oswald font-normal no-underline transition-colors duration-200 uppercase tracking-wide;
+}
+
+.nav-link-active {
+  @apply text-[var(--primary)] font-medium;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  @apply lg:hidden ml-4;
+}
+
+/* Navigation container */
+.desktop-nav {
+  @apply hidden lg:flex items-center justify-center flex-1 ml-16 mr-16;
+}
+
+/* Logo container */
+.logo-container {
+  @apply flex-shrink-0;
+}
+
+/* Quote button container */
+.quote-btn-container {
+  @apply flex-shrink-0 hidden md:block;
+}

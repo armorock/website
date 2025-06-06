@@ -1,120 +1,125 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+import MobileMenu from './MobileMenu';
+import { getNavigationLinks, shouldUseHeaderLightStyling } from '@/lib/utils/navigation';
+import { HEADER, LAYOUT } from '@/styles';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const navLinks = [
-    { name: 'About Us', href: '/about' },
-    { name: 'Our Products', href: '/products' },
-    { name: 'Life Cycle Analysis', href: '/life-cycle-analysis' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Leadership', href: '/leadership' },
-    { name: 'Connect With Us', href: '/contact' },
-  ];
-
+  const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+  // Get navigation links from utility function
+  const navLinks = getNavigationLinks();
+  
+  // Check if current page should use light styling
+  const useLightStyling = shouldUseHeaderLightStyling(pathname);
+  
+  // Handle scroll effect for header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    
+    // Run it once to set initial state
+    handleScroll();
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
-    <header className="relative bg-[var(--primary)] shadow-lg z-50 text-white">
-      <div className="container-custom py-3">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <div className="relative w-48 h-12 bg-white p-1 rounded">
-              <Image 
-                src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg" 
-                alt="Armorock Logo" 
-                fill
-                style={{ objectFit: 'contain' }}
-                priority
-              />
-            </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-sm uppercase font-medium text-white hover:text-gray-200 transition-colors"
-              >
-                {link.name}
-              </Link>
-            ))}
-            <Link href="/quote" className="btn bg-white text-[var(--primary)] hover:bg-gray-200 py-2 px-5 uppercase text-sm font-bold">
-              GET A QUOTE
+    <>
+      <header className={`header ${isScrolled ? 'header-scrolled' : 'header-transparent'}`}>
+        <div className={`${LAYOUT.container} flex items-center justify-between`}>
+          {/* Logo */}
+          <div className="logo-container flex-shrink-0">
+            <Link href="/" className="flex items-center">
+              <div className="relative w-[360px] h-10">
+                <Image
+                  src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
+                  alt="Armorock Polymer Concrete Logo"
+                  fill
+                  className="object-contain object-left"
+                  priority
+                  draggable={false}
+                />
+              </div>
             </Link>
-          </nav>
-
-          {/* Mobile menu button */}
-          <button
-            type="button"
-            className="md:hidden flex items-center"
-            onClick={toggleMenu}
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-          >
-            <span className="sr-only">Open main menu</span>
-            <div className="w-6 h-6 flex items-center justify-center">
-              <span
-                className={`block w-5 h-0.5 bg-white transition-all ${
-                  isOpen ? 'rotate-45 translate-y-0.5' : ''
-                }`}
-              ></span>
-              <span
-                className={`block w-5 h-0.5 bg-white transition-all mt-1 ${
-                  isOpen ? 'opacity-0' : ''
-                }`}
-              ></span>
-              <span
-                className={`block w-5 h-0.5 bg-white transition-all mt-1 ${
-                  isOpen ? '-rotate-45 -translate-y-1.5' : ''
-                }`}
-              ></span>
+          </div>
+          
+          {/* Navigation - Desktop */}
+          <nav className="desktop-nav">
+            <div className="flex items-center justify-center gap-x-11">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`
+                    nav-link
+                    ${pathname === link.href ? 'nav-link-active' : ''}
+                    ${useLightStyling && !isScrolled ? 'text-white' : 'text-[#20242A]'}
+                  `}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <motion.div
-          id="mobile-menu"
-          className="md:hidden bg-white"
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: 'auto' }}
-          exit={{ opacity: 0, height: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="container-custom py-4 space-y-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="block text-base font-medium text-gray-800 hover:text-[var(--primary)] transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <Link 
-              href="/quote" 
-              className="block w-full btn btn-primary text-center mt-4"
-              onClick={() => setIsOpen(false)}
+          </nav>
+          
+          {/* Get a Quote Button */}
+          <div className="quote-btn-container flex-shrink-0">
+            <Link
+              href="/quote"
+              className={`
+                px-8 py-[6px] border-[2px] text-lg font-oswald font-bold uppercase bg-transparent transition-colors duration-200 tracking-wide inline-block
+                ${useLightStyling && !isScrolled 
+                  ? 'border-white text-white hover:bg-white hover:text-[#20242A]' 
+                  : 'border-[#20242A] text-[#20242A] hover:bg-[#20242A] hover:text-white'}
+              `}
             >
               GET A QUOTE
             </Link>
           </div>
-        </motion.div>
-      )}
-    </header>
+          
+          {/* Mobile Menu Button - Only visible on mobile */}
+          <button 
+            className="mobile-menu-btn lg:hidden ml-4" 
+            aria-label="Toggle menu"
+            onClick={() => setIsMobileMenuOpen(true)}
+          >
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className={`h-8 w-8 ${useLightStyling && !isScrolled ? 'text-white' : 'text-[#20242A]'}`} 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      
+      {/* Mobile Menu */}
+      <MobileMenu 
+        isOpen={isMobileMenuOpen} 
+        onClose={() => setIsMobileMenuOpen(false)} 
+        navLinks={navLinks} 
+        pathname={pathname}
+      />
+    </>
   );
 };
 
