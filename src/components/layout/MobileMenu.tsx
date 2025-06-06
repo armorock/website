@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { LAYOUT, BUTTONS } from '@/styles';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -45,10 +44,10 @@ const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuProps) =>
 
   return (
     <div className="fixed inset-0 bg-white z-50 flex flex-col">
-      <div className={`${LAYOUT.container} flex justify-between items-center py-6`}>
+      <div className="w-full max-w-[1400px] px-4 mx-auto flex justify-between items-center py-6">
         {/* Logo in mobile menu */}
         <Link href="/" onClick={onClose} className="flex items-center">
-          <div className="relative w-52 sm:w-64 h-10 sm:h-12">
+          <div className="relative w-44 sm:w-[220px] h-8 sm:h-8">
             <Image
               src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
               alt="Armorock Polymer Concrete Logo"
@@ -78,7 +77,7 @@ const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuProps) =>
             className={`
               py-4 text-2xl sm:text-3xl font-oswald tracking-wide text-[#20242A] no-underline 
               hover:text-[var(--primary)] transition-colors duration-200
-              ${pathname === link.href ? 'nav-link-active' : ''}
+              ${pathname === link.href ? 'text-[var(--primary)] font-medium' : ''}
             `}
             onClick={onClose}
           >
@@ -88,7 +87,7 @@ const MobileMenu = ({ isOpen, onClose, navLinks, pathname }: MobileMenuProps) =>
         
         <Link
           href="/quote"
-          className={`${BUTTONS.quoteLarge} mt-10 border-[#20242A] text-[#20242A] hover:bg-[#20242A] hover:text-white`}
+          className="px-8 py-1.5 border-[3px] text-xl font-oswald font-bold uppercase bg-transparent transition-colors duration-200 tracking-wide mt-10 border-[#20242A] text-[#20242A] hover:bg-[#20242A] hover:text-white"
           onClick={onClose}
         >
           GET A QUOTE

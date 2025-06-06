@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import MobileMenu from './MobileMenu';
 import { getNavigationLinks, shouldUseHeaderLightStyling } from '@/lib/utils/navigation';
-import { HEADER, LAYOUT } from '@/styles';
 
 const Header = () => {
   const pathname = usePathname();
@@ -41,12 +40,14 @@ const Header = () => {
   
   return (
     <>
-      <header className={`header ${isScrolled ? 'header-scrolled' : 'header-transparent'}`}>
-        <div className={`${LAYOUT.container} flex items-center justify-between`}>
+      <header className={`w-full fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-4'
+      }`}>
+        <div className="w-full max-w-[1400px] px-4 mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="logo-container flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="relative w-[360px] h-10">
+              <div className="relative w-[220px] h-8">
                 <Image
                   src="/logos/Horizontal (Logo + Armorock + Polymer Concrete).svg"
                   alt="Armorock Polymer Concrete Logo"
@@ -60,15 +61,15 @@ const Header = () => {
           </div>
           
           {/* Navigation - Desktop */}
-          <nav className="desktop-nav">
+          <nav className="hidden lg:flex items-center justify-center flex-1 ml-16 mr-16">
             <div className="flex items-center justify-center gap-x-11">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={`
-                    nav-link
-                    ${pathname === link.href ? 'nav-link-active' : ''}
+                    text-[16px] leading-tight font-oswald font-normal no-underline transition-colors duration-200 uppercase tracking-wide
+                    ${pathname === link.href ? 'text-[var(--primary)] font-medium' : ''}
                     ${useLightStyling && !isScrolled ? 'text-white' : 'text-[#20242A]'}
                   `}
                 >
@@ -95,7 +96,7 @@ const Header = () => {
           
           {/* Mobile Menu Button - Only visible on mobile */}
           <button 
-            className="mobile-menu-btn lg:hidden ml-4" 
+            className="lg:hidden ml-4" 
             aria-label="Toggle menu"
             onClick={() => setIsMobileMenuOpen(true)}
           >
