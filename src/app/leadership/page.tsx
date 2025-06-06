@@ -18,7 +18,7 @@ const leadershipTeam = [
     id: 'coo',
     name: 'Sarah Johnson',
     title: 'Chief Operations Officer',
-    bio: 'With a background in industrial manufacturing and process optimization, Sarah oversees Armorock's production facilities and ensures operational excellence. She has been instrumental in scaling our production capacity while maintaining the highest quality standards.',
+    bio: 'With a background in industrial manufacturing and process optimization, Sarah oversees Armorock\'s production facilities and ensures operational excellence. She has been instrumental in scaling our production capacity while maintaining the highest quality standards.',
     imageUrl: '/images/team/sarah-johnson.jpg',
     linkedIn: 'https://www.linkedin.com/'
   },
@@ -26,7 +26,7 @@ const leadershipTeam = [
     id: 'cto',
     name: 'Michael Chen',
     title: 'Chief Technology Officer',
-    bio: 'Michael leads Armorock's research and development initiatives, focusing on polymer concrete innovation and continuous product improvement. His team has developed several patented processes that have revolutionized the industry and reinforced Armorock's position as a market leader.',
+    bio: 'Michael leads Armorock\'s research and development initiatives, focusing on polymer concrete innovation and continuous product improvement. His team has developed several patented processes that have revolutionized the industry and reinforced Armorock\'s position as a market leader.',
     imageUrl: '/images/team/michael-chen.jpg',
     linkedIn: 'https://www.linkedin.com/'
   },

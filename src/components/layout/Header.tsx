@@ -64,19 +64,33 @@ const Header = () => {
           {/* Navigation - Desktop */}
           <nav className={styles.desktopNav}>
             <div className={styles.navLinks}>
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className={`
-                    ${styles.navLink}
-                    ${pathname === link.href ? styles.navLinkActive : ''}
-                    ${useLightStyling && !isScrolled ? styles.navLinkLight : styles.navLinkDark}
-                  `}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                // Start with the base nav link class
+                const classNames = [styles.navLink];
+                
+                // For active link, priority is active styling regardless of page
+                if (pathname === link.href) {
+                  classNames.push(styles.navLinkActive);
+                } 
+                // For non-active links on home page when not scrolled
+                else if (pathname === '/' && !isScrolled) {
+                  classNames.push(styles.navLinkLight);
+                } 
+                // For all other cases (non-active links on other pages or when scrolled)
+                else {
+                  classNames.push(styles.navLinkDark);
+                }
+                
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={classNames.join(' ')}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </div>
           </nav>
           
