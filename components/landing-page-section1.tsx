@@ -130,7 +130,8 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
         width={391.7}
         height={317}
         sizes="100vw"
-        alt=""
+        alt="Armorock Logo"
+        src="/logo--white@2x.png"
       />
       <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px]">
         <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
