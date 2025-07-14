@@ -15,12 +15,13 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
       <div className="w-[663px] h-[213px] flex flex-col items-start justify-start max-w-full">
         <div className="w-[663px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
           <Image
-            className="h-[113px] w-full relative object-cover"
-            width={132}
+            className="h-[113px] w-auto relative object-contain"
+            width={500}
             height={113}
-            sizes="100vw"
-            alt=""
-            src="/logo-image-1@2x.png"
+            sizes="500px"
+            alt="Armorock Difference Logo"
+            src="/white-diff-logo.svg"
+            priority
           />
         </div>
         <div className="flex flex-row items-start justify-start max-w-full">
