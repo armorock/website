@@ -62,12 +62,12 @@ const LocofyAboutUsPage: NextPage = () => {
             src="/iso-9001@2x.png"
           />
           <Image
-            className="w-[445px] relative max-h-full object-cover hidden"
+            className="w-[445px] relative max-h-full object-cover"
             width={445}
             height={371}
             sizes="100vw"
             alt=""
-            src="/iso-9002@2x.png"
+            src="/made-usa.png"
           />
         </div>
       </section>
