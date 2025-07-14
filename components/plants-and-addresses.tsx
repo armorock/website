@@ -40,12 +40,12 @@ const PlantsAndAddresses: NextPage<PlantsAndAddressesType> = ({
       </section>
       <section className="h-[690px] w-[460px] flex flex-col items-start justify-start text-center text-[50px] text-firebrick font-oswald mq675:pt-72 mq675:box-border">
         <Image
-          className="w-[460px] relative max-h-full hidden"
+          className="w-[460px] relative max-h-full"
           width={460}
           height={460}
           sizes="100vw"
           alt=""
-          src="/texas.svg"
+          src="/texas.png"
         />
         <div className="h-[88.7px] flex flex-row items-start justify-start py-0 pl-[74px] pr-[76px] box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
           <h2 className="m-0 w-[253px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-3xl mq450:leading-[60px] mq825:text-[40px] mq825:leading-[80px]">
