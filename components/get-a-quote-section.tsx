@@ -2,13 +2,10 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import Header1 from "./header1";
+import Header from "./header";
 
 export type GetAQuoteSectionType = {
   className?: string;
-  headerPadding?: string;
-  logoImage: string;
-  mainNavigationBarMargin?: string;
 
   /** Style props */
   heroSectionHeight?: CSSProperties["height"];
@@ -19,9 +16,6 @@ const GetAQuoteSection: NextPage<GetAQuoteSectionType> = ({
   className = "",
   heroSectionHeight,
   heroSectionBackgroundImage,
-  headerPadding,
-  logoImage,
-  mainNavigationBarMargin,
 }) => {
   const heroSectionStyle: CSSProperties = useMemo(() => {
     return {
@@ -32,12 +26,8 @@ const GetAQuoteSection: NextPage<GetAQuoteSectionType> = ({
 
   const router = useRouter();
 
-  const onOurProductsTextClick = useCallback(() => {
-    router.push("/locofy-our-products-page");
-  }, [router]);
-
-  const onConnectWithUsClick = useCallback(() => {
-    router.push("/connect-with-us-page");
+  const onFAQTextClick = useCallback(() => {
+    router.push("/frequently-asked-questions-page");
   }, [router]);
 
   return (
@@ -45,12 +35,12 @@ const GetAQuoteSection: NextPage<GetAQuoteSectionType> = ({
       className={`self-stretch h-[550px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 px-[25px] box-border sticky gap-2 bg-[url('/hero-section1@3x.png')] bg-cover bg-no-repeat bg-[top] top-[0] z-[99] text-left text-6xl text-gray-100 font-oswald ${className}`}
       style={heroSectionStyle}
     >
-      <Header1
-        headerPadding={headerPadding}
-        logoImage={logoImage}
-        mainNavigationBarMargin={mainNavigationBarMargin}
-        onOurProductsTextClick={onOurProductsTextClick}
-        onConnectWithUsClick={onConnectWithUsClick}
+      <Header
+        headerFlexWrap="wrap"
+        headerAlignContent="center"
+        headerTop="0"
+        headerPosition="sticky"
+        onFAQTextClick={onFAQTextClick}
       />
       <div className="w-[1314px] h-[399px] !!m-[0 important] absolute top-[118px] left-[58px] flex flex-row items-start justify-start pt-0 px-0 pb-[299px] box-border z-[1]">
         <h2 className="m-0 w-[1314px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block shrink-0 z-[0]">
