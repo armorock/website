@@ -1,6 +1,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    domains: ['localhost'],
     remotePatterns: [
       {
         protocol: "https",
@@ -8,7 +9,9 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    unoptimized: true,
   },
+  optimizeFonts: true,
 };
 
 module.exports = nextConfig;

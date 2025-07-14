@@ -21,8 +21,8 @@ module.exports = {
         whitesmoke: "#f4f4f4",
       },
       fontFamily: {
-        oswald: "Oswald",
-        "open-sans": "Open Sans",
+        oswald: ["Oswald", "sans-serif"],
+        "open-sans": ["Open Sans", "sans-serif"],
       },
     },
     screens: {
@@ -35,6 +35,6 @@ module.exports = {
     },
   },
   corePlugins: {
-    preflight: false,
+    preflight: true,
   },
 };
