@@ -34,8 +34,10 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
   }, [router]);
 
   const onCareersTextClick = useCallback(() => {
-    router.push("/careers-page");
-  }, [router]);
+    window.open(
+      "https://paycomonline.net/v4/ats/web.php/jobs?clientkey=FA5DC105028F0075FCBC55C96E060882"
+    );
+  }, []);
 
   const onFAQTextClick = useCallback(() => {
     router.push("/frequently-asked-questions-page");
@@ -47,7 +49,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
 
   return (
     <section
-      className={`self-stretch flex flex-col items-center justify-start gap-[39px] bg-[url('/hero-section11@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-3xl text-gray-100 font-oswald mq675:gap-[19px] ${className}`}
+      className={`self-stretch flex flex-col items-center justify-start gap-[39px] bg-[url('/hero-section11@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-[50px] font-oswald mq675:gap-[19px] ${className}`}
     >
       <header className="self-stretch flex flex-row items-start justify-between py-[15px] px-[25px] top-[0] z-[99] sticky text-left text-[40px] text-gray-100 font-oswald">
         <div className="flex-1 flex flex-row items-center justify-between flex-wrap content-center gap-x-0 gap-y-5">
@@ -123,21 +125,15 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
           </div>
         </div>
       </header>
-      <div className="w-[391.7px] flex flex-col items-center justify-start gap-3">
-        <Image
-          className="self-stretch relative max-w-full overflow-hidden max-h-full"
-          loading="lazy"
-          width={391.7}
-          height={257}
-          sizes="100vw"
-          alt=""
-          src="/Center Logo.svg"
-        />
-        <h1 className="m-0 self-stretch h-12 relative text-[length:inherit] tracking-[2px] leading-6 uppercase font-medium font-[inherit] inline-block mq450:text-lg mq450:leading-[14px] mq825:text-2xl mq825:leading-[19px]">
-          polymer concrete
-        </h1>
-      </div>
-      <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px] text-[50px]">
+      <Image
+        className="w-[391.7px] max-h-full"
+        width={391.7}
+        height={317}
+        sizes="100vw"
+        alt="Armorock Logo"
+        src="/Stacked (Logo + Armorock + Polymer Concrete).svg"
+      />
+      <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px]">
         <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
           {`Sustainable `}in Design.
         </h2>

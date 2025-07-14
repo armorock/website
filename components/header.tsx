@@ -15,7 +15,6 @@ export type HeaderType = {
 
   /** Action props */
   onFAQTextClick?: () => void;
-  onCareersTextClick?: () => void;
 };
 
 const Header: NextPage<HeaderType> = ({
@@ -25,7 +24,6 @@ const Header: NextPage<HeaderType> = ({
   headerTop,
   headerPosition,
   onFAQTextClick,
-  onCareersTextClick,
 }) => {
   const headerStyle: CSSProperties = useMemo(() => {
     return {
@@ -58,9 +56,11 @@ const Header: NextPage<HeaderType> = ({
     router.push("/connect-with-us-page");
   }, [router]);
 
-  const onCareersTextClick1 = useCallback(() => {
-    router.push("/careers-page");
-  }, [router]);
+  const onCareersTextClick = useCallback(() => {
+    window.open(
+      "https://paycomonline.net/v4/ats/web.php/jobs?clientkey=FA5DC105028F0075FCBC55C96E060882"
+    );
+  }, []);
 
   const onFAQTextClick1 = useCallback(() => {
     router.push("/frequently-asked-questions-page");

@@ -19,19 +19,19 @@ const EngineeringDocsSection: NextPage<EngineeringDocsSectionType> = ({
       <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[42px] mq675:gap-[21px]">
         <StandardsManual standardsManual="standards manual" />
         <StandardsManual
+          frameDivPadding="0px 20px 0px 21px"
           standardsManual="technical documents"
           standardsManualWidth="234px"
-          frameDivPadding1="0px 20px 0px 21px"
         />
         <StandardsManual
+          frameDivPadding="0px 37px 0px 38px"
           standardsManual="installation guide"
           standardsManualWidth="200px"
-          frameDivPadding1="0px 37px 0px 38px"
         />
         <StandardsManual
+          frameDivPadding="0px 61px 0px 62px"
           standardsManual="CAD drawings"
           standardsManualWidth="152px"
-          frameDivPadding1="0px 61px 0px 62px"
         />
       </div>
     </main>

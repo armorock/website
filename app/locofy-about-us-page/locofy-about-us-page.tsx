@@ -3,17 +3,16 @@ import Image from "next/image";
 import AboutUsSection from "../../components/about-us-section";
 import AboutUsSection2 from "../../components/about-us-section2";
 import AboutUsSection1 from "../../components/about-us-section1";
-import AwardsCertsSection from "../../components/awards-certs-section";
 import Footer2 from "../../components/footer1";
 
 const LocofyAboutUsPage: NextPage = () => {
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start">
+    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
       <AboutUsSection />
-      <section className="self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start py-16 px-[107px] text-center text-6xl text-white font-oswald">
+      <section className="self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start py-16 px-[107px] text-center text-6xl text-white font-oswald mq450:pl-5 mq450:pr-5 mq450:box-border mq675:py-[42px] mq675:px-[53px] mq675:box-border">
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-1.5">
           <div className="h-[211px] w-[1226px] relative">
-            <h2 className="m-0 absolute top-[111px] left-[calc(50%_-_613px)] text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block w-[1226px]">
+            <h2 className="m-0 absolute top-[111px] left-[calc(50%_-_613px)] text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block w-[1226px] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
               {`our `}founding story
             </h2>
             <Image
@@ -26,7 +25,7 @@ const LocofyAboutUsPage: NextPage = () => {
               src="/logo1@2x.png"
             />
           </div>
-          <div className="flex-1 relative text-[22px] leading-[35px] font-open-sans">
+          <div className="flex-1 relative text-[22px] leading-[35px] font-open-sans inline-block min-w-[490px] mq450:text-lg mq450:leading-7 mq675:min-w-full">
             Before we were Armorock, our team operated as Geneva Pipe, a precast
             manufacturer that utilized alternative solutions such as liners,
             coatings, and admixtures in our solutions to corrosive environments.
@@ -72,7 +71,6 @@ const LocofyAboutUsPage: NextPage = () => {
           />
         </div>
       </section>
-      <AwardsCertsSection />
       <Footer2
         logo="/logo-2@2x.png"
         connectWithUsBorder="unset"

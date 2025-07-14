@@ -10,12 +10,12 @@ export type AboutUsSection2Type = {
 const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-16 px-[53px] gap-[25px] text-left text-[65px] text-gray-100 font-oswald ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-16 px-[53px] gap-[25px] text-left text-[65px] text-gray-100 font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq675:py-5 mq675:px-[26px] mq675:box-border mq825:pt-[27px] mq825:pb-[27px] mq825:box-border ${className}`}
     >
-      <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit]">
+      <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
         meet our team
       </h2>
-      <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-[65px]">
+      <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-[65px] mq450:gap-4 mq675:gap-8">
         <Ian
           ianAbernathy="Ian Abernathy"
           chiefExecutiveOfficer="Chief Executive Officer"
@@ -26,8 +26,8 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           ianAbernathy="Thomas Liffrig, PE"
           chiefExecutiveOfficer="Chief Operating Officer"
           image="/image-1@2x.png"
-          frameDivPadding2="0px 1px 0px 0px"
-          memberTitlesPadding="0px 8px 0px 0px"
+          frameDivPadding1="0px 1px 0px 0px"
+          memberRolesPadding="0px 8px 0px 0px"
         />
         <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
           <Image
@@ -38,19 +38,19 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             alt=""
             src="/image-2@2x.png"
           />
-          <div className="w-[281px] h-[100px] flex flex-col items-end justify-start gap-1.5">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center">
+          <div className="flex flex-col items-end justify-start gap-1.5">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
               Brad Brei
             </h3>
-            <div className="w-[281px] h-16 flex flex-row items-start justify-end py-0 pl-0 pr-[7px] box-border font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center">
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
+              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
                 Chief Financial Officer
               </i>
             </div>
           </div>
         </section>
         <section className="h-[523px] w-[273px] flex flex-col items-end justify-start gap-[21.5px] text-center text-xl text-gray-100 font-oswald">
-          <div className="w-[270px] h-[385px] flex flex-row items-start justify-end py-0 pl-0 pr-0.5 box-border">
+          <div className="flex flex-row items-start justify-end py-0 pl-[3px] pr-0.5">
             <Image
               className="h-[385px] w-full relative object-cover"
               width={268}
@@ -60,12 +60,12 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
               src="/image-3@2x.png"
             />
           </div>
-          <div className="w-[269px] h-[30px] flex flex-row items-start justify-end py-0 pl-0 pr-0.5 box-border">
-            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center">
+          <div className="flex flex-row items-start justify-end py-0 pl-1 pr-0.5">
+            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
               Lake O’Donnell
             </h3>
           </div>
-          <i className="w-[273px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center">
+          <i className="w-[273px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
             Director of Project Management
           </i>
         </section>
@@ -78,14 +78,14 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             alt=""
             src="/image-4@2x.png"
           />
-          <div className="w-[281px] h-[119px] flex flex-row items-start justify-end py-0 pl-0 pr-[7px] box-border">
-            <div className="h-[119px] w-[274px] flex flex-col items-start justify-start gap-[25px]">
-              <div className="w-[270px] h-[30px] flex flex-row items-start justify-start py-0 pl-[3px] pr-0 box-border">
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center">
+          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px]">
+            <div className="flex flex-col items-start justify-start gap-[25px]">
+              <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
                   Nichole Caldwell
                 </h3>
               </div>
-              <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center">
+              <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
                 Director of Business Operations
               </i>
             </div>
@@ -105,13 +105,13 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             alt=""
             src="/image-6@2x.png"
           />
-          <div className="w-[277px] h-[104px] flex flex-row items-start justify-start py-0 pl-0.5 pr-0 box-border">
-            <div className="h-[104px] w-[275px] flex flex-col items-start justify-start gap-[9px]">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center">
+          <div className="flex flex-row items-start justify-start py-0 pl-0.5 pr-0">
+            <div className="flex flex-col items-start justify-start gap-[9px]">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
                 Dyanna Serrano
               </h3>
-              <div className="w-[275px] h-[65px] flex flex-row items-start justify-start py-0 pl-px pr-0 box-border font-open-sans">
-                <i className="h-[65px] w-[274px] relative leading-[30px] flex items-center justify-center">
+              <div className="flex flex-row items-start justify-start py-0 pl-px pr-0 font-open-sans">
+                <i className="h-[65px] w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
                   Director of Human Resources
                 </i>
               </div>
@@ -127,11 +127,11 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             alt=""
             src="/image-7@2x.png"
           />
-          <div className="w-[274px] h-[120px] flex flex-col items-end justify-start gap-[26px]">
-            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center">
+          <div className="flex flex-col items-end justify-start gap-[26px]">
+            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
               Josh Elkins
             </h3>
-            <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center">
+            <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
               Director of Operational Excellence
             </i>
           </div>
@@ -142,8 +142,8 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           directorOfEngineering="Director of Risk"
           image="/image-8@2x.png"
           imageIconWidth="268px"
-          frameDivPadding4="0px 0px 0px 1px"
-          frameDivPadding5="0px 0px 0px 3px"
+          frameDivPadding2="0px 0px 0px 1px"
+          frameDivPadding3="0px 3px"
         />
         <Chris
           chrisHeight="497px"
@@ -151,8 +151,8 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           directorOfEngineering="Controller"
           image="/image-9@2x.png"
           imageIconWidth="271.5px"
-          frameDivPadding4="0px 0px 0px 3px"
-          frameDivPadding5="0px 0px 0px 3px"
+          frameDivPadding2="0px 0px 0px 3px"
+          frameDivPadding3="0px 3px"
         />
       </div>
     </section>

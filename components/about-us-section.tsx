@@ -32,8 +32,10 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
   }, [router]);
 
   const onCareersTextClick = useCallback(() => {
-    router.push("/careers-page");
-  }, [router]);
+    window.open(
+      "https://paycomonline.net/v4/ats/web.php/jobs?clientkey=FA5DC105028F0075FCBC55C96E060882"
+    );
+  }, []);
 
   const onFAQTextClick = useCallback(() => {
     router.push("/frequently-asked-questions-page");
@@ -45,9 +47,9 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
 
   return (
     <main
-      className={`self-stretch overflow-hidden flex flex-col items-center justify-start gap-[15px] bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald ${className}`}
+      className={`self-stretch flex flex-col items-center justify-start gap-[15px] bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald ${className}`}
     >
-      <header className="self-stretch flex flex-row items-start justify-between py-[15px] px-[25px] text-left text-[40px] text-gray-100 font-oswald">
+      <header className="self-stretch flex flex-row items-start justify-between py-[15px] px-[25px] top-[0] z-[99] sticky text-left text-[40px] text-gray-100 font-oswald">
         <div className="flex-1 flex flex-row items-center justify-between flex-wrap content-center gap-x-0 gap-y-5">
           <div
             className="h-20 w-[263px] flex flex-row items-end justify-start gap-[5px] cursor-pointer"
@@ -62,8 +64,8 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
               alt=""
               src="/logo-image@2x.png"
             />
-            <div className="h-20 w-[181px] flex flex-col items-start justify-end pt-0 px-0 pb-[5px] box-border">
-              <div className="w-[181px] h-[75px] flex flex-col items-start justify-start">
+            <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5px]">
+              <div className="flex flex-col items-start justify-start">
                 <h2 className="m-0 w-[181px] h-12 relative text-[length:inherit] leading-[48px] uppercase font-medium font-[inherit] inline-block">
                   Armorock
                 </h2>
@@ -73,7 +75,7 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="flex-1 flex flex-row items-center justify-end flex-wrap content-center gap-[42px] text-right text-xl text-black">
+          <div className="flex-1 flex flex-row items-center justify-end flex-wrap content-center gap-[42px] text-right text-xl text-black mq675:gap-[21px]">
             <h3
               className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
               onClick={onAboutUsTextClick}
@@ -111,7 +113,7 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
               FAQ
             </h3>
             <button
-              className="cursor-pointer border-gray-100 border-solid border-[3px] py-[13px] px-[25px] bg-gray-200 h-[50px] w-[146px] box-border flex flex-row items-center justify-center hover:bg-gainsboro-300 hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+              className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-[22px] bg-gray-200 h-[50px] w-[146px] box-border flex flex-row items-center justify-center hover:bg-gainsboro-300 hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
               onClick={onGetAQuoteButtonClick}
             >
               <div className="relative text-xl leading-6 font-oswald text-black text-right">
@@ -121,18 +123,18 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
           </div>
         </div>
       </header>
-      <div className="self-stretch flex flex-col items-center justify-start pt-0 px-[45px] pb-[38px] gap-[15px]">
-        <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit]">
+      <div className="self-stretch flex flex-col items-center justify-start pt-0 px-[45px] pb-[38px] gap-[15px] mq675:pl-[22px] mq675:pr-[22px] mq675:box-border">
+        <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
           about us
         </h2>
-        <div className="self-stretch h-52 flex flex-col items-start justify-start gap-[50px] text-right">
-          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit]">
+        <div className="self-stretch h-52 flex flex-col items-start justify-start gap-[50px] text-right mq675:gap-[25px]">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[18px] mq825:text-5xl mq825:leading-6">
             Sustainable in Design.
           </h2>
-          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit]">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[18px] mq825:text-5xl mq825:leading-6">
             proven in performance.
           </h2>
-          <h2 className="m-0 self-stretch relative text-[75px] leading-[30px] uppercase font-bold font-[inherit]">
+          <h2 className="m-0 self-stretch relative text-[75px] leading-[30px] uppercase font-bold font-[inherit] mq450:text-[45px] mq450:leading-[18px] mq825:text-6xl mq825:leading-6">
             {`trusted `}for the future.
           </h2>
         </div>

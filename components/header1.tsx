@@ -60,8 +60,10 @@ const Header1: NextPage<Header1Type> = ({
   }, [router]);
 
   const onCareersTextClick = useCallback(() => {
-    router.push("/careers-page");
-  }, [router]);
+    window.open(
+      "https://paycomonline.net/v4/ats/web.php/jobs?clientkey=FA5DC105028F0075FCBC55C96E060882"
+    );
+  }, []);
 
   const onFAQTextClick = useCallback(() => {
     router.push("/frequently-asked-questions-page");

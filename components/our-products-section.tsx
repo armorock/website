@@ -48,14 +48,14 @@ const OurProductsSection: NextPage<OurProductsSectionType> = ({
               manholesRehabs="manholes"
               manholesRehabsWidth="128px"
               onManholesAndRehabsClick={onCustomStructuresClick}
-              frameDivPadding1="0px 121px"
+              frameDivPadding="0px 121px"
             />
             <ManholesAndRehabs
               manholes="/custom structures1.svg"
               manholesRehabs="rehabilitation inserts"
               manholesRehabsWidth="293px"
               onManholesAndRehabsClick={onLiftStationsClick}
-              frameDivPadding1="0px 56px 0px 55px"
+              frameDivPadding="0px 56px 0px 55px"
             />
             <ManholesAndRehabs
               manholes="/custom structures2.svg"

@@ -12,7 +12,6 @@ export type ManholesAndRehabsType = {
   categoryLabelsPadding?: CSSProperties["padding"];
   manholesRehabsWidth?: CSSProperties["width"];
   frameDivPadding?: CSSProperties["padding"];
-  frameDivPadding1?: CSSProperties["padding"];
 
   /** Action props */
   onManholesAndRehabsClick?: () => void;
@@ -26,7 +25,6 @@ const ManholesAndRehabs: NextPage<ManholesAndRehabsType> = ({
   manholesRehabsWidth,
   onManholesAndRehabsClick,
   frameDivPadding,
-  frameDivPadding1,
 }) => {
   const liftStationsStyle: CSSProperties = useMemo(() => {
     return {
@@ -36,9 +34,9 @@ const ManholesAndRehabs: NextPage<ManholesAndRehabsType> = ({
 
   const frameDivStyle: CSSProperties = useMemo(() => {
     return {
-      padding: frameDivPadding1,
+      padding: frameDivPadding,
     };
-  }, [frameDivPadding1]);
+  }, [frameDivPadding]);
 
   const onManholesAndRehabsClick1 = useCallback(() => {
     const anchor = document.querySelector(
