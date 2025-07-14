@@ -98,7 +98,9 @@ const LocofyOurProductsPage: NextPage = () => {
       </section>
       <LiftStationsSection />
       <CustomStructuresSection />
-      <EngineeringDocsSection />
+      <div className="hidden">
+        <EngineeringDocsSection />
+      </div>
       <Footer logo="/logo@2x.png" />
     </div>
   );
