@@ -5,7 +5,7 @@ import LandingPageSection2 from "../components/landing-page-section2";
 import LandingPageSection3 from "../components/landing-page-section3";
 import DifferenceSection from "../components/difference-section";
 import LandingPageSection5 from "../components/landing-page-section5";
-import Footer2 from "../components/footer1";
+import Footer from "../components/footer";
 
 const LocofyLandingPage: NextPage = () => {
   return (
@@ -65,7 +65,7 @@ const LocofyLandingPage: NextPage = () => {
         </div>
       </section>
       <LandingPageSection5 />
-      <Footer2 logo="/logo-2@2x.png" />
+      <Footer logo="/logo-2@2x.png" />
     </div>
   );
 };

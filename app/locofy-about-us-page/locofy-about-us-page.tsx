@@ -3,7 +3,7 @@ import Image from "next/image";
 import AboutUsSection from "../../components/about-us-section";
 import AboutUsSection2 from "../../components/about-us-section2";
 import AboutUsSection1 from "../../components/about-us-section1";
-import Footer2 from "../../components/footer1";
+import Footer from "../../components/footer";
 
 const LocofyAboutUsPage: NextPage = () => {
   return (
@@ -71,29 +71,7 @@ const LocofyAboutUsPage: NextPage = () => {
           />
         </div>
       </section>
-      <Footer2
-        logo="/logo-2@2x.png"
-        connectWithUsBorder="unset"
-        connectWithUsPadding="unset"
-        connectWithUsBackgroundColor="unset"
-        socialMediaButtonBorder="unset"
-        socialMediaButtonPadding="unset"
-        socialMediaButtonBackgroundColor="unset"
-        aboutUsButtonBorder="unset"
-        aboutUsButtonPadding="unset"
-        aboutUsButtonBackgroundColor="unset"
-        ourProductsButtonBorder="unset"
-        ourProductsButtonPadding="unset"
-        ourProductsButtonBackgroundColor="unset"
-        engineeringDocsButtonBorder="unset"
-        engineeringDocsButtonPadding="unset"
-        engineeringDocsButtonBackgroundColor="unset"
-        joinOurTeamBorder="unset"
-        joinOurTeamPadding="unset"
-        joinOurTeamBackgroundColor="unset"
-        copyright2025Margin="unset"
-        copyright2025Height="unset"
-      />
+      <Footer logo="/logo-2@2x.png" />
     </div>
   );
 };

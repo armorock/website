@@ -7,7 +7,7 @@ import Header from "../../components/header";
 import ConnectWithUsSection from "../../components/connect-with-us-section";
 import PlanLocationsSection from "../../components/plan-locations-section";
 import LinkSection from "../../components/link-section";
-import Footer1 from "../../components/footer11";
+import Footer from "../../components/footer";
 
 const ConnectWithUsPage: NextPage = () => {
   const router = useRouter();
@@ -65,7 +65,7 @@ const ConnectWithUsPage: NextPage = () => {
           />
         </div>
       </section>
-      <Footer1 />
+      <Footer logo="/logo-2@2x.png"/>
     </div>
   );
 };
