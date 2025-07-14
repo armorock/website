@@ -16,6 +16,10 @@ const ConnectWithUsPage: NextPage = () => {
     router.push("/frequently-asked-questions-page");
   }, [router]);
 
+  const onCareersTextClick = useCallback(() => {
+    router.push("/careers-page");
+  }, [router]);
+
   const onLinkedInIconImageClick = useCallback(() => {
     window.open(
       "https://www.linkedin.com/company/armorock-polymer-concrete/posts/?feedView=all"
@@ -27,22 +31,23 @@ const ConnectWithUsPage: NextPage = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start gap-px leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start gap-px">
       <Header
         headerFlexWrap="unset"
         headerAlignContent="unset"
         headerTop="unset"
         headerPosition="unset"
         onFAQTextClick={onFAQTextClick}
+        onCareersTextClick={onCareersTextClick}
       />
       <ConnectWithUsSection />
       <PlanLocationsSection />
       <LinkSection />
-      <section className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-start py-16 px-[63px] text-center text-6xl text-gray-100 font-oswald lg:pl-[31px] lg:pr-[31px] lg:box-border mq675:pt-[42px] mq675:pb-[42px] mq675:box-border">
-        <h2 className="m-0 w-[1226px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
+      <section className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-start py-16 px-[63px] text-center text-6xl text-gray-100 font-oswald">
+        <h2 className="m-0 w-[1226px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block">
           our socials
         </h2>
-        <div className="w-[1008px] h-[307px] flex flex-row items-center justify-center gap-[83px] mq450:gap-[21px] mq675:gap-[41px]">
+        <div className="w-[1008px] h-[307px] flex flex-row items-center justify-center gap-[83px]">
           <Image
             className="w-[228px] relative max-h-full object-cover cursor-pointer"
             loading="lazy"

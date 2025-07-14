@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import { useCallback } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Header from "./header";
 
 export type HeroSectionType = {
@@ -9,6 +10,12 @@ export type HeroSectionType = {
 };
 
 const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
+  const router = useRouter();
+
+  const onCareersTextClick = useCallback(() => {
+    router.push("/careers-page");
+  }, [router]);
+
   const onOurProductContainerClick = useCallback(() => {
     const anchor = document.querySelector(
       "[data-scroll-to='ourProductSection']"
@@ -45,6 +52,7 @@ const HeroSection: NextPage<HeroSectionType> = ({ className = "" }) => {
         headerAlignContent="flex-start"
         headerTop="0"
         headerPosition="sticky"
+        onCareersTextClick={onCareersTextClick}
       />
       <div className="self-stretch flex flex-col items-start justify-start py-0 px-[72px] mq675:pl-9 mq675:pr-9 mq675:box-border">
         <div className="self-stretch flex flex-col items-start justify-start gap-2">

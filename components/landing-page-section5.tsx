@@ -23,9 +23,9 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
 
   return (
     <section
-      className={`self-stretch bg-gray-100 overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-0 gap-[60px] text-center text-6xl font-oswald mq675:gap-[30px] mq675:pt-[42px] mq675:pb-[42px] mq675:box-border ${className}`}
+      className={`self-stretch bg-gray-100 overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-0 gap-[60px] text-center text-[50px] font-oswald mq675:gap-[30px] mq675:pt-[42px] mq675:pb-[42px] mq675:box-border ${className}`}
     >
-      <div className="w-[809px] h-[124px] flex flex-row items-start justify-start gap-[12.2px]">
+      <section className="w-[809px] h-[124px] flex flex-row items-start justify-start gap-[12.2px] text-center text-6xl font-oswald">
         <Image
           className="w-[117.8px] relative max-h-full object-cover"
           width={117.8}
@@ -39,8 +39,8 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
             armorock is the solution
           </h2>
         </div>
-      </div>
-      <div className="self-stretch h-32 flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px] text-[50px]">
+      </section>
+      <div className="self-stretch h-32 flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px]">
         <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
           Sustainable in Design.
         </h2>
@@ -51,7 +51,7 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
           trusted for the future.
         </h2>
       </div>
-      <div className="self-stretch flex flex-row items-center justify-center py-10 px-0 gap-[38px] mq450:gap-[19px] mq450:flex-wrap">
+      <section className="self-stretch flex flex-row items-center justify-center py-10 px-0 gap-[38px] mq450:gap-[19px] mq450:flex-wrap">
         <button
           className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] pl-[23px] pr-[22px] bg-firebrick h-[50px] w-[145px] box-border flex flex-row items-start justify-start whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onGetAQuoteButtonClick}
@@ -70,7 +70,7 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
             CONNECT WITH US
           </div>
         </button>
-      </div>
+      </section>
     </section>
   );
 };

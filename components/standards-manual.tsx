@@ -9,6 +9,7 @@ export type StandardsManualType = {
   /** Style props */
   frameDivPadding?: CSSProperties["padding"];
   standardsManualWidth?: CSSProperties["width"];
+  frameDivPadding1?: CSSProperties["padding"];
 };
 
 const StandardsManual: NextPage<StandardsManualType> = ({
@@ -16,18 +17,19 @@ const StandardsManual: NextPage<StandardsManualType> = ({
   frameDivPadding,
   standardsManual,
   standardsManualWidth,
+  frameDivPadding1,
 }) => {
-  const frameDiv1Style: CSSProperties = useMemo(() => {
-    return {
-      padding: frameDivPadding,
-    };
-  }, [frameDivPadding]);
-
   const standardsManualStyle: CSSProperties = useMemo(() => {
     return {
       width: standardsManualWidth,
     };
   }, [standardsManualWidth]);
+
+  const frameDiv1Style: CSSProperties = useMemo(() => {
+    return {
+      padding: frameDivPadding1,
+    };
+  }, [frameDivPadding1]);
 
   return (
     <section

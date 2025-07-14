@@ -17,13 +17,20 @@ const LocofyOurProductsPage: NextPage = () => {
     router.push("/frequently-asked-questions-page");
   }, [router]);
 
+  const onCareersTextClick = useCallback(() => {
+    router.push("/careers-page");
+  }, [router]);
+
   const onGetAQuoteButtonClick = useCallback(() => {
     router.push("/get-a-quote-page");
   }, [router]);
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start gap-[3px] leading-[normal] tracking-[normal]">
-      <Header onFAQTextClick={onFAQTextClick} />
+      <Header
+        onFAQTextClick={onFAQTextClick}
+        onCareersTextClick={onCareersTextClick}
+      />
       <OurProductsSection />
       <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[50px] mq675:gap-[25px]">
@@ -71,7 +78,7 @@ const LocofyOurProductsPage: NextPage = () => {
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[75px] mq450:gap-[19px] mq675:gap-[37px]">
           <div className="w-[655px] flex flex-col items-end justify-start gap-3.5">
             <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
-              rehabs
+              rehabilitation inserts
             </h2>
             <div className="self-stretch relative h-[382px]" />
           </div>
