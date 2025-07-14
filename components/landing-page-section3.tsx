@@ -30,7 +30,7 @@ const LandingPageSection3: NextPage<LandingPageSection3Type> = ({
           height={306}
           sizes="100vw"
           alt="Polymer concrete solution"
-          src="/Armorock Solution Logo@2x.png"
+          src="/Cross Section with Labels.svg"
         />
       </section>
     </section>
