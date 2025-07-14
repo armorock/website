@@ -9,7 +9,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
 }) => {
   return (
     <main
-      className={`self-stretch bg-gray-100 overflow-hidden flex flex-col items-center justify-start py-[50px] px-[53px] gap-[39px] text-left text-6xl text-white font-oswald mq450:pt-[21px] mq450:pb-[21px] mq450:box-border mq675:gap-[19px] mq675:pl-[26px] mq675:pr-[26px] mq675:box-border mq825:pt-8 mq825:pb-8 mq825:box-border ${className}`}
+      className={`self-stretch bg-gray-100 overflow-hidden flex flex-col items-center justify-center py-[50px] pl-[53px] pr-[0px] gap-[39px] text-left text-6xl text-white font-oswald mq450:pt-[21px] mq450:pb-[21px] mq450:box-border mq675:gap-[19px] mq675:pl-[26px] mq675:pr-[26px] mq675:box-border mq825:pt-8 mq825:pb-8 mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-col items-start justify-start">
         <h2 className="m-0 relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">

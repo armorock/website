@@ -8,7 +8,7 @@ export type LinkSectionType = {
 const LinkSection: NextPage<LinkSectionType> = ({ className = "" }) => {
   return (
     <section
-      className={`w-[1440px] h-[498px] overflow-hidden shrink-0 flex flex-col items-start justify-center py-16 px-[72px] box-border bg-[url('/link-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-white font-oswald mq675:py-[42px] mq675:px-9 mq675:box-border ${className}`}
+      className={`self-stretch h-[498px] overflow-hidden shrink-0 flex flex-col items-start justify-center py-16 px-[72px] box-border bg-[url('/link-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-white font-oswald mq675:py-[42px] mq675:px-9 mq675:box-border ${className}`}
     >
       <div className="w-[1334px] h-[100px] flex flex-row items-center justify-start">
         <Image
@@ -24,7 +24,7 @@ const LinkSection: NextPage<LinkSectionType> = ({ className = "" }) => {
           armorock community engagement
         </h2>
       </div>
-      <div className="w-[759px] h-[300px] flex flex-col items-start justify-start text-[22px] font-open-sans">
+      <div className="self-stretch h-[300px] flex flex-col items-start justify-start text-[22px] font-open-sans">
         <h3 className="m-0 relative text-[length:inherit] [text-decoration:underline] leading-[50px] font-normal font-[inherit] mq450:text-lg mq450:leading-10">
           Armorock Polymer Concrete Offers a Sustianable Solution in Wastewater
           Systems
