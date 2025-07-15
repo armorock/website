@@ -1,0 +1,153 @@
+import { NextResponse } from 'next/server';
+import { Client } from '@microsoft/microsoft-graph-client';
+import 'isomorphic-fetch';
+
+// Types for form data
+interface FormData {
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+  company: string;
+  city: string;
+  state: string;
+  rolePosition: string;
+  email: string;
+  lunchAndLearns: boolean;
+  plantTours: boolean;
+  virtualMeetings: boolean;
+}
+
+// Configuration for Microsoft Graph API
+const TENANT_ID = process.env.AZURE_TENANT_ID || '';
+const CLIENT_ID = process.env.AZURE_CLIENT_ID || '';
+const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET || '';
+const EXCEL_FILE_ID = process.env.EXCEL_FILE_ID || '';
+const EXCEL_WORKSHEET_NAME = process.env.EXCEL_WORKSHEET_NAME || 'Form Submissions';
+const EXCEL_TABLE_NAME = process.env.EXCEL_TABLE_NAME || 'FormSubmissionsTable';
+
+// Get access token for Microsoft Graph API
+async function getAccessToken(): Promise<string> {
+  const tokenEndpoint = `https://login.microsoftonline.com/${TENANT_ID}/oauth2/v2.0/token`;
+  
+  const formData = new URLSearchParams({
+    client_id: CLIENT_ID,
+    scope: 'https://graph.microsoft.com/.default',
+    client_secret: CLIENT_SECRET,
+    grant_type: 'client_credentials'
+  });
+
+  const response = await fetch(tokenEndpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: formData.toString()
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    console.error('Token acquisition failed:', errorData);
+    throw new Error('Failed to acquire access token');
+  }
+
+  const data = await response.json();
+  return data.access_token;
+}
+
+// Create a Microsoft Graph client
+async function getAuthenticatedClient(): Promise<Client> {
+  const accessToken = await getAccessToken();
+  
+  return Client.init({
+    authProvider: (done) => {
+      done(null, accessToken);
+    }
+  });
+}
+
+// Add row to Excel table
+async function addRowToExcel(formData: FormData): Promise<void> {
+  try {
+    const client = await getAuthenticatedClient();
+    
+    // Format data for Excel - convert boolean values to "Yes"/"No" strings
+    const rowData = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      phoneNumber: formData.phoneNumber,
+      company: formData.company,
+      city: formData.city,
+      state: formData.state,
+      rolePosition: formData.rolePosition,
+      email: formData.email,
+      lunchAndLearns: formData.lunchAndLearns ? 'Yes' : 'No',
+      plantTours: formData.plantTours ? 'Yes' : 'No',
+      virtualMeetings: formData.virtualMeetings ? 'Yes' : 'No',
+      submissionDate: new Date().toISOString()
+    };
+
+    // Add row to Excel table
+    await client
+      .api(`/me/drive/items/${EXCEL_FILE_ID}/workbook/worksheets/${EXCEL_WORKSHEET_NAME}/tables/${EXCEL_TABLE_NAME}/rows`)
+      .post({
+        values: [
+          [
+            rowData.firstName,
+            rowData.lastName,
+            rowData.phoneNumber,
+            rowData.company,
+            rowData.city,
+            rowData.state,
+            rowData.rolePosition,
+            rowData.email,
+            rowData.lunchAndLearns,
+            rowData.plantTours,
+            rowData.virtualMeetings,
+            rowData.submissionDate
+          ]
+        ]
+      });
+      
+    console.log('Data successfully added to Excel');
+  } catch (error) {
+    console.error('Error adding row to Excel:', error);
+    throw error;
+  }
+}
+
+// API route handler
+export async function POST(req: Request) {
+  try {
+    // Check for required environment variables
+    if (!TENANT_ID || !CLIENT_ID || !CLIENT_SECRET || !EXCEL_FILE_ID) {
+      console.error('Missing required environment variables');
+      return NextResponse.json(
+        { error: 'Server configuration error' },
+        { status: 500 }
+      );
+    }
+
+    // Parse and validate request body
+    const formData: FormData = await req.json();
+    
+    // Basic validation
+    if (!formData.email || !formData.firstName || !formData.lastName) {
+      return NextResponse.json(
+        { error: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
+
+    // Add form data to Excel
+    await addRowToExcel(formData);
+
+    // Return success response
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error('Error processing form submission:', error);
+    return NextResponse.json(
+      { error: 'Failed to process form submission' },
+      { status: 500 }
+    );
+  }
+}
