@@ -54,11 +54,24 @@ This guide walks you through setting up Azure AD app registration and Excel file
 5. Name the table "FormSubmissionsTable" (Table Design > Table Name)
 6. Save the file
 
-## Step 5: Get the File ID
+## Step 5: Get the Site ID, Drive ID, and File ID
 
-1. In OneDrive/SharePoint, right-click on the Excel file and select "Details" or "Properties"
-2. Look for the file ID in the URL - it will be a long string of characters 
-   (Example: `https://1drv.ms/x/s!AaBbCcDdEeFf1234567?e=abcdef` - the ID would be `AaBbCcDdEeFf1234567`)
+1. **Get SharePoint Site ID:**
+   - Go to your SharePoint site
+   - Use Microsoft Graph Explorer (https://developer.microsoft.com/en-us/graph/graph-explorer)
+   - Sign in with appropriate permissions
+   - Run this query: `https://graph.microsoft.com/v1.0/sites?search=your_site_name`
+   - Find your site in the results and copy the `id` value
+
+2. **Get Drive ID:**
+   - In Graph Explorer, run this query: `https://graph.microsoft.com/v1.0/sites/{site-id}/drives`
+   - Look for the appropriate document library (typically "Documents")
+   - Copy the `id` value for the drive
+
+3. **Get File ID:**
+   - Upload your Excel file to the SharePoint document library
+   - In Graph Explorer, run this query: `https://graph.microsoft.com/v1.0/sites/{site-id}/drives/{drive-id}/root/children`
+   - Find your Excel file in the results and copy the `id` value
 
 ## Step 6: Configure Environment Variables
 
@@ -68,12 +81,15 @@ This guide walks you through setting up Azure AD app registration and Excel file
    AZURE_TENANT_ID=your_tenant_id_here
    AZURE_CLIENT_ID=your_client_id_here
    AZURE_CLIENT_SECRET=your_client_secret_here
+   SHAREPOINT_SITE_ID=your_sharepoint_site_id_here
+   SHAREPOINT_DRIVE_ID=your_sharepoint_drive_id_here
    EXCEL_FILE_ID=your_excel_file_id_here
    EXCEL_WORKSHEET_NAME=Sheet1
    EXCEL_TABLE_NAME=FormSubmissionsTable
    ```
    - The Tenant ID and Client ID can be found in the "Overview" page of your app registration
    - The Client Secret is the value you saved in Step 3
+   - The SharePoint Site ID and Drive ID are what you found in Step 5
    - The File ID is what you found in Step 5
    - The Worksheet name is typically "Sheet1" unless you renamed it
    - The Table name should be "FormSubmissionsTable" as set in Step 4
@@ -85,10 +101,29 @@ This guide walks you through setting up Azure AD app registration and Excel file
 3. Check your Excel file to verify the data was added correctly
 4. Check the console logs for any errors if the submission fails
 
+## Alternative Method for Getting IDs
+
+If you prefer not to use Graph Explorer, you can:
+
+1. **Get Site ID and Drive ID from SharePoint URL:**
+   - Go to your document library in SharePoint
+   - Look at the URL, which follows this pattern: 
+     `https://{tenant}.sharepoint.com/sites/{site-name}/Shared%20Documents/Forms/AllItems.aspx`
+   - The site name is what follows `/sites/` in the URL
+   - You can get the site ID using this formula: `{tenant}.sharepoint.com,{GUID},{site-name}`
+   - For example: `contoso.sharepoint.com,12345678-90ab-cdef-1234-567890abcdef,marketing`
+   - Or you can use REST API: `https://{tenant}.sharepoint.com/sites/{site-name}/_api/site/id`
+
+2. **Alternative File ID Method:**
+   - In SharePoint, click on the Excel file
+   - In the URL, look for `sourcedoc=%7B` followed by a GUID
+   - The GUID is your file ID
+
 ## Troubleshooting
 
 - **Permission errors**: Make sure you've granted admin consent for all required permissions
 - **Authentication errors**: Verify your Tenant ID, Client ID, and Client Secret are correct
+- **Site or Drive not found**: Verify the SharePoint Site ID and Drive ID 
 - **File not found**: Double-check the Excel File ID
 - **Table not found**: Ensure the table name matches exactly what you set in Excel
 - **Worksheet not found**: Confirm the worksheet name is correct (case-sensitive)

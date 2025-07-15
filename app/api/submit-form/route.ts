@@ -21,6 +21,8 @@ interface FormData {
 const TENANT_ID = process.env.AZURE_TENANT_ID || '';
 const CLIENT_ID = process.env.AZURE_CLIENT_ID || '';
 const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET || '';
+const SITE_ID = process.env.SHAREPOINT_SITE_ID || '';
+const DRIVE_ID = process.env.SHAREPOINT_DRIVE_ID || '';
 const EXCEL_FILE_ID = process.env.EXCEL_FILE_ID || '';
 const EXCEL_WORKSHEET_NAME = process.env.EXCEL_WORKSHEET_NAME || 'Form Submissions';
 const EXCEL_TABLE_NAME = process.env.EXCEL_TABLE_NAME || 'FormSubmissionsTable';
@@ -88,7 +90,7 @@ async function addRowToExcel(formData: FormData): Promise<void> {
 
     // Add row to Excel table
     await client
-      .api(`/me/drive/items/${EXCEL_FILE_ID}/workbook/worksheets/${EXCEL_WORKSHEET_NAME}/tables/${EXCEL_TABLE_NAME}/rows`)
+      .api(`/sites/${SITE_ID}/drives/${DRIVE_ID}/items/${EXCEL_FILE_ID}/workbook/worksheets/${EXCEL_WORKSHEET_NAME}/tables/${EXCEL_TABLE_NAME}/rows`)
       .post({
         values: [
           [
@@ -119,7 +121,7 @@ async function addRowToExcel(formData: FormData): Promise<void> {
 export async function POST(req: Request) {
   try {
     // Check for required environment variables
-    if (!TENANT_ID || !CLIENT_ID || !CLIENT_SECRET || !EXCEL_FILE_ID) {
+    if (!TENANT_ID || !CLIENT_ID || !CLIENT_SECRET || !SITE_ID || !DRIVE_ID || !EXCEL_FILE_ID) {
       console.error('Missing required environment variables');
       return NextResponse.json(
         { error: 'Server configuration error' },
