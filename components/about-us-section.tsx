@@ -47,7 +47,7 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
 
   return (
     <main
-      className={`self-stretch flex flex-col items-center justify-start gap-[15px] bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald ${className}`}
+      className={`self-stretch flex flex-col items-center justify-start gap-[15px] bg-[url('/hero-about-us.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald ${className}`}
     >
       <header className="self-stretch flex flex-row items-start justify-between py-[15px] px-[25px] top-[0] z-[99] sticky text-left text-[40px] text-gray-100 font-oswald">
         <div className="flex-1 flex flex-row items-center justify-between flex-wrap content-center gap-x-0 gap-y-5">

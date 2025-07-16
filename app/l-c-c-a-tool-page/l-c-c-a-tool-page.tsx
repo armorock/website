@@ -44,7 +44,7 @@ const LCCAToolPage: NextPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <section className="self-stretch h-[515px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 px-[25px] box-border sticky gap-2 bg-[url('/hero-section2@3x.png')] bg-cover bg-no-repeat bg-[top] top-[0] z-[99] text-left text-6xl text-gray-100 font-oswald">
+      <section className="self-stretch h-[515px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 px-[25px] box-border sticky gap-2 bg-[url('/hero-lcca.png')] bg-cover bg-no-repeat bg-[top] top-[0] z-[99] text-left text-6xl text-gray-100 font-oswald">
         <section className="self-stretch flex flex-row items-start justify-between py-[15px] px-0 z-[0] text-left text-[40px] text-gray-100 font-oswald">
           <div className="flex-1 flex flex-row items-center justify-between flex-wrap content-center gap-x-0 gap-y-5">
             <div

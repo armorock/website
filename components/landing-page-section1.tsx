@@ -49,7 +49,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
 
   return (
     <section
-      className={`self-stretch flex flex-col items-center justify-start gap-[39px] bg-[url('/hero-section11@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-[50px] font-oswald mq675:gap-[19px] ${className}`}
+      className={`self-stretch flex flex-col items-center justify-start gap-[39px] bg-[url('/hero-landing.png')] bg-cover bg-no-repeat bg-[top] text-center text-[50px] font-oswald mq675:gap-[19px] ${className}`}
     >
       <header className="self-stretch flex flex-row items-start justify-between py-[15px] px-[25px] top-[0] z-[99] sticky text-left text-[40px] text-gray-100 font-oswald">
         <div className="flex-1 flex flex-row items-center justify-between flex-wrap content-center gap-x-0 gap-y-5">

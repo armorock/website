@@ -15,7 +15,7 @@ const CareersPage: NextPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <section className="self-stretch flex flex-col items-center justify-start bg-[url('/hero-section12@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald">
+      <section className="self-stretch flex flex-col items-center justify-start bg-[url('/hero-careers.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald">
         <Header
           headerFlexWrap="unset"
           headerAlignContent="unset"

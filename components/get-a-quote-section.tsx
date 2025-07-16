@@ -32,7 +32,7 @@ const GetAQuoteSection: NextPage<GetAQuoteSectionType> = ({
 
   return (
     <header
-      className={`self-stretch h-[550px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 px-[25px] box-border sticky gap-2 bg-[url('/hero-section1@3x.png')] bg-cover bg-no-repeat bg-[top] top-[0] z-[99] text-left text-6xl text-gray-100 font-oswald ${className}`}
+      className={`self-stretch h-[550px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 px-[25px] box-border sticky gap-2 bg-[url('/hero-quote.png')] bg-cover bg-no-repeat bg-[top] top-[0] z-[99] text-left text-6xl text-gray-100 font-oswald ${className}`}
       style={heroSectionStyle}
     >
       <Header
