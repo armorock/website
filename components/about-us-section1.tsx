@@ -8,7 +8,7 @@ export type AboutUsSection1Type = {
 const AboutUsSection1: NextPage<AboutUsSection1Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch h-[1100px] bg-gray-100 overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-[100px] box-border gap-[25px] text-center text-6xl text-white font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq675:py-[27px] mq675:px-[50px] mq675:box-border mq825:h-auto ${className}`}
+      className={`self-stretch bg-gray-100 overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-[100px] box-border gap-[25px] text-center text-6xl text-white font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq675:py-[27px] mq675:px-[50px] mq675:box-border ${className}`}
     >
       <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
         our mission
@@ -18,9 +18,17 @@ const AboutUsSection1: NextPage<AboutUsSection1Type> = ({ className = "" }) => {
         At Armorock, we want to drive the future of sustainable infrastructure
         with high quality, innovative solutions that create lasting value.
       </p>
-      <video className="w-[843px] h-[410px] relative" controls>
-        <source src />
-      </video>
+      <div className="my-4">
+        <iframe 
+          style={{width: "843px", height: "474px", border: "0"}}
+          src="https://www.youtube.com/embed/pd46DYvsP3o" 
+          title="Armorock Values: QUESST" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="w-[598px] h-[124px] flex flex-row items-start justify-start gap-[20.2px]">
         <Image
           className="w-[117.8px] relative max-h-full"
@@ -89,7 +97,7 @@ const AboutUsSection1: NextPage<AboutUsSection1Type> = ({ className = "" }) => {
           </div>
         </div>
       </section>
-      <div className="w-[1403px] relative h-[352px] overflow-hidden shrink-0" />
+      <div className="w-full relative py-1" />
     </section>
   );
 };
