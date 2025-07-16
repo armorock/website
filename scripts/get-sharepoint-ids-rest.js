@@ -24,7 +24,8 @@ async function getSharePointIds() {
     // Step 1: Get access token using client credentials flow
     const params = new URLSearchParams();
     params.append('client_id', clientId);
-    params.append('scope', `https://${tenantName}.sharepoint.com/.default`);
+    // Use resource instead of scope for SharePoint access
+    params.append('resource', `https://${tenantName}.sharepoint.com`);
     params.append('client_secret', clientSecret);
     params.append('grant_type', 'client_credentials');
     
@@ -45,21 +46,46 @@ async function getSharePointIds() {
     const token = tokenResponse.data.access_token;
     console.log('✅ Access token acquired successfully');
 
-    // Step 2: Get site information
-    console.log('\nStep 2: Fetching site information...');
-    const siteResponse = await axios.get(
-      `https://${tenantName}.sharepoint.com/sites/${siteName}/_api/site`,
-      {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Accept': 'application/json;odata=verbose'
+    // Step 2a: First try to access the root site to verify permissions
+    console.log('\nStep 2a: Verifying access to the root site...');
+    try {
+      const rootResponse = await axios.get(
+        `https://${tenantName}.sharepoint.com/_api/site`,
+        {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/json;odata=verbose'
+          }
         }
+      );
+      console.log('✅ Root site access verified successfully');
+      console.log(`Root site URL: ${rootResponse.data.d.Url}`);
+    } catch (error) {
+      console.log('❌ Failed to access root site. This indicates a permissions issue.');
+      if (error.response) {
+        console.log(`Status: ${error.response.status}`);
+        console.log(`Response data:`, error.response.data);
       }
-    );
-    
-    const siteId = siteResponse.data.d.Id;
-    const siteUrl = siteResponse.data.d.Url;
-    const webId = siteResponse.data.d.WebId;
+      console.log('Will try to access the specific site anyway...');
+    }
+
+    // Step 2b: Get specific site information
+    console.log('\nStep 2b: Fetching site information...');
+    let siteResponse;
+    try {
+      siteResponse = await axios.get(
+        `https://${tenantName}.sharepoint.com/sites/${siteName}/_api/site`,
+        {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/json;odata=verbose'
+          }
+        }
+      );
+      
+      const siteId = siteResponse.data.d.Id;
+      const siteUrl = siteResponse.data.d.Url;
+      const webId = siteResponse.data.d.WebId;
     
     console.log('✅ Site information retrieved successfully');
     console.log('\nSITE INFORMATION:');
