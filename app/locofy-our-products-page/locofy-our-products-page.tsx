@@ -48,7 +48,19 @@ const LocofyOurProductsPage: NextPage = () => {
             <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] z-[1] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
               manholes
             </h2>
-            <div className="self-stretch relative h-[382px] z-[0]" />
+            <div className="self-stretch relative z-[0]">
+              <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                <iframe 
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/dpgyWyWOLPs" 
+                  title="Installation: Armorock Manholes" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
           <section className="w-[498px] flex flex-col items-start justify-center gap-9 z-[0] text-left text-[22px] text-white font-open-sans mq675:gap-[18px]">
             <p className="m-0 w-[537px] h-[243px] relative leading-[30px] whitespace-pre-wrap inline-block z-[1] mq450:text-lg mq450:leading-6">{`Armorock Manholes are the premiere corrosive resistant option for various waste water systems across the US. Over 50 years of manufacturing, polymer concrete manholes have been proven to be the sustainable option in the waste water industry.  We produce manholes ranging from 48” to 192” and ensure that we meet custom job requirements with advanced machinery and technology. `}</p>
