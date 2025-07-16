@@ -17,12 +17,7 @@ const LandingPageSection3: NextPage<LandingPageSection3Type> = ({
       </h2>
       <section className="self-stretch flex flex-row items-center justify-center flex-wrap content-center pt-0 px-0 pb-[50px] box-border gap-[15px] max-w-full text-left text-[22px] text-gray-100 font-open-sans mq450:pb-8 mq450:box-border">
         <p className="m-0 h-[276px] w-[557px] relative leading-[30px] flex items-center mq450:text-lg mq450:leading-6">
-          Polymer concrete is a sustainable, corrosion-resistant alternative to
-          traditional precast concrete. With a mixture of resin, aggregate,
-          sand, and FRP rebar for enhanced structure, our polymer concrete blend
-          is 100% corrosion resistant. No matter the environment, our product
-          will hold up against corrosion and keep wastewater systems strong over
-          time.
+          Armorock polymer concrete is a sustainable, corrosion-resistant alternative to traditional precast concrete. With a mixture of resin, aggregate, sand, and FRP rebar for enhanced structure, our polymer concrete blend is 100% corrosion resistant. No matter the environment, our product will hold up against corrosion and keep wastewater systems strong over time.
         </p>
         <Image
           className="w-[723px] max-h-full max-w-full"

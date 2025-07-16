@@ -39,14 +39,7 @@ const LandingPageSection2: NextPage<LandingPageSection2Type> = ({
         <section className="h-[347px] w-[761px] flex flex-col items-end justify-start gap-[15px] max-w-full text-left text-[22px] text-white font-open-sans">
           <div className="w-[761px] flex flex-col items-start justify-start gap-[7px] max-w-full">
             <p className="m-0 w-[750px] h-[225px] relative leading-[30px] inline-block mq450:text-lg mq450:leading-6">
-              We are an innovative polymer concrete company that provides
-              corrosion-resistant, long-lasting solutions to common issues
-              within the wastewater industry. Founded in 2010, our goal has been
-              to create more sustainability in infrastructure through the use of
-              polymer concrete structures. Rather than using alternative fixes
-              like liners, coatings, and admixtures, our concrete formula is
-              built hold up against corrosive environments and keep wastewater
-              systems strong over time.
+              We are an innovative polymer concrete company that provides corrosion-resistant, long-lasting solutions to common issues within the wastewater industry. Founded in 2010, our goal has been to drive sustainability in infrastructure through the use of polymer concrete structures. Rather than using alternative fixes like liners, coatings, and admixtures, our concrete formula is built to hold up against corrosive environments and keep wastewater systems strong over time.
             </p>
             <p className="m-0 self-stretch relative text-[25px] leading-[50px] italic mq450:text-xl mq450:leading-10">
               Sustainable in Design. Proven in Performance. Trusted for the

@@ -51,9 +51,7 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
             </h2>
           </div>
           <div className="w-[326px] relative text-xl leading-[35px] font-open-sans text-black flex items-center justify-center z-[1] mq450:text-base mq450:leading-7">
-            We reduces the frequency of replacements, minimizing the
-            environmental footprint and offering a sustainable solution for
-            wastewater systems.
+            Using polymer concrete reduces the frequency of replacements, minimizing environmental footprint and offering a sustainable solution for wastewater systems.
           </div>
         </section>
         <section className="h-[300px] w-[390px] shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[21px] px-3 pb-[31px] box-border gap-[21px] text-center text-3xl text-gray-100 font-oswald">
@@ -64,9 +62,7 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
             </h3>
           </div>
           <div className="w-[365px] h-[157px] relative text-xl leading-[35px] font-open-sans text-black flex items-center justify-center z-[1] mq450:text-base mq450:leading-7">
-            This long term reliability significantly reduces the need for costly
-            rehabilitation and maintenance, providing unparalleled economic
-            benefits.
+            Our long term reliability significantly reduces the need for costly rehabilitation and maintenance, providing unparalleled economic benefits.
           </div>
         </section>
         <section className="h-[300px] w-[390px] shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[26px] px-3.5 pb-[49px] box-border gap-[15px] text-center text-3xl text-gray-100 font-oswald">
@@ -77,9 +73,7 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
             </h2>
           </div>
           <div className="w-[362px] h-[175px] relative text-xl leading-[35px] font-open-sans text-black flex items-center justify-center z-[1] mq450:text-base mq450:leading-7">
-            We are an ISO 9001 Certified polymer manufacturer, so our quality
-            control systems and procedures are maintained under the highest
-            standards found in the United States.
+            We are an ISO 9001 Certified polymer manufacturer. Our quality control systems and procedures are maintained under the highest standards found in the United States.
           </div>
         </section>
         <section className="h-[300px] w-[390px] shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[30px] pb-8 pl-[15px] pr-[13px] box-border gap-7 text-center text-3xl text-gray-100 font-oswald">
@@ -89,7 +83,7 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
               lead times
             </h2>
           </div>
-          <div className="w-[362px] h-[175px] relative text-xl leading-[35px] font-open-sans text-black flex items-center justify-center z-[1] mq450:text-base mq450:leading-7">{`We offer faster, more efficient installation when time is critical. For small structures, lead times are 2-4 weeks and large structures are 4-6 weeks. We can also expedite production based on availability. `}</div>
+          <div className="w-[362px] h-[175px] relative text-xl leading-[35px] font-open-sans text-black flex items-center justify-center z-[1] mq450:text-base mq450:leading-7">{`We offer faster, more efficient installation when time is critical. For small structures, lead times are 2-4 weeks whereas large structures are 4-6 weeks. We can also expedite production based on availability. `}</div>
         </section>
         <section className="h-[300px] w-[390px] shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[26px] pb-[49px] pl-[9px] pr-0.5 box-border gap-[15px] text-center text-3xl text-gray-100 font-oswald">
           <div className="w-[390px] relative shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white h-[300px] hidden" />
@@ -99,9 +93,7 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
             </h2>
           </div>
           <div className="w-[379px] relative text-xl leading-[35px] font-open-sans text-black flex items-center justify-center z-[1] mq450:text-base mq450:leading-7">
-            We uses a monolithic pouring system for all of our structures,
-            including benching, to mitigate opportunities for Inflow and
-            Infiltration, minimizing risk of leaks and cracks in structures.
+            We use a monolithic pouring system for all of our structures, including benching, to mitigate opportunities for Inflow and Infiltration and minimize the risk of leaks and cracks in structures over time.
           </div>
         </section>
       </div>
