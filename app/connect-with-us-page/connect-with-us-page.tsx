@@ -23,7 +23,7 @@ const ConnectWithUsPage: NextPage = () => {
   }, []);
 
   const onYouTubeIconImageClick = useCallback(() => {
-    window.open("https://www.youtube.com/@ArmorockPolymerConcrete/featured");
+    window.open("https://www.youtube.com/@Armorock-Polymer-Concrete");
   }, []);
 
   return (
