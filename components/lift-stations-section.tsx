@@ -26,7 +26,19 @@ const LiftStationsSection: NextPage<LiftStationsSectionType> = ({
           <h2 className="m-0 relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
             lift stations
           </h2>
-          <div className="self-stretch relative h-[382px]" />
+          <div className="self-stretch relative">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+              <iframe 
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/WM2dIFlWmq0" 
+                title="Installation: Armorock Lift Stations" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
         <section className="w-[498px] flex flex-col items-start justify-start gap-[6.3px] text-left text-[22px] text-white font-open-sans">
           <p className="m-0 self-stretch h-[245px] relative leading-[35px] inline-block mq450:text-lg mq450:leading-7">
