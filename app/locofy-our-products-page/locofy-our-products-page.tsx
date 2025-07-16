@@ -63,7 +63,7 @@ const LocofyOurProductsPage: NextPage = () => {
             </div>
           </div>
           <section className="w-[498px] flex flex-col items-start justify-center gap-9 z-[0] text-left text-[22px] text-white font-open-sans mq675:gap-[18px]">
-            <p className="m-0 w-[537px] h-[243px] relative leading-[30px] whitespace-pre-wrap inline-block z-[1] mq450:text-lg mq450:leading-6">{`Armorock Manholes are the premiere corrosive resistant option for various waste water systems across the US. Over 50 years of manufacturing, polymer concrete manholes have been proven to be the sustainable option in the waste water industry.  We produce manholes ranging from 48” to 192” and ensure that we meet custom job requirements with advanced machinery and technology. `}</p>
+            <p className="m-0 w-[537px] h-[243px] relative leading-[30px] whitespace-pre-wrap inline-block z-[1] mq450:text-lg mq450:leading-6">{`Armorock Manholes are the premiere corrosion-resistant option for various waste water systems across the US. Polymer concrete manholes have been proven to be the sustainable option in the waste water industry.  We produce manholes ranging from 48” to 192” and ensure that we meet custom job requirements with advanced machinery and technology. `}</p>
             <button
               className="cursor-pointer border-firebrick border-solid border-[3px] py-2 pl-[23px] pr-[22px] bg-firebrick w-[145px] h-[44.8px] box-border flex flex-row items-start justify-start whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
               onClick={onGetAQuoteButtonClick}
@@ -83,7 +83,7 @@ const LocofyOurProductsPage: NextPage = () => {
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[75px] mq450:gap-[19px] mq675:gap-[37px]">
           <div className="w-[655px] flex flex-col items-end justify-start gap-3.5">
             <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
-              rehabs
+              rehabilitation inserts
             </h2>
             <div className="self-stretch relative">
               <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
@@ -101,12 +101,7 @@ const LocofyOurProductsPage: NextPage = () => {
           </div>
           <section className="w-[498px] flex flex-col items-start justify-start gap-[11.3px] text-left text-[22px] text-gray-100 font-open-sans">
             <p className="m-0 self-stretch h-60 relative leading-[30px] inline-block mq450:text-lg mq450:leading-6">
-              Armorock Structural Rehabilitation Inserts combine the benefits of
-              a corrosion resistant product with minimal excavation processes
-              during installation. Polymer manholes are sleeved into existing
-              precast concrete manholes, allowing municipalities to extend the
-              life of their existing manholes without temporary fixes like
-              liners, admixtures, and coatings.
+              Armorock Structural Rehabilitation Inserts combine the benefits of a corrosion resistant product with minimal excavation processes during installation. Polymer manholes are sleeved into existing precast concrete manholes, allowing municipalities to extend the life of their existing manholes without alternative fixes like liners, admixtures, and coatings.
             </p>
             <button
               className="cursor-pointer border-gray-100 border-solid border-[3px] py-2 pl-[23px] pr-[22px] bg-gray-100 w-[145px] h-[44.8px] box-border flex flex-row items-start justify-start whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
