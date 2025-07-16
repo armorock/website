@@ -33,15 +33,7 @@ const CTASection: NextPage<CTASectionType> = ({ className = "" }) => {
         src="/logo3@2x.png"
       />
       <h3 className="m-0 self-stretch h-[175px] relative text-[length:inherit] leading-[35px] font-normal font-[inherit] inline-block mq450:text-lg mq450:leading-7">
-        Investing in Armorock Polymer Concrete structures is the long-term,
-        cost-effective solution to ongoing issues within the wastewater
-        industry. Our white glove service coupled with our fully
-        corrosion-resistant product is the premium choice for contractors,
-        developers, engineers, and municipalities across the nation. With our
-        long-lasting product backed by a 50-year corrosion warranty, you can
-        save in rehabilitation and replacement costs in the future. An
-        investment in Armorock Polymer Concrete ensures sustainability of
-        budgets and vital infrastructure.
+        Investing in Armorock Polymer Concrete structures is the long-term, cost-effective solution to ongoing issues within the wastewater industry. Our white glove service coupled with our fully corrosion-resistant product is the premium choice for contractors, developers, engineers, and municipalities across the nation. With our long-lasting product backed by a 50-year corrosion warranty, you can save in rehabilitation and replacement costs in the future. An investment in Armorock Polymer Concrete ensures sustainability of budgets and vital infrastructure.
       </h3>
       <div className="h-[90px] flex flex-row items-center justify-center pt-10 px-0 pb-0 box-border gap-[38px] mq450:h-auto mq450:gap-[19px] mq450:flex-wrap">
         <button
