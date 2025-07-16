@@ -31,7 +31,7 @@ const FrequentlyAskedQuestionsPage: NextPage = () => {
               What does the 50-year corrosion warranty cover?
             </h2>
             <h3 className="m-0 self-stretch relative text-[22px] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
-              Armorock’s 50-year corrosion warranty guarantees resistance to H2S
+              Armorock’s 50-year corrosion warranty guarantees resistance to H<sub>2</sub>S
               gas and corrosive environments. To date, no customer has ever
               needed to use the warranty—proving the long-term reliability of
               our material.
@@ -44,10 +44,7 @@ const FrequentlyAskedQuestionsPage: NextPage = () => {
               Is your product truly 100% corrosion proof?
             </h2>
             <h3 className="m-0 self-stretch relative text-[22px] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
-              Yes. Armorock uses FRP rebar, which is completely
-              corrosion-resistant. Other manufacturers often use steel rebar
-              reinforcement, which is not corrosion-proof and becomes exposed
-              during coring. 
+              Yes. Armorock uses FRP rebar to reinforce structures, which is completely corrosion-resistant. Other manufacturers often use steel rebar reinforcement, which is not corrosion-proof and becomes exposed during coring.
             </h3>
           </div>
         </section>
@@ -58,15 +55,7 @@ const FrequentlyAskedQuestionsPage: NextPage = () => {
               structures?
             </h2>
             <h3 className="m-0 self-stretch relative text-[22px] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
-              Armorock structures are 100% corrosion-proof, engineered with over
-              twice the compressive and flexural strength of traditional
-              concrete, and designed to be lighter, reducing the need for heavy
-              lifting equipment during installation. Unlike traditional
-              concrete, Armorock requires no coatings, liners, admixtures, or
-              ongoing maintenance. This results in less rehabilitation, reduced
-              labor, and significantly lower life-cycle costs. Choosing Armorock
-              is not just a product decision, it is an investment in the future
-              of your infrastructure. 
+              Armorock structures are 100% corrosion-proof, engineered with over twice the compressive and flexural strength of traditional concrete. In addition, our product is designed to be lighter, reducing the need for heavy lifting equipment during installation. Unlike traditional concrete, Armorock products do not require coatings, liners, admixtures, or ongoing maintenance. This results in less rehabilitation, reduced labor, and significantly lower life cycle costs. Choosing Armorock is not just a product decision, it is an investment in the future of your infrastructure.
             </h3>
           </div>
         </section>
@@ -109,10 +98,7 @@ const FrequentlyAskedQuestionsPage: NextPage = () => {
               Why are Armorock structures lighter?
             </h2>
             <h3 className="m-0 self-stretch relative text-[22px] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
-              While polymer concrete itself weighs similar to concrete, Armorock
-              structures are lighter due to their thinner walls. Thanks to a
-              compressive strength of 11,000 psi, we do not require the extra
-              thickness of traditional concrete. 
+              While polymer concrete itself weighs similar to concrete, Armorock structures are lighter due to their thinner walls. With a compressive strength of 11,000 psi, our structures do not have the additional thickness that is required of traditional concrete.
             </h3>
           </div>
         </section>
@@ -122,9 +108,7 @@ const FrequentlyAskedQuestionsPage: NextPage = () => {
               Are Armorock structures difficult to install?
             </h2>
             <h3 className="m-0 self-stretch relative text-[22px] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
-              Not at all. They install just like traditional precast concrete
-              only lighter, saving money on lifting equipment and installation
-              time. 
+              Armorock Polymer Concrete structures install just like traditional precast concrete only lighter, saving money on lifting equipment and installation time.
             </h3>
           </div>
         </section>
