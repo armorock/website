@@ -24,8 +24,8 @@ const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET || '';
 const SITE_ID = process.env.SHAREPOINT_SITE_ID || '';
 const DRIVE_ID = process.env.SHAREPOINT_DRIVE_ID || '';
 const EXCEL_FILE_ID = process.env.EXCEL_FILE_ID || '';
-const EXCEL_WORKSHEET_NAME = process.env.EXCEL_WORKSHEET_NAME || 'Form Submissions';
-const EXCEL_TABLE_NAME = process.env.EXCEL_TABLE_NAME || 'FormSubmissionsTable';
+const EXCEL_WORKSHEET_NAME = process.env.EXCEL_WORKSHEET_NAME || 'Sheet1';
+const EXCEL_TABLE_NAME = process.env.EXCEL_TABLE_NAME || 'ContactFormSubmission';
 
 // Get access token for Microsoft Graph API
 async function getAccessToken(): Promise<string> {
@@ -84,8 +84,7 @@ async function addRowToExcel(formData: FormData): Promise<void> {
       email: formData.email,
       lunchAndLearns: formData.lunchAndLearns ? 'Yes' : 'No',
       plantTours: formData.plantTours ? 'Yes' : 'No',
-      virtualMeetings: formData.virtualMeetings ? 'Yes' : 'No',
-      submissionDate: new Date().toISOString()
+      virtualMeetings: formData.virtualMeetings ? 'Yes' : 'No'
     };
 
     // Add row to Excel table
@@ -104,8 +103,7 @@ async function addRowToExcel(formData: FormData): Promise<void> {
             rowData.email,
             rowData.lunchAndLearns,
             rowData.plantTours,
-            rowData.virtualMeetings,
-            rowData.submissionDate
+            rowData.virtualMeetings
           ]
         ]
       });
