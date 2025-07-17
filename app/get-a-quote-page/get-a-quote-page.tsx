@@ -1,17 +1,21 @@
+"use client";
+
 import type { NextPage } from "next";
 import Image from "next/image";
 import GetAQuoteSection from "../../components/get-a-quote-section";
 import SubmitYourProject from "../../components/submit-your-project";
 import ContactInformation from "../../components/contact-information";
 import Footer from "../../components/footer";
+import { QuoteFormProvider } from "../../contexts/QuoteFormContext";
 
 const GetAQuotePage: NextPage = () => {
   return (
-    <div className="w-full h-[2479.1px] relative bg-white overflow-hidden flex flex-col items-start justify-start gap-2.5 leading-[normal] tracking-[normal]">
-      <GetAQuoteSection logoImage="/logo-image@2x.png" />
-      <SubmitYourProject />
-      <ContactInformation />
-      <section className="self-stretch bg-gray-100 flex flex-col items-start justify-center py-8 px-[72px] text-center text-3xl text-firebrick font-oswald mq450:gap-6 mq750:gap-12 mq750:pl-9 mq750:pr-9 mq750:box-border">
+    <QuoteFormProvider>
+      <div className="w-full h-[2479.1px] relative bg-white overflow-hidden flex flex-col items-start justify-start gap-2.5 leading-[normal] tracking-[normal]">
+        <GetAQuoteSection logoImage="/logo-image@2x.png" />
+        <SubmitYourProject />
+        <ContactInformation />
+        <section className="self-stretch bg-gray-100 flex flex-col items-start justify-center py-8 px-[72px] text-center text-3xl text-firebrick font-oswald mq450:gap-6 mq750:gap-12 mq750:pl-9 mq750:pr-9 mq750:box-border">
         <div className="self-stretch h-[83px] flex flex-row items-center justify-center flex-wrap content-center gap-8 mq750:gap-4">
           <div className="h-[73px] w-[366px] flex flex-row items-start justify-start text-[35px] text-white">
             <Image
@@ -45,6 +49,7 @@ const GetAQuotePage: NextPage = () => {
       </section>
       <Footer logo="/logo2@2x.png" />
     </div>
+    </QuoteFormProvider>
   );
 };
 
