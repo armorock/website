@@ -44,7 +44,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
     
-    if (name === 'phoneNumber' && type === 'text') {
+    if (name === 'phoneNumber') {
       // Only allow numbers for phone field
       const numbersOnly = value.replace(/[^0-9]/g, '');
       setFormData({
