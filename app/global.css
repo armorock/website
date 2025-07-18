@@ -16,6 +16,9 @@
 
 body {
   @apply leading-[normal] m-0;
+  min-width: 1440px;
+  width: 100%;
+  overflow-x: hidden;
 }
 @layer base {
   *,
