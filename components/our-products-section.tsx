@@ -10,23 +10,32 @@ export type OurProductsSectionType = {
 const OurProductsSection: NextPage<OurProductsSectionType> = ({
   className = "",
 }) => {
-  const onCustomStructuresClick = useCallback(() => {
+  const onManholesClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='manholesSection']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
 
-  const onLiftStationsClick = useCallback(() => {
+  const onRehabsClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='rehabsSection']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   }, []);
 
-  const onManholesAndRehabsClick = useCallback(() => {
+  const onLiftStationsClick = useCallback(() => {
     const anchor = document.querySelector(
       "[data-scroll-to='liftStationsSection']"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+  
+  const onCustomStructuresClick = useCallback(() => {
+    const anchor = document.querySelector(
+      "[data-scroll-to='customStructuresSection']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -47,20 +56,20 @@ const OurProductsSection: NextPage<OurProductsSectionType> = ({
               manholes="/custom structures.svg"
               manholesRehabs="manholes"
               manholesRehabsWidth="128px"
-              onManholesAndRehabsClick={onCustomStructuresClick}
+              onManholesAndRehabsClick={onManholesClick}
               frameDivPadding="0px 121px"
             />
             <ManholesAndRehabs
               manholes="/custom structures1.svg"
               manholesRehabs="rehabilitation inserts"
               manholesRehabsWidth="293px"
-              onManholesAndRehabsClick={onLiftStationsClick}
+              onManholesAndRehabsClick={onRehabsClick}
               frameDivPadding="0px 56px 0px 55px"
             />
             <ManholesAndRehabs
               manholes="/custom structures2.svg"
               manholesRehabs="lift stations "
-              onManholesAndRehabsClick={onManholesAndRehabsClick}
+              onManholesAndRehabsClick={onLiftStationsClick}
             />
           </div>
         </div>

@@ -18,6 +18,7 @@ const CustomStructuresSection: NextPage<CustomStructuresSectionType> = ({
 
   return (
     <section
+      data-scroll-to="customStructuresSection"
       className={`self-stretch bg-white overflow-hidden flex flex-col items-start justify-start py-16 px-[53px] text-right text-6xl text-gray-100 font-oswald mq450:gap-[19px] mq450:pt-[42px] mq450:pb-[42px] mq450:box-border mq825:gap-[37px] mq825:pl-[26px] mq825:pr-[26px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[75px] mq450:gap-[19px] mq675:gap-[37px]">

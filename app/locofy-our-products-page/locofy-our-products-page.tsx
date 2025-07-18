@@ -1,8 +1,8 @@
 "use client";
 import type { NextPage } from "next";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Header from "../../components/header";
 import OurProductsSection from "../../components/our-products-section";
 import LiftStationsSection from "../../components/lift-stations-section";
@@ -12,6 +12,22 @@ import Footer from "../../components/footer";
 
 const LocofyOurProductsPage: NextPage = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    // Handle hash navigation when page loads
+    const hash = window.location.hash;
+    if (hash) {
+      const sanitizedHash = hash.replace('#', '');
+      // Increase timeout to ensure all content is loaded before scrolling
+      setTimeout(() => {
+        const element = document.querySelector(`[data-scroll-to='${sanitizedHash}']`);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 1000);
+    }
+  }, []);
 
   const onFAQTextClick = useCallback(() => {
     router.push("/frequently-asked-questions-page");

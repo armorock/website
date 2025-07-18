@@ -9,7 +9,7 @@ const LocofyAboutUsPage: NextPage = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
       <AboutUsSection />
-      <section className="self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start py-16 px-[107px] text-center text-6xl text-white font-oswald mq450:pl-5 mq450:pr-5 mq450:box-border mq675:py-[42px] mq675:px-[53px] mq675:box-border">
+      <section id="founding-story" className="self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start py-16 px-[107px] text-center text-6xl text-white font-oswald mq450:pl-5 mq450:pr-5 mq450:box-border mq675:py-[42px] mq675:px-[53px] mq675:box-border">
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-1.5">
           <div className="h-[211px] w-[1226px] relative">
             <h2 className="m-0 absolute top-[111px] left-[calc(50%_-_613px)] text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block w-[1226px] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">

@@ -10,6 +10,7 @@ export type AboutUsSection2Type = {
 const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
   return (
     <section
+      id="meet-our-team"
       className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-16 px-[53px] gap-[25px] text-left text-[65px] text-gray-100 font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq675:py-5 mq675:px-[26px] mq675:box-border mq825:pt-[27px] mq825:pb-[27px] mq825:box-border ${className}`}
     >
       <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
