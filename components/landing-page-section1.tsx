@@ -64,7 +64,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
               height={72}
               sizes="100vw"
               alt=""
-              src="/logo-image@2x.png"
+              src="/logo1@2x.png"
             />
             <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5px]">
               <div className="flex flex-col items-start justify-start">
