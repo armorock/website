@@ -74,6 +74,7 @@ async function addRowToExcel(formData: FormData): Promise<void> {
     
     // Format data for Excel - convert boolean values to "Yes"/"No" strings
     const rowData = {
+      timestamp: new Date().toISOString(), // UTC timestamp
       firstName: formData.firstName,
       lastName: formData.lastName,
       phoneNumber: formData.phoneNumber,
@@ -93,6 +94,7 @@ async function addRowToExcel(formData: FormData): Promise<void> {
       .post({
         values: [
           [
+            rowData.timestamp, // UTC timestamp as first column
             rowData.firstName,
             rowData.lastName,
             rowData.phoneNumber,

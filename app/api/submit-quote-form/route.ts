@@ -109,6 +109,7 @@ async function addRowToExcel(formData: QuoteFormData, fileUrl?: string): Promise
     
     // Format data for Excel - convert boolean values to "Yes"/"No" strings
     const rowData = {
+      timestamp: new Date().toISOString(), // UTC timestamp
       firstName: formData.firstName,
       lastName: formData.lastName,
       phoneNumber: formData.phoneNumber,
@@ -118,8 +119,7 @@ async function addRowToExcel(formData: QuoteFormData, fileUrl?: string): Promise
       rolePosition: formData.rolePosition,
       email: formData.email,
       planSet: fileUrl || '', // URL to the uploaded plan set file
-      projectDetails: formData.projectDetails || '',
-      submissionDate: new Date().toISOString()
+      projectDetails: formData.projectDetails || ''
     };
 
     // Add row to Excel table
@@ -128,6 +128,7 @@ async function addRowToExcel(formData: QuoteFormData, fileUrl?: string): Promise
       .post({
         values: [
           [
+            rowData.timestamp, // UTC timestamp as first column
             rowData.firstName,
             rowData.lastName,
             rowData.phoneNumber,
