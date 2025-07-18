@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure fonts are properly applied */
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  @apply leading-[normal] m-0;
+}
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-width: 0;
+  }
+}
