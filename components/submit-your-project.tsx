@@ -107,6 +107,12 @@ const SubmitYourProject: NextPage<SubmitYourProjectType> = ({
         {" "}
         submit your project
       </h1>
+      <div className="self-stretch text-center text-lg font-open-sans text-firebrick bg-gainsboro-200 p-4 rounded-md mx-auto max-w-4xl">
+        <p className="font-semibold">
+          <span className="inline-block mr-2">⚠️</span>
+          Please upload a plan set, provide project details, or both to proceed with your quote request.
+        </p>
+      </div>
       <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-x-[76px] gap-y-0 text-center text-[35px] mq750:gap-[19px] mq1125:gap-[38px]">
         <div className="h-auto w-[272px] flex flex-col items-start justify-start">
           <h1 className="m-0 w-[272px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block shrink-0 mq450:text-[21px] mq450:leading-[60px] mq1025:text-[28px] mq1025:leading-[80px]">

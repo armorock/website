@@ -171,6 +171,14 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
+    
+    // Validate that either plan set or project details are provided
+    if (!formData.fileData && (!formData.projectDetails || !formData.projectDetails.trim())) {
+      return NextResponse.json(
+        { error: 'You must provide either a plan set, project details, or both' },
+        { status: 400 }
+      );
+    }
 
     // Handle file upload if provided
     let fileUrl: string | null = null;

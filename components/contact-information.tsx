@@ -67,6 +67,14 @@ const ContactInformation: NextPage<ContactInformationType> = ({
       setIsSubmitting(false);
       return;
     }
+    
+    // Check if either file upload or project details are provided
+    if (!formState.fileData && (!formState.projectDetails || !formState.projectDetails.trim())) {
+      setSubmitStatus("error");
+      setErrorMessage("You must either upload a plan set, provide project details, or both.");
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       // Use our API endpoint
