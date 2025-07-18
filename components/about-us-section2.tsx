@@ -50,25 +50,65 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[523px] w-[273px] flex flex-col items-end justify-start gap-[21.5px] text-center text-xl text-gray-100 font-oswald">
-          <div className="flex flex-row items-start justify-end py-0 pl-[3px] pr-0.5">
-            <Image
-              className="h-[385px] w-full relative object-cover"
-              width={268}
-              height={385}
-              sizes="100vw"
-              alt=""
-              src="/image-3@2x.png"
-            />
-          </div>
-          <div className="flex flex-row items-start justify-end py-0 pl-1 pr-0.5">
-            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
-              Lake O’Donnell
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt=""
+            src="/robert.png"
+          />
+          <div className="flex flex-col items-end justify-start gap-1.5">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+              Robert Gupsill
             </h3>
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
+              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+                Plant Manager, Plant City, FL
+              </i>
+            </div>
           </div>
-          <i className="w-[273px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
-            Director of Project Management
-          </i>
+        </section>
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt=""
+            src="/john.png"
+          />
+          <div className="flex flex-col items-end justify-start gap-1.5">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+              John Bilberry
+            </h3>
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
+              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+                Plant Manager, Boulder City, NV
+              </i>
+            </div>
+          </div>
+        </section>
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt=""
+            src="/brads.png"
+          />
+          <div className="flex flex-col items-end justify-start gap-1.5">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+              Brad Swearingen
+            </h3>
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
+              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+                Plant Manager, Sulphur Springs, TX
+              </i>
+            </div>
+          </div>
         </section>
         <section className="h-[519px] w-[281px] flex flex-col items-end justify-start gap-[15px] text-center text-xl text-gray-100 font-oswald">
           <Image
@@ -77,7 +117,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             height={385}
             sizes="100vw"
             alt=""
-            src="/image-4@2x.png"
+            src="/nicole.png"
           />
           <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px]">
             <div className="flex flex-col items-start justify-start gap-[25px]">
@@ -92,11 +132,26 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <Chris
-          chrisJuneman="Chris Juneman"
-          directorOfEngineering="Director of Engineering"
-          image="/image-5@2x.png"
-        />
+        <section className="h-[523px] w-[273px] flex flex-col items-end justify-start gap-[21.5px] text-center text-xl text-gray-100 font-oswald">
+          <div className="flex flex-row items-start justify-end py-0 pl-[3px] pr-0.5">
+            <Image
+              className="h-[385px] w-full relative object-cover"
+              width={268}
+              height={385}
+              sizes="100vw"
+              alt=""
+              src="/lake.png"
+            />
+          </div>
+          <div className="flex flex-row items-start justify-end py-0 pl-1 pr-0.5">
+            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+              Lake O'Donnell
+            </h3>
+          </div>
+          <i className="w-[273px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+            Director of Project Management
+          </i>
+        </section>
         <section className="h-[503px] w-[277px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
           <Image
             className="w-[268px] h-[385px] relative object-cover"
@@ -104,7 +159,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             height={385}
             sizes="100vw"
             alt=""
-            src="/image-6@2x.png"
+            src="/dyanna.png"
           />
           <div className="flex flex-row items-start justify-start py-0 pl-0.5 pr-0">
             <div className="flex flex-col items-start justify-start gap-[9px]">
@@ -126,7 +181,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             height={385}
             sizes="100vw"
             alt=""
-            src="/image-7@2x.png"
+            src="/josh.png"
           />
           <div className="flex flex-col items-end justify-start gap-[26px]">
             <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
@@ -141,7 +196,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           chrisHeight="497px"
           chrisJuneman="Charlie Short"
           directorOfEngineering="Director of Risk"
-          image="/image-8@2x.png"
+          image="/charlie.png"
           imageIconWidth="268px"
           frameDivPadding2="0px 0px 0px 1px"
           frameDivPadding3="0px 3px"
@@ -150,7 +205,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           chrisHeight="497px"
           chrisJuneman="Brandon Roundy"
           directorOfEngineering="Controller"
-          image="/image-9@2x.png"
+          image="/brandon.png"
           imageIconWidth="271.5px"
           frameDivPadding2="0px 0px 0px 3px"
           frameDivPadding3="0px 3px"
