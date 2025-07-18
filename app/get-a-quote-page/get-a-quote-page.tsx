@@ -12,7 +12,7 @@ const GetAQuotePage: NextPage = () => {
   return (
     <QuoteFormProvider>
       <div className="w-full h-[2479.1px] relative bg-white overflow-hidden flex flex-col items-start justify-start gap-2.5 leading-[normal] tracking-[normal]">
-        <GetAQuoteSection logoImage="/logo-image@2x.png" />
+        <GetAQuoteSection />
         <SubmitYourProject />
         <ContactInformation />
         <section className="self-stretch bg-gray-100 flex flex-col items-start justify-center py-8 px-[72px] text-center text-3xl text-firebrick font-oswald mq450:gap-6 mq750:gap-12 mq750:pl-9 mq750:pr-9 mq750:box-border">
