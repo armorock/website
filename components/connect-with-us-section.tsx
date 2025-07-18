@@ -3,6 +3,16 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 
+// US States array for dropdown
+const US_STATES = [
+  'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
+  'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD',
+  'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ',
+  'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
+  'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'
+];
+
+// Types for form data
 export type ConnectWithUsSectionType = {
   className?: string;
 };
@@ -31,12 +41,27 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
   const [errorMessage, setErrorMessage] = useState("");
 
   // Handle input changes
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value
-    }));
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    
+    if (name === 'phoneNumber' && type === 'text') {
+      // Only allow numbers for phone field
+      const numbersOnly = value.replace(/[^0-9]/g, '');
+      setFormData({
+        ...formData,
+        [name]: numbersOnly
+      });
+    } else if ((e.target as HTMLInputElement).type === 'checkbox') {
+      setFormData({
+        ...formData,
+        [name]: (e.target as HTMLInputElement).checked
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
   };
 
   // Handle form submission
@@ -184,7 +209,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 First Name
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[216px] h-[74px] relative px-3"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[216px] h-[74px] relative px-3 text-black"
                 type="text"
                 name="firstName"
                 value={formData.firstName}
@@ -197,7 +222,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 Last Name
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[216px] h-[74px] relative px-3"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[216px] h-[74px] relative px-3 text-black"
                 type="text"
                 name="lastName"
                 value={formData.lastName}
@@ -210,11 +235,14 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 Phone Number
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[280px] h-[74px] relative px-3"
-                type="text"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[280px] h-[74px] relative px-3 text-black"
+                type="tel"
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleInputChange}
+                pattern="[0-9]*"
+                inputMode="numeric"
+                placeholder="Numbers only"
                 required
               />
             </div>
@@ -223,7 +251,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 Company
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[345px] h-[74px] relative px-3"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[345px] h-[74px] relative px-3 text-black"
                 type="text"
                 name="company"
                 value={formData.company}
@@ -236,7 +264,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 City
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[212px] h-[74px] relative px-3"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[212px] h-[74px] relative px-3 text-black"
                 type="text"
                 name="city"
                 value={formData.city}
@@ -248,21 +276,25 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
               <h3 className="m-0 w-[55px] relative text-[length:inherit] leading-[30px] font-normal font-[inherit] flex items-center mq450:text-base mq450:leading-6">
                 State
               </h3>
-              <input
-                className="[border:none] [outline:none] max-w-full bg-gainsboro-200 w-[155px] h-[74px] relative px-3"
-                type="text"
+              <select
+                className="bg-gainsboro-200 w-[155px] h-[74px] relative px-3 text-black"
                 name="state"
                 value={formData.state}
                 onChange={handleInputChange}
                 required
-              />
+              >
+                <option value="">Select State</option>
+                {US_STATES.map((state) => (
+                  <option key={state} value={state}>{state}</option>
+                ))}
+              </select>
             </div>
             <div className="h-[110px] w-[345px] flex flex-col items-start justify-start gap-1.5">
               <h3 className="m-0 w-[141px] relative text-[length:inherit] leading-[30px] font-normal font-[inherit] flex items-center mq450:text-base mq450:leading-6">
                 Role/Position
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[345px] h-[74px] relative px-3"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[345px] h-[74px] relative px-3 text-black"
                 type="text"
                 name="rolePosition"
                 value={formData.rolePosition}
@@ -275,7 +307,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 Email
               </h3>
               <input
-                className="[border:none] [outline:none] bg-gainsboro-200 w-[394px] h-[74px] relative px-3"
+                className="[border:none] [outline:none] bg-gainsboro-200 w-[394px] h-[74px] relative px-3 text-black"
                 type="text"
                 name="email"
                 value={formData.email}

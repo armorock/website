@@ -4,6 +4,15 @@ import { useContext } from "react";
 import type { NextPage } from "next";
 import { QuoteFormContext } from "../contexts/QuoteFormContext";
 
+// US States array for dropdown
+const US_STATES = [
+  'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA',
+  'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD',
+  'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ',
+  'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
+  'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'
+];
+
 export type ContactInformationType = {
   className?: string;
 };
@@ -23,12 +32,27 @@ const ContactInformation: NextPage<ContactInformationType> = ({
   } = useContext(QuoteFormContext);
 
   // Handle input changes
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFormState(prev => ({
-      ...prev,
-      [name]: type === "checkbox" ? checked : value
-    }));
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    
+    if (name === 'phoneNumber' && type === 'tel') {
+      // Only allow numbers for phone field
+      const numbersOnly = value.replace(/[^0-9]/g, '');
+      setFormState(prev => ({
+        ...prev,
+        [name]: numbersOnly
+      }));
+    } else if ((e.target as HTMLInputElement).type === 'checkbox') {
+      setFormState(prev => ({
+        ...prev,
+        [name]: (e.target as HTMLInputElement).checked
+      }));
+    } else {
+      setFormState(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    }
   };
 
   // Handle form submission
@@ -190,10 +214,13 @@ const ContactInformation: NextPage<ContactInformationType> = ({
         <div className="h-[111px] w-[280px] relative">
           <input
             className="[border:none] [outline:none] bg-gainsboro-200 absolute top-[37px] left-[0px] w-[280px] h-[74px] px-3"
-            type="text"
+            type="tel"
             name="phoneNumber"
             value={formState.phoneNumber}
             onChange={handleInputChange}
+            pattern="[0-9]*"
+            inputMode="numeric"
+            placeholder="Numbers only"
             required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] mq450:text-base mq450:leading-6">
@@ -227,14 +254,18 @@ const ContactInformation: NextPage<ContactInformationType> = ({
           </label>
         </div>
         <div className="h-[111px] w-[177px] relative">
-          <input
+          <select
             className="[border:none] [outline:none] bg-gainsboro-200 absolute top-[37px] left-[0.4px] w-[176.8px] h-[74px] px-3"
-            type="text"
             name="state"
             value={formState.state}
             onChange={handleInputChange}
             required
-          />
+          >
+            <option value="">Select State</option>
+            {US_STATES.map((state) => (
+              <option key={state} value={state}>{state}</option>
+            ))}
+          </select>
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-14 mq450:text-base mq450:leading-6">
             State
           </label>
