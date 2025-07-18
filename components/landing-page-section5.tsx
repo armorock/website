@@ -35,19 +35,19 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
           src="/Armorock Solution Logo@2x.png"
         />
         <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
-          <h2 className="m-0 w-[679px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
+          <h2 className="m-0 w-[679px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block text-white mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
             armorock is the solution
           </h2>
         </div>
       </div>
       <div className="self-stretch h-32 flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px] text-[50px]">
-        <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
+        <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] text-white mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
           Sustainable in Design.
         </h2>
-        <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
+        <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] text-white mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
           proven in performance.
         </h2>
-        <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] mq450:text-[39px] mq450:leading-[18px] mq825:text-[52px] mq825:leading-6">
+        <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] text-white mq450:text-[39px] mq450:leading-[18px] mq825:text-[52px] mq825:leading-6">
           trusted for the future.
         </h2>
       </div>
