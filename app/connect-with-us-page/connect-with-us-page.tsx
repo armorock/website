@@ -38,7 +38,7 @@ const ConnectWithUsPage: NextPage = () => {
       <ConnectWithUsSection />
       <PlanLocationsSection />
       <LinkSection />
-      <section className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-start py-16 px-[63px] text-center text-6xl text-gray-100 font-oswald lg:pl-[31px] lg:pr-[31px] lg:box-border mq675:pt-[42px] mq675:pb-[42px] mq675:box-border">
+      <section id="our-socials" className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-start py-16 px-[63px] text-center text-6xl text-gray-100 font-oswald lg:pl-[31px] lg:pr-[31px] lg:box-border mq675:pt-[42px] mq675:pb-[42px] mq675:box-border">
         <h2 className="m-0 w-[1226px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
           our socials
         </h2>

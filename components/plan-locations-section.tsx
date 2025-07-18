@@ -10,6 +10,7 @@ const PlanLocationsSection: NextPage<PlanLocationsSectionType> = ({
 }) => {
   return (
     <section
+      id="plant-locations"
       className={`self-stretch overflow-hidden flex flex-col items-center justify-center py-16 pl-[53px] pr-0 bg-[url('/plant-locations-bg.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald mq450:pt-[27px] mq450:pb-[27px] mq450:box-border mq675:pl-[26px] mq675:box-border mq825:pt-[42px] mq825:pb-[42px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-col items-start justify-start">
