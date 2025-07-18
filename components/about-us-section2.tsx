@@ -20,13 +20,13 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
         <Ian
           ianAbernathy="Ian Abernathy"
           chiefExecutiveOfficer="Chief Executive Officer"
-          image="/image@2x.png"
+          image="/ian.png"
         />
         <Ian
           ianWidth="283px"
           ianAbernathy="Thomas Liffrig, PE"
           chiefExecutiveOfficer="Chief Operating Officer"
-          image="/image-1@2x.png"
+          image="/thomas.png"
           frameDivPadding1="0px 1px 0px 0px"
           memberRolesPadding="0px 8px 0px 0px"
         />
@@ -37,7 +37,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             height={385}
             sizes="100vw"
             alt=""
-            src="/image-2@2x.png"
+            src="/brad.png"
           />
           <div className="flex flex-col items-end justify-start gap-1.5">
             <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
