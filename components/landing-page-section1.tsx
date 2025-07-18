@@ -57,13 +57,11 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
             className="h-20 w-[263px] flex flex-row items-end justify-start gap-[5px] cursor-pointer"
             onClick={onLogoContainerClick}
           >
-            <Image
+            <img
               className="w-[77px] relative max-h-full object-cover"
-              loading="lazy"
               width={77}
               height={72}
-              sizes="100vw"
-              alt=""
+              alt="Armorock Logo"
               src="/logo1@2x.png"
             />
             <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5px]">
@@ -125,11 +123,10 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
           </div>
         </div>
       </header>
-      <Image
+      <img
         className="w-[391.7px] max-h-full"
-        width={391.7}
-        height={317}
-        sizes="100vw"
+        width="391.7"
+        height="317"
         alt="Armorock Logo"
         src="/Stacked (Logo + Armorock + Polymer Concrete).svg"
       />
