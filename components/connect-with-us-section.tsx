@@ -45,6 +45,56 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
     setIsSubmitting(true);
     setSubmitStatus(null);
     
+    // Basic form validation
+    if (!formData.firstName.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("First Name is required.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (!formData.lastName.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Last Name is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formData.phoneNumber.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Phone Number is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formData.company.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Company is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formData.city.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("City is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formData.state.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("State is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formData.rolePosition.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Role/Position is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
     // Email validation
     if (!formData.email.includes("@") || !formData.email.includes(".")) {
       setSubmitStatus("error");
@@ -139,6 +189,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[111.3px] w-[216px] flex flex-col items-start justify-start gap-[7.3px]">
@@ -151,6 +202,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[111px] w-[280px] flex flex-col items-start justify-start gap-[7px]">
@@ -163,6 +215,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[111px] w-[345px] flex flex-col items-start justify-start gap-[7px]">
@@ -175,6 +228,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="company"
                 value={formData.company}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[111px] w-[212px] flex flex-col items-start justify-start gap-[7px]">
@@ -187,6 +241,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="city"
                 value={formData.city}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[111px] w-[155px] flex flex-col items-start justify-start gap-[7px]">
@@ -199,6 +254,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="state"
                 value={formData.state}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[110px] w-[345px] flex flex-col items-start justify-start gap-1.5">
@@ -211,6 +267,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="rolePosition"
                 value={formData.rolePosition}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <div className="h-[111px] w-[394px] flex flex-col items-start justify-start gap-[7px]">
@@ -223,6 +280,7 @@ const ConnectWithUsSection: NextPage<ConnectWithUsSectionType> = ({
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
+                required
               />
             </div>
           </div>

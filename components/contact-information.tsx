@@ -52,6 +52,41 @@ const ContactInformation: NextPage<ContactInformationType> = ({
       return;
     }
     
+    if (!formState.phoneNumber.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Phone Number is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formState.company.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Company is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formState.city.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("City is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formState.state.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("State is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
+    if (!formState.rolePosition.trim()) {
+      setSubmitStatus("error");
+      setErrorMessage("Role/Position is required.");
+      setIsSubmitting(false);
+      return;
+    }
+    
     // Email validation
     if (!formState.email.includes("@") || !formState.email.includes(".")) {
       setSubmitStatus("error");
@@ -133,6 +168,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="firstName"
             value={formState.firstName}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-[117.1px] mq450:text-base mq450:leading-6">
             First Name
@@ -145,6 +181,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="lastName"
             value={formState.lastName}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-[117.1px] mq450:text-base mq450:leading-6">
             Last Name
@@ -157,6 +194,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="phoneNumber"
             value={formState.phoneNumber}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] mq450:text-base mq450:leading-6">
             Phone Number
@@ -169,6 +207,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="company"
             value={formState.company}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] mq450:text-base mq450:leading-6">
             Company
@@ -181,6 +220,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="city"
             value={formState.city}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-[74.6px] mq450:text-base mq450:leading-6">
             City
@@ -193,6 +233,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="state"
             value={formState.state}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-14 mq450:text-base mq450:leading-6">
             State
@@ -205,6 +246,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="rolePosition"
             value={formState.rolePosition}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-[129.8px] mq450:text-base mq450:leading-6">
             Role/Position
@@ -217,6 +259,7 @@ const ContactInformation: NextPage<ContactInformationType> = ({
             name="email"
             value={formState.email}
             onChange={handleInputChange}
+            required
           />
           <label className="cursor-pointer absolute top-[0px] left-[0px] leading-[30px] flex items-center w-[129.8px] mq450:text-base mq450:leading-6">
             Email

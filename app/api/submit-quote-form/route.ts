@@ -165,9 +165,11 @@ export async function POST(req: Request) {
     const formData: QuoteFormData = await req.json();
     
     // Basic validation
-    if (!formData.email || !formData.firstName || !formData.lastName) {
+    if (!formData.firstName || !formData.lastName || !formData.phoneNumber || 
+        !formData.company || !formData.city || !formData.state || 
+        !formData.rolePosition || !formData.email) {
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'All contact information fields are required' },
         { status: 400 }
       );
     }
