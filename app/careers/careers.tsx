@@ -41,7 +41,7 @@ const CareersPage: NextPage = () => {
         </div>
       </section>
       <CompanyCulture />
-      <Footer logo="/logo-image@2x.png" />
+      <Footer logo="/logo-2@2x.png" />
     </div>
   );
 };

@@ -27,7 +27,7 @@ const CompanyCulture: NextPage<CompanyCultureType> = ({ className = "" }) => {
             height={112}
             sizes="100vw"
             alt=""
-            src="/logo2@2x.png"
+            src="/logo-image@2x.png"
           />
           <h2 className="m-0 w-[806px] relative text-[length:inherit] leading-[60px] uppercase font-medium font-[inherit] inline-block mq450:text-4xl mq450:leading-9 mq825:text-5xl mq825:leading-[48px]">
             why work at armorock?
