@@ -31,7 +31,7 @@ const LCCAToolPage: NextPage = () => {
   }, [router]);
 
   const onCareersTextClick = useCallback(() => {
-    router.push("/careers-page");
+    router.push("/careers");
   }, [router]);
 
   const onFAQTextClick = useCallback(() => {

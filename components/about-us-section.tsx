@@ -32,10 +32,8 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
   }, [router]);
 
   const onCareersTextClick = useCallback(() => {
-    window.open(
-      "https://paycomonline.net/v4/ats/web.php/jobs?clientkey=FA5DC105028F0075FCBC55C96E060882"
-    );
-  }, []);
+    router.push("/careers");
+  }, [router]);
 
   const onFAQTextClick = useCallback(() => {
     router.push("/frequently-asked-questions-page");

@@ -34,10 +34,8 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
   }, [router]);
 
   const onCareersTextClick = useCallback(() => {
-    window.open(
-      "https://paycomonline.net/v4/ats/web.php/jobs?clientkey=FA5DC105028F0075FCBC55C96E060882"
-    );
-  }, []);
+    router.push("/careers");
+  }, [router]);
 
   const onFAQTextClick = useCallback(() => {
     router.push("/frequently-asked-questions-page");
@@ -62,7 +60,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
               width={77}
               height={72}
               alt="Armorock Logo"
-              src="/logo1@2x.png"
+              src="/logo-image@2x.png"
             />
             <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5px]">
               <div className="flex flex-col items-start justify-start">
@@ -128,7 +126,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
         width="391.7"
         height="317"
         alt="Armorock Logo"
-        src="/Stacked (Logo + Armorock + Polymer Concrete).svg"
+        src="/Stacked(Logo+Armorock+PolymerConcrete).svg"
       />
       <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[68px]">
         <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] mq450:text-3xl mq450:leading-[18px] mq825:text-[40px] mq825:leading-6">
