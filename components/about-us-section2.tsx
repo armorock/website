@@ -61,7 +61,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           />
           <div className="flex flex-col items-end justify-start gap-1.5">
             <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
-              Robert Gupsill
+              Robert Guptill
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
               <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
