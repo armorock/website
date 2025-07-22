@@ -53,7 +53,7 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
       </div>
       <div className="self-stretch flex flex-row items-center justify-center py-6 px-0 gap-[38px] mq450:gap-[12px] mq450:flex-wrap">
         <button
-          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-4 bg-firebrick h-[50px] min-w-[145px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-4 bg-firebrick h-[50px] min-w-[145px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border md:px-[8px] sm:px-[6px] xs:px-[4px] md:min-w-[130px]"
           onClick={onGetAQuoteButtonClick}
         >
           <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center inline-block z-[1]">
