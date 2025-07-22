@@ -32,16 +32,16 @@ const LandingPageSection2: NextPage<LandingPageSection2Type> = ({
             alt="Who is Armorock Logo"
             src="/Who is Armorock Logo.svg"
           />
-          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[25px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[25px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl">
             Who is Armorock?
           </h2>
         </div>
         <section className="flex flex-col items-end justify-start gap-[15px] max-w-full text-left text-[22px] text-white font-open-sans md:items-center md:w-full">
           <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full md:items-center">
-            <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-lg xs:text-base">
+            <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-xl xs:text-lg">
               We are an innovative polymer concrete company that provides corrosion-resistant, long-lasting solutions to common issues within the wastewater industry. Founded in 2010, our goal has been to drive sustainability in infrastructure through the use of polymer concrete structures. Rather than using alternative fixes like liners, coatings, and admixtures, our concrete formula is built to hold up against corrosive environments and keep wastewater systems strong over time.
             </p>
-            <p className="m-0 self-stretch relative text-[25px] leading-[50px] italic md:text-center md:text-2xl md:leading-normal sm:text-xl xs:text-lg mt-2 md:mt-3">
+            <p className="m-0 self-stretch relative text-[25px] leading-[50px] italic md:text-center md:text-2xl md:leading-normal sm:text-2xl xs:text-xl mt-2 md:mt-3">
               Sustainable in Design. Proven in Performance. Trusted for the
               Future.
             </p>
@@ -50,7 +50,7 @@ const LandingPageSection2: NextPage<LandingPageSection2Type> = ({
             className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-1 bg-firebrick w-32 h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border md:w-[160px] md:mt-2 sm:w-[140px]"
             onClick={onConnectWithUsButtonClick}
           >
-            <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center [text-shadow:1px_0_0_#bb2034,_0_1px_0_#bb2034,_-1px_0_0_#bb2034,_0_-1px_0_#bb2034]">
+            <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center md:text-xl sm:text-lg xs:text-lg [text-shadow:1px_0_0_#bb2034,_0_1px_0_#bb2034,_-1px_0_0_#bb2034,_0_-1px_0_#bb2034]">
               OUR STORY
             </div>
           </button>
