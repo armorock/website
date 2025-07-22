@@ -48,8 +48,7 @@ const LandingPageSection5: NextPage<LandingPageSection5Type> = ({
           proven in performance.
         </h2>
         <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] text-white md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl pt-6 md:pt-0">
-          <span className="hidden mq450:inline">{`trusted `}for the<br className="mq450:inline" />future.</span>
-          <span className="inline mq450:hidden">{`trusted `}for the future.</span>
+          <span>{`trusted `}for the future.</span>
         </h2>
       </div>
       <div className="self-stretch flex flex-row items-center justify-center py-6 px-0 gap-[38px] mq450:gap-[12px] mq450:flex-wrap">
