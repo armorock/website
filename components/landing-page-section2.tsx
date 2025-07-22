@@ -47,7 +47,7 @@ const LandingPageSection2: NextPage<LandingPageSection2Type> = ({
             </p>
           </div>
           <button
-            className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-2 bg-firebrick w-40 h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border md:w-[200px] md:mt-2"
+            className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-1 bg-firebrick w-32 h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border md:w-[160px] md:mt-2 sm:w-[140px]"
             onClick={onConnectWithUsButtonClick}
           >
             <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center [text-shadow:1px_0_0_#bb2034,_0_1px_0_#bb2034,_-1px_0_0_#bb2034,_0_-1px_0_#bb2034]">
