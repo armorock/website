@@ -36,7 +36,7 @@ const Footer: NextPage<FooterType> = ({ className = "", logo }) => {
 
   return (
     <footer
-      className={`self-stretch bg-white overflow-hidden flex flex-col items-start justify-start pt-[50px] px-0 pb-0 text-left text-base text-black font-open-sans md:pt-10 sm:pt-8 xs:pt-6 ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-col items-start justify-start pt-[50px] px-0 pb-0 text-left text-base text-black font-open-sans md:pt-10 sm:pt-8 xs:pt-6 md:hidden ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-between flex-wrap content-start py-0 px-[60px] gap-x-0 gap-y-[40px] md:px-6 sm:px-4 sm:gap-y-[30px]">
         <Image
