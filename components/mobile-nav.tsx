@@ -84,9 +84,9 @@ const MobileNav = () => {
           className="flex flex-col justify-center items-center p-2"
           aria-label="Toggle menu"
         >
-          <span className={`block w-8 h-0.5 bg-gray-100 transition-all duration-300 mb-2 ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
-          <span className={`block w-8 h-0.5 bg-gray-100 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-          <span className={`block w-8 h-0.5 bg-gray-100 transition-all duration-300 mt-2 ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
+          <span className={`block w-8 h-1 bg-gray-100 transition-all duration-300 mb-1.5 ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
+          <span className={`block w-8 h-1 bg-gray-100 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+          <span className={`block w-8 h-1 bg-gray-100 transition-all duration-300 mt-1.5 ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
         </button>
       </header>
 
