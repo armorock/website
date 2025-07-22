@@ -16,17 +16,20 @@ const LocofyLandingPage: NextPage = () => {
         <h2 className="m-0 relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-4xl md:leading-tight sm:text-3xl">
           the problem
         </h2>
-        <p className="m-0 w-[526px] relative text-[22px] leading-[30px] font-open-sans text-left flex items-center md:w-full md:text-lg md:leading-relaxed sm:text-base xs:text-sm">
-          <span className="w-full">
-            Corrosion in wastewater systems results from a combination of H
-            <sub>2</sub>S (Hydrogen Sulfide) gas and thiobacillus bacteria in
-            structures, which creates sulfuric acid. Traditional precast
-            concrete structures corrode when exposed to sulfuric acid, a common
-            issue in the waste water industry. Corrosion increases
-            rehabilitation of traditional concrete structures, increasing costs
-            for municipalities over time.
-          </span>
-        </p>
+        <div className="w-full md:flex md:flex-row">
+          <p className="m-0 w-[526px] relative text-[22px] leading-[30px] font-open-sans text-left flex items-center md:w-1/2 md:text-lg md:leading-relaxed sm:text-base xs:text-sm">
+            <span className="w-full">
+              Corrosion in wastewater systems results from a combination of H
+              <sub>2</sub>S (Hydrogen Sulfide) gas and thiobacillus bacteria in
+              structures, which creates sulfuric acid. Traditional precast
+              concrete structures corrode when exposed to sulfuric acid, a common
+              issue in the waste water industry. Corrosion increases
+              rehabilitation of traditional concrete structures, increasing costs
+              for municipalities over time.
+            </span>
+          </p>
+          <div className="hidden md:block md:w-1/2"></div>
+        </div>
       </section>
       <LandingPageSection3 />
       <DifferenceSection />
