@@ -33,12 +33,12 @@ const LocofyLandingPage: NextPage = () => {
       </section>
       <LandingPageSection3 />
       <DifferenceSection />
-      <section className="self-stretch bg-whitesmoke overflow-hidden shrink-0 flex flex-row items-center justify-between flex-wrap content-center py-16 px-[118px] gap-x-4 gap-y-[70px] text-center text-6xl text-gray-100 font-oswald lg:px-[59px] md:px-6 md:py-12 sm:px-4 sm:py-8 xs:py-6 md:flex-nowrap">
-        <div className="w-[557px] flex flex-col items-center justify-start gap-[22px] md:w-1/2 sm:w-1/2 xs:w-1/2">
-          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-4xl md:leading-tight sm:text-3xl xs:text-2xl sm:leading-normal">
+      <section className="self-stretch bg-whitesmoke overflow-hidden shrink-0 flex flex-row items-center justify-between flex-wrap content-center py-16 px-[118px] gap-x-0 gap-y-[70px] text-center text-6xl text-gray-100 font-oswald lg:px-[59px] md:px-6 md:py-12 sm:px-4 sm:py-8 xs:py-6">
+        <div className="w-[557px] flex flex-col items-center justify-start gap-[22px] md:w-full">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl sm:leading-normal">
             the problem
           </h2>
-          <div className="w-[550px] h-[400px] relative overflow-hidden flex items-center justify-center md:w-full md:h-[250px] sm:h-[200px] xs:h-[150px]">
+          <div className="w-[550px] h-[400px] relative overflow-hidden flex items-center justify-center md:w-full md:h-[350px] sm:h-[300px] xs:h-[250px]">
             <Image
               className="w-full h-full object-cover absolute left-[10px] top-[10px] [transform:scale(1.035)]"
               loading="lazy"
@@ -50,11 +50,11 @@ const LocofyLandingPage: NextPage = () => {
             />
           </div>
         </div>
-        <div className="w-[557px] flex flex-col items-center justify-start gap-[22px] md:w-1/2 sm:w-1/2 xs:w-1/2">
-          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-4xl md:leading-tight sm:text-3xl xs:text-2xl sm:leading-normal">
+        <div className="w-[557px] flex flex-col items-center justify-start gap-[22px] md:w-full md:mt-8">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl sm:leading-normal">
             The Solution
           </h2>
-          <div className="w-[550px] h-[400px] relative overflow-hidden flex items-center justify-center md:w-full md:h-[250px] sm:h-[200px] xs:h-[150px]">
+          <div className="w-[550px] h-[400px] relative overflow-hidden flex items-center justify-center md:w-full md:h-[350px] sm:h-[300px] xs:h-[250px]">
             <Image
               className="w-full h-full object-cover absolute left-[10px] top-[10px] [transform:scale(1.035)]"
               loading="lazy"
