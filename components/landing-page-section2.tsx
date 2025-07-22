@@ -32,16 +32,16 @@ const LandingPageSection2: NextPage<LandingPageSection2Type> = ({
             alt="Who is Armorock Logo"
             src="/Who is Armorock Logo.svg"
           />
-          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[25px] uppercase font-medium font-[inherit] md:text-4xl md:leading-tight sm:text-3xl xs:text-2xl">
+          <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[25px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl">
             Who is Armorock?
           </h2>
         </div>
         <section className="flex flex-col items-end justify-start gap-[15px] max-w-full text-left text-[22px] text-white font-open-sans md:items-center md:w-full">
-          <div className="w-[761px] flex flex-col items-start justify-start gap-[7px] max-w-full md:items-center">
-            <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-lg md:leading-relaxed sm:text-base xs:text-sm">
+          <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full md:items-center">
+            <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-lg xs:text-base">
               We are an innovative polymer concrete company that provides corrosion-resistant, long-lasting solutions to common issues within the wastewater industry. Founded in 2010, our goal has been to drive sustainability in infrastructure through the use of polymer concrete structures. Rather than using alternative fixes like liners, coatings, and admixtures, our concrete formula is built to hold up against corrosive environments and keep wastewater systems strong over time.
             </p>
-            <p className="m-0 self-stretch relative text-[25px] leading-[50px] italic md:text-center md:text-xl md:leading-normal sm:text-lg xs:text-base">
+            <p className="m-0 self-stretch relative text-[25px] leading-[50px] italic md:text-center md:text-2xl md:leading-normal sm:text-xl xs:text-lg mt-2 md:mt-3">
               Sustainable in Design. Proven in Performance. Trusted for the
               Future.
             </p>

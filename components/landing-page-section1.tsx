@@ -132,9 +132,9 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
       {/* Hero content */}
       <div className="pt-4 md:pt-10 sm:pt-8 xs:pt-6">
         <img
-          className="w-[420px] max-h-full md:w-[288px] sm:w-[240px] xs:w-[210px]"
-          width="420"
-          height="340"
+          className="w-[391.7px] max-h-full md:w-[288px] sm:w-[240px] xs:w-[210px]"
+          width="391.7"
+          height="317"
           alt="Armorock Logo"
           src="/Stacked(Logo+Armorock+PolymerConcrete).svg"
         />
@@ -147,7 +147,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
         <h2 className="m-0 relative text-[54px] leading-[34px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl xs:leading-8">
           proven in performance.
         </h2>
-        <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl">
+        <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl pt-6 md:pt-0">
           {`trusted `}for the future.
         </h2>
       </div>
