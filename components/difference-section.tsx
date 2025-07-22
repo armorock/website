@@ -34,9 +34,9 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
         </div>
       </div>
       <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-12 md:gap-6 sm:gap-4 xs:gap-3">
-        <section className="h-[300px] w-[390px] shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[15px] px-6 pb-[34px] box-border gap-[41px] text-center text-3xl text-gray-100 font-oswald md:w-[48%] md:h-[280px] sm:h-[260px] xs:h-[240px] md:gap-4 sm:gap-3 xs:gap-2 md:pt-4 md:px-4 md:pb-4">
+        <section className="h-[300px] w-[390px] shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[15px] px-6 pb-[34px] box-border gap-[41px] text-center text-3xl text-gray-100 font-oswald md:w-[48%] md:h-[280px] sm:h-[260px] xs:h-[240px] md:gap-2 sm:gap-1 xs:gap-1 md:pt-2 md:px-4 md:pb-4">
           <div className="w-[390px] relative shadow-[25px_25px_4px_rgba(0,_0,_0,_0.25)] bg-white h-[300px] hidden" />
-          <div className="flex flex-row items-start justify-start py-0 pl-[110px] pr-[111px] md:px-0 md:w-full md:justify-center md:py-1">
+          <div className="flex flex-row items-start justify-start py-0 pl-[110px] pr-[111px] md:px-0 md:w-full md:justify-center md:py-0">
             <h2 className="m-0 h-[35px] w-[121px] relative text-[length:inherit] leading-[35px] uppercase font-medium font-[inherit] flex items-center justify-center z-[1] md:text-3xl md:leading-8 sm:text-2xl sm:leading-7 xs:text-xl xs:leading-6">
               strength
             </h2>
