@@ -157,15 +157,15 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
           className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[180px] sm:w-[150px] xs:w-[140px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onGetAQuoteButtonClick}
         >
-          <div className="relative text-3xl leading-8 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
+          <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
             GET A QUOTE
           </div>
         </button>
         <button
-          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[180px] sm:w-[150px] xs:w-[140px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-48 md:w-[180px] sm:w-[150px] xs:w-[140px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onConnectWithUsClick}
         >
-          <div className="relative text-3xl leading-8 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
+          <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
             CONNECT WITH US
           </div>
         </button>
