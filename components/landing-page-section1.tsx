@@ -130,42 +130,42 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
       </header>
       
       {/* Hero content */}
-      <div className="pt-8 md:pt-20">
+      <div className="pt-4 md:pt-10 sm:pt-8 xs:pt-6">
         <img
-          className="w-[391.7px] max-h-full md:w-[250px] sm:w-[200px] xs:w-[180px]"
-          width="391.7"
-          height="317"
+          className="w-[420px] max-h-full md:w-[288px] sm:w-[240px] xs:w-[210px]"
+          width="420"
+          height="340"
           alt="Armorock Logo"
           src="/Stacked(Logo+Armorock+PolymerConcrete).svg"
         />
       </div>
 
-      <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-x-4 gap-y-[40px] md:gap-y-[24px] px-4">
-        <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] md:text-3xl md:leading-7 sm:text-2xl xs:text-xl xs:leading-6 mq450:text-xl">
+      <div className="self-stretch flex flex-row md:flex-col items-center justify-center flex-wrap md:flex-nowrap content-center gap-x-4 gap-y-[40px] md:gap-y-[16px] px-4">
+        <h2 className="m-0 relative text-[54px] leading-[34px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl xs:leading-8">
           {`Sustainable `}in Design.
         </h2>
-        <h2 className="m-0 relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] md:text-3xl md:leading-7 sm:text-2xl xs:text-xl xs:leading-6 mq450:text-xl">
+        <h2 className="m-0 relative text-[54px] leading-[34px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl xs:leading-8">
           proven in performance.
         </h2>
-        <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] md:text-[40px] sm:text-[32px] xs:text-[28px] mq450:text-[26px] mq450:leading-7">
+        <h2 className="m-0 relative text-[65px] leading-[30px] uppercase font-bold font-[inherit] md:text-5xl md:leading-tight sm:text-4xl xs:text-3xl">
           {`trusted `}for the future.
         </h2>
       </div>
       
-      <div className="flex flex-row items-center justify-center pt-10 px-0 pb-20 gap-[38px] md:flex-col md:gap-4 sm:pb-12 xs:pb-10">
+      <div className="flex flex-row items-center justify-center pt-10 px-0 pb-20 gap-[38px] sm:gap-5 xs:gap-4 sm:pb-12 xs:pb-10">
         <button
-          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] pl-[23px] pr-[22px] bg-gray-100 h-[50px] w-[145px] md:w-[200px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[180px] sm:w-[150px] xs:w-[140px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onGetAQuoteButtonClick}
         >
-          <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center z-[1]">
+          <div className="relative text-3xl leading-8 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
             GET A QUOTE
           </div>
         </button>
         <button
-          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[200px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[180px] sm:w-[150px] xs:w-[140px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onConnectWithUsClick}
         >
-          <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center z-[1]">
+          <div className="relative text-3xl leading-8 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
             CONNECT WITH US
           </div>
         </button>

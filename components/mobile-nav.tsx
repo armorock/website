@@ -68,10 +68,10 @@ const MobileNav = () => {
           />
           <div className="flex flex-col items-start justify-end">
             <div className="flex flex-col items-start justify-start">
-              <h2 className="m-0 relative text-2xl leading-7 uppercase font-medium font-oswald text-gray-100">
+              <h2 className="m-0 relative text-3xl leading-8 uppercase font-medium font-oswald text-gray-100">
                 Armorock
               </h2>
-              <h3 className="m-0 relative text-sm leading-5 uppercase font-medium font-oswald text-black text-justify">
+              <h3 className="m-0 relative text-lg leading-5 uppercase font-medium font-oswald text-black text-justify">
                 polymer concrete
               </h3>
             </div>
@@ -84,9 +84,9 @@ const MobileNav = () => {
           className="flex flex-col justify-center items-center p-2"
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-gray-100 transition-all duration-300 mb-1.5 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-          <span className={`block w-6 h-0.5 bg-gray-100 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-          <span className={`block w-6 h-0.5 bg-gray-100 transition-all duration-300 mt-1.5 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+          <span className={`block w-8 h-0.5 bg-gray-100 transition-all duration-300 mb-2 ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
+          <span className={`block w-8 h-0.5 bg-gray-100 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+          <span className={`block w-8 h-0.5 bg-gray-100 transition-all duration-300 mt-2 ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
         </button>
       </header>
 
