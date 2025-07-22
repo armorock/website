@@ -13,7 +13,7 @@ const LocofyLandingPage: NextPage = () => {
       <LandingPageSection1 />
       <LandingPageSection2 />
       <section className="self-stretch overflow-hidden shrink-0 flex flex-col items-start justify-start pt-16 pb-[57px] pl-[72px] pr-5 box-border bg-[url('/problem-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-6xl text-white font-oswald md:min-w-full md:pl-6 md:pr-6 sm:pl-4 sm:pr-4 sm:pt-10 sm:pb-10">
-        <h2 className="m-0 relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl mb-6 md:mb-8 sm:mb-4">
+        <h2 className="m-0 relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl mb-4 md:mb-8 sm:mb-4">
           the problem
         </h2>
         <div className="w-full md:flex md:flex-row">
