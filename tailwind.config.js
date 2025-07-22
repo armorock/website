@@ -26,12 +26,16 @@ module.exports = {
       },
     },
     screens: {
-      lg: {
-        max: "1200px",
-      },
-      mq750: {
-        raw: "screen and (max-width: 750px)",
-      },
+      '2xl': { 'max': '1535px' },
+      'xl': { 'max': '1279px' },
+      'lg': { 'max': '1023px' },
+      'md': { 'max': '767px' },
+      'sm': { 'max': '639px' },
+      'xs': { 'max': '479px' },
+      mq825: { 'max': '825px' },
+      mq750: { 'max': '750px' },
+      mq675: { 'max': '675px' },
+      mq450: { 'max': '450px' },
     },
   },
   corePlugins: {

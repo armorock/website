@@ -36,19 +36,19 @@ const Footer: NextPage<FooterType> = ({ className = "", logo }) => {
 
   return (
     <footer
-      className={`self-stretch bg-white overflow-hidden flex flex-col items-start justify-start pt-[50px] px-0 pb-0 text-left text-base text-black font-open-sans mq450:pt-8 mq450:box-border ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-col items-start justify-start pt-[50px] px-0 pb-0 text-left text-base text-black font-open-sans md:pt-10 sm:pt-8 xs:pt-6 md:hidden ${className}`}
     >
-      <div className="self-stretch flex flex-row items-start justify-between flex-wrap content-start py-0 px-[60px] gap-x-0 gap-y-[70px] mq825:pl-[30px] mq825:pr-[30px] mq825:box-border">
+      <div className="self-stretch flex flex-row items-start justify-between flex-wrap content-start py-0 px-[60px] gap-x-0 gap-y-[40px] md:px-6 sm:px-4 sm:gap-y-[30px]">
         <Image
-          className="w-[304px] relative max-h-full object-cover"
+          className="w-[304px] relative max-h-full object-cover md:w-[250px] sm:w-[200px] xs:mx-auto"
           loading="lazy"
           width={304}
           height={241.1}
-          sizes="100vw"
-          alt=""
+          sizes="(max-width: 767px) 250px, (max-width: 639px) 200px, 304px"
+          alt="Armorock Logo"
           src={logo}
         />
-        <div className="flex-1 flex flex-row items-start justify-end flex-wrap content-start gap-x-[90px] gap-y-[35px] min-w-[406px] mq450:gap-[22px] mq450:min-w-full mq825:gap-[45px]">
+        <div className="flex-1 flex flex-row items-start justify-end flex-wrap content-start gap-x-[90px] gap-y-[35px] min-w-[406px] md:justify-center md:gap-x-[45px] sm:gap-x-[25px] xs:min-w-full xs:gap-y-[25px]">
           <div className="h-[154px] w-[132px] flex flex-col items-start justify-start">
             <div className="flex flex-col items-start justify-start">
               <Link
@@ -202,7 +202,7 @@ const Footer: NextPage<FooterType> = ({ className = "", logo }) => {
             </Link>
           </div>
         </div>
-        <div className="w-[1320px] relative leading-6 text-center inline-block">
+        <div className="w-full relative leading-6 text-center mt-6 py-4 border-t border-gray-100">
           Copyright © 2025 Armorock. All rights reserved.
         </div>
       </div>

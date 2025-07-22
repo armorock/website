@@ -19,6 +19,30 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+/* Mobile-first responsive styles */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 639px) {
+  html {
+    font-size: 13px;
+  }
+}
+
 @layer base {
   *,
   ::before,
