@@ -54,7 +54,7 @@ const MobileNav = () => {
   return (
     <div className="relative">
       {/* Mobile header with hamburger */}
-      <header className="self-stretch flex flex-row items-center justify-between py-4 px-5 bg-white z-50 sticky top-0">
+      <header className="self-stretch flex flex-row items-center justify-between py-4 px-5 bg-transparent z-50 sticky top-0">
         <div 
           className="flex flex-row items-center justify-start gap-1 cursor-pointer"
           onClick={onLogoContainerClick}
@@ -92,7 +92,7 @@ const MobileNav = () => {
 
       {/* Mobile menu overlay */}
       <div 
-        className={`fixed inset-0 bg-gray-100 bg-opacity-95 z-40 transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} pt-20`}
+        className={`fixed inset-0 bg-gray-100 z-40 transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} pt-20`}
         style={{ top: '80px', height: 'calc(100vh - 80px)' }}
       >
         <div className="flex flex-col items-center justify-start gap-6 p-4 h-full">

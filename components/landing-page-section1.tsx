@@ -56,7 +56,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
       </div>
       
       {/* Desktop Header - Hidden on mobile */}
-      <header className="self-stretch md:hidden flex flex-row items-start justify-between py-[15px] px-[25px] top-[0] z-[99] sticky text-left text-[40px] text-gray-100 font-oswald bg-white bg-opacity-95">
+      <header className="self-stretch md:hidden flex flex-row items-start justify-between py-[15px] px-[25px] top-[0] z-[99] sticky text-left text-[40px] text-gray-100 font-oswald bg-transparent">
         <div className="flex-1 flex flex-row items-center justify-between flex-wrap content-center gap-x-0 gap-y-5">
           <div
             className="h-20 w-[263px] flex flex-row items-end justify-start gap-[5px] cursor-pointer"
@@ -82,37 +82,37 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
           </div>
           <div className="flex-1 flex flex-row items-center justify-end flex-wrap content-center gap-[42px] text-right text-xl text-black mq675:gap-[21px]">
             <h3
-              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
+              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer drop-shadow-md"
               onClick={onAboutUsTextClick}
             >
               About Us
             </h3>
             <h3
-              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
+              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer drop-shadow-md"
               onClick={onOurProductsTextClick}
             >
               Our Products
             </h3>
             <h3
-              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
+              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer drop-shadow-md"
               onClick={onLifeCycleCostClick}
             >
               Life Cycle Cost Analysis
             </h3>
             <h3
-              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
+              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer drop-shadow-md"
               onClick={onConnectWithUsClick}
             >
               Connect With Us
             </h3>
             <h3
-              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
+              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer drop-shadow-md"
               onClick={onCareersTextClick}
             >
               Careers
             </h3>
             <h3
-              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer"
+              className="m-0 relative text-[length:inherit] leading-6 font-normal font-[inherit] cursor-pointer drop-shadow-md"
               onClick={onFAQTextClick}
             >
               FAQ
