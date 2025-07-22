@@ -48,7 +48,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
 
   return (
     <section
-      className={`self-stretch flex flex-col items-center justify-start gap-[39px] bg-[url('/hero-landing.png')] bg-cover bg-no-repeat bg-[top] text-center text-[50px] font-oswald md:bg-fixed mq675:gap-[19px] ${className}`}
+      className={`self-stretch flex flex-col items-center justify-start gap-[39px] bg-[url('/hero-landing.png')] bg-cover bg-no-repeat bg-[top] text-center text-[50px] font-oswald md:bg-[url('/hero-landing.png')] mq675:gap-[19px] ${className}`}
     >
       {/* Mobile Navigation - Only visible on small screens */}
       <div className="hidden md:block w-full">
