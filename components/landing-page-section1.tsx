@@ -154,7 +154,7 @@ const LandingPageSection1: NextPage<LandingPageSection1Type> = ({
       
       <div className="flex flex-row items-center justify-center pt-10 px-0 pb-20 gap-[38px] sm:gap-5 xs:gap-4 sm:pb-12 xs:pb-10">
         <button
-          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[180px] sm:w-[150px] xs:w-[140px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-gray-100 border-solid border-[3px] py-[9px] px-2 bg-gray-100 h-[50px] w-40 md:w-[160px] sm:w-[130px] xs:w-[120px] md:px-1 sm:px-1 xs:px-0 box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onGetAQuoteButtonClick}
         >
           <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center z-[1] md:text-2xl sm:text-xl xs:text-lg">
