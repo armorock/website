@@ -39,9 +39,9 @@ const CompanyCulture: NextPage<CompanyCultureType> = ({ className = "" }) => {
             className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-6 mt-4 bg-firebrick w-auto min-w-[160px] h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:w-full mq450:max-w-[250px] mq450:mx-auto"
             onClick={onConnectWithUsButtonClick}
           >
-            <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center inline-block [text-shadow:1px_0_0_#bb2034,_0_1px_0_#bb2034,_-1px_0_0_#bb2034,_0_-1px_0_#bb2034]">
+            <span className="text-xl leading-6 font-medium font-oswald text-white text-center w-full [text-shadow:1px_0_0_#bb2034,_0_1px_0_#bb2034,_-1px_0_0_#bb2034,_0_-1px_0_#bb2034]">
               JOIN OUR TEAM
-            </div>
+            </span>
           </button>
         </section>
       </div>
