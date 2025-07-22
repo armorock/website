@@ -10,7 +10,7 @@ const DifferenceSection: NextPage<DifferenceSectionType> = ({
 }) => {
   return (
     <section
-      className={`self-stretch overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-[120px] box-border gap-[38px] bg-[url('/difference-section@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-6xl font-oswald md:gap-[19px] md:py-10 md:px-[30px] sm:py-8 sm:px-4 xs:py-6 xs:px-3 ${className}`}
+      className={`self-stretch overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-[120px] box-border gap-[38px] bg-[url('/difference-section@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-center text-6xl font-oswald md:gap-[19px] md:py-10 md:px-[30px] sm:py-8 sm:px-4 xs:gap-0 xs:py-6 xs:px-3 ${className}`}
     >
       <div className="w-[663px] h-[213px] flex flex-col items-start justify-start max-w-full">
         <div className="w-[663px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
