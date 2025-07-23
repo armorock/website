@@ -60,7 +60,7 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
             <div className="w-full flex justify-end mt-3">
               <div className="relative">
                 <Image
-                  className="w-[65px] object-contain z-[1] md:w-[50px] sm:w-[40px] mq450:w-[35px]"
+                  className="w-[65px] object-contain z-[1] md:w-[50px] sm:w-[40px] mq450:w-[35px] transform rotate-180"
                   loading="lazy"
                   width={65}
                   height={51}
