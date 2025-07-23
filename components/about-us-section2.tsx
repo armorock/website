@@ -175,7 +175,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
               src="/lake.png"
             />
           </div>
-          <div className="flex flex-col items-end justify-start gap-[13px]">
+          <div className="flex flex-col items-end justify-start gap-[13px] mq450:gap-1">
             <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
               Lake Bennett
             </h3>
