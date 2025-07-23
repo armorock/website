@@ -43,6 +43,34 @@ html {
   }
 }
 
+/* Ensure consistent mobile header styling across all pages */
+@media (max-width: 767px) {
+  /* Mobile header logo size consistency */
+  header .w-\[60px\] {
+    width: 60px !important;
+  }
+  
+  /* Mobile header text size consistency */
+  header .text-3xl {
+    font-size: 1.875rem !important;
+    line-height: 2rem !important;
+  }
+  
+  header .text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.25rem !important;
+  }
+  
+  /* Mobile hamburger consistency */
+  header .w-8 {
+    width: 2rem !important;
+  }
+  
+  header .h-1 {
+    height: 0.25rem !important;
+  }
+}
+
 @layer base {
   *,
   ::before,

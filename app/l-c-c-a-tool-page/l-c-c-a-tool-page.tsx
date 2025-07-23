@@ -15,7 +15,7 @@ const LCCAToolPage: NextPage = () => {
 
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 767); // Use the md breakpoint (767px) like the careers page
+      setIsMobile(window.innerWidth <= 767); // Use the md breakpoint (767px)
     };
     
     // Initial check
@@ -62,8 +62,8 @@ const LCCAToolPage: NextPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <section className="self-stretch flex flex-col items-center justify-start bg-[url('/hero-lcca.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald min-h-[515px]">
-        {/* Mobile Navigation - Only visible on small screens */}
+      <section className="self-stretch flex flex-col items-center justify-start bg-[url('/hero-lcca.png')] bg-cover bg-no-repeat bg-[top] text-left text-6xl text-gray-100 font-oswald">
+        {/* Mobile Navigation - Only visible on small screens (exact same as careers page) */}
         <div className="hidden md:block w-full">
           <MobileNav />
         </div>
