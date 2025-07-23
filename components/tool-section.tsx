@@ -36,7 +36,7 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
           <div className="w-full relative">
             {/* Opening quote mark */}
             <Image
-              className="w-[65px] absolute top-[-30px] left-[-10px] object-cover z-[1] md:w-[50px] sm:w-[40px] mq450:w-[35px] mq450:top-[-20px] mq450:left-[-5px]"
+              className="w-[65px] absolute top-[-30px] left-[-20px] object-cover z-[1] md:w-[50px] sm:w-[40px] mq450:w-[35px] mq450:top-[-20px] mq450:left-[-5px]"
               loading="lazy"
               width={65}
               height={51}
@@ -45,7 +45,7 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
               src="/rectangle-22@2x.png"
             />
             
-            <div className="w-full pr-4 pl-10 md:pl-8 mq450:pl-6">
+            <div className="w-full pr-4 pl-16 md:pl-8 mq450:pl-6">
               <h3 className="m-0 w-full relative text-[length:inherit] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
                 Going with an Armorock manhole, even though the base/risers are a
                 little more for material, it ends up being cheaper once you
