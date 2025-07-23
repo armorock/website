@@ -14,10 +14,10 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
       <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
         meet our team
       </h2>
-      <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-[65px] mq450:gap-4 mq675:gap-8">
-        <section className="h-[505px] w-[289px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+      <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-[65px] mq675:gap-6 mq450:gap-3">
+        <section className="h-[505px] w-[289px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             loading="lazy"
             width={268}
             height={385}
@@ -25,22 +25,22 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             alt="Ian Abernathy"
             src="/ian.png"
           />
-          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px]">
-            <div className="flex flex-col items-end justify-start gap-1.5">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px] mq450:pr-0 mq450:w-full">
+            <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
                 Ian Abernathy
               </h3>
-              <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans">
-                <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+              <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans mq450:pr-0 mq450:w-full">
+                <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                   Chief Executive Officer
                 </i>
               </div>
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[283px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[283px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             loading="lazy"
             width={268}
             height={385}
@@ -48,128 +48,128 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             alt="Thomas Liffrig"
             src="/thomas.png"
           />
-          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px]" style={{ padding: "0px 1px 0px 0px" }}>
-            <div className="flex flex-col items-end justify-start gap-1.5">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px] mq450:pr-0 mq450:w-full" style={{ padding: "0px 1px 0px 0px" }}>
+            <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
                 Thomas Liffrig, PE
               </h3>
-              <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans" style={{ padding: "0px 8px 0px 0px" }}>
-                <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+              <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans mq450:pr-0 mq450:w-full" style={{ padding: "0px 8px 0px 0px" }}>
+                <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                   Chief Operating Officer
                 </i>
               </div>
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
             alt=""
             src="/brad.png"
           />
-          <div className="flex flex-col items-end justify-start gap-1.5">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
               Brad Brei
             </h3>
-            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
+              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 Chief Financial Officer
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
-            alt=""
+            alt="Robert Guptill"
             src="/robert.png"
           />
-          <div className="flex flex-col items-end justify-start gap-1.5">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
               Robert Guptill
             </h3>
-            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq450:text-base mq450:leading-6">
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
+              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 <span className="block">Plant Manager</span>
                 <span className="block">Plant City, FL</span>
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
-            alt=""
+            alt="John Bilberry"
             src="/john.png"
           />
-          <div className="flex flex-col items-end justify-start gap-1.5">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
               John Bilberry
             </h3>
-            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq450:text-base mq450:leading-6">
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
+              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 <span className="block">Plant Manager</span>
                 <span className="block">Boulder City, NV</span>
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
-            alt=""
+            alt="Brad Swearingen"
             src="/brads.png"
           />
-          <div className="flex flex-col items-end justify-start gap-1.5">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
               Brad Swearingen
             </h3>
-            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq450:text-base mq450:leading-6">
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
+              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 <span className="block">Plant Manager</span>
                 <span className="block">Sulphur Springs, TX</span>
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[519px] w-[281px] flex flex-col items-end justify-start gap-[15px] text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[519px] w-[281px] flex flex-col items-end justify-start gap-[15px] text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
             alt=""
             src="/nicole.png"
           />
-          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px]">
-            <div className="flex flex-col items-start justify-start gap-[25px]">
-              <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1">
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] mq450:pr-0 mq450:w-full mq450:items-center">
+            <div className="flex flex-col items-start justify-start gap-1.5 mq450:items-center mq450:w-full">
+              <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1 mq450:pl-0 mq450:pr-0 mq450:w-full">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
                   Nichole Caldwell
                 </h3>
               </div>
-              <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+              <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 Director of Business Operations
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[523px] w-[273px] flex flex-col items-end justify-start gap-[21.5px] text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[273px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <div className="flex flex-row items-start justify-end py-0 pl-[3px] pr-0.5">
             <Image
-              className="h-[385px] w-full relative object-cover"
+              className="h-[385px] w-full relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
               width={268}
               height={385}
               sizes="100vw"
@@ -177,58 +177,58 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
               src="/lake.png"
             />
           </div>
-          <div className="flex flex-row items-start justify-end py-0 pl-1 pr-0.5">
-            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
               Lake O'Donnell
             </h3>
+            <i className="w-[273px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
+              Director of Project Management
+            </i>
           </div>
-          <i className="w-[273px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
-            Director of Project Management
-          </i>
         </section>
-        <section className="h-[503px] w-[277px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[503px] w-[277px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
             alt=""
             src="/dyanna.png"
           />
-          <div className="flex flex-row items-start justify-start py-0 pl-0.5 pr-0">
-            <div className="flex flex-col items-start justify-start gap-[9px]">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-row items-start justify-start py-0 pl-0.5 pr-0 mq450:items-center mq450:w-full mq450:pl-0">
+            <div className="flex flex-col items-start justify-start gap-[9px] mq450:items-center mq450:w-full">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
                 Dyanna Serrano
               </h3>
-              <div className="flex flex-row items-start justify-start py-0 pl-px pr-0 font-open-sans">
-                <i className="h-[65px] w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+              <div className="flex flex-row items-start justify-start py-0 pl-px pr-0 font-open-sans mq450:pl-0 mq450:w-full">
+                <i className="h-[65px] w-[274px] relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                   Director of Human Resources
                 </i>
               </div>
             </div>
           </div>
         </section>
-        <section className="h-[519px] w-[274px] flex flex-col items-end justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[505px] w-[274px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
             alt=""
             src="/josh.png"
           />
-          <div className="flex flex-col items-end justify-start gap-[26px]">
-            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
               Josh Elkins
             </h3>
-            <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+            <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
               Director of Operational Excellence
             </i>
           </div>
         </section>
-        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
@@ -239,19 +239,19 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-start py-0 pl-px pr-0" style={{ padding: "0px 0px 0px 1px" }}>
             <div className="flex flex-col items-start justify-start gap-[9px]">
               <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1" style={{ padding: "0px 3px" }}>
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
                   Charlie Short
                 </h3>
               </div>
-              <i className="w-[274px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+              <i className="w-[274px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 Director of Risk
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
+        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[150px]"
             width={268}
             height={385}
             sizes="100vw"
@@ -262,11 +262,11 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-start py-0 pl-px pr-0" style={{ padding: "0px 0px 0px 3px" }}>
             <div className="flex flex-col items-start justify-start gap-[9px]">
               <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1" style={{ padding: "0px 3px" }}>
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
                   Brandon Roundy
                 </h3>
               </div>
-              <i className="w-[274px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+              <i className="w-[274px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
                 Controller
               </i>
             </div>
