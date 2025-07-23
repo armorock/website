@@ -46,7 +46,7 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
             />
             
             <div className="w-full pr-4 pl-16 md:pl-8 mq450:pl-6">
-              <h3 className="m-0 w-full relative text-[length:inherit] leading-[35px] font-normal font-[inherit] mq450:text-lg mq450:leading-7">
+              <h3 className="m-0 w-full relative text-[length:inherit] leading-[35px] font-normal font-[inherit] md:text-xl mq675:text-lg mq450:text-base mq450:leading-6">
                 Going with an Armorock manhole, even though the base/risers are a
                 little more for material, it ends up being cheaper once you
                 consider the coating that's required on the concrete manholes and
