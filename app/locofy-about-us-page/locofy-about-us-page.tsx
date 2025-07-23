@@ -25,7 +25,7 @@ const LocofyAboutUsPage: NextPage = () => {
               src="/logo1@2x.png"
             />
           </div>
-          <div className="flex-1 relative text-[22px] leading-[35px] font-open-sans inline-block min-w-[490px] mq450:text-lg mq450:leading-7 mq675:min-w-full">
+          <div className="flex-1 relative text-[22px] leading-[30px] font-open-sans inline-block min-w-[490px] mq825:text-xl mq825:leading-7 mq825:max-w-[95%] mq675:text-lg mq675:leading-6 mq675:max-w-[95%] mq450:text-lg mq450:leading-6 mq675:min-w-full">
             Before we were Armorock, our team operated as Geneva Pipe, a precast manufacturer that utilized alternative solutions such as liners, coatings, and admixtures in our solutions to corrosive environments. We saw firsthand how liners would delaminate, coatings would crack, and the underlying concrete would continue to corrode. After years of seeing these failures repeated, Vince Bussio, the founder of Armorock, decided the industry needed a better solution. He created the company with a vision: a fully corrosion-proof structure that solves the root of the problem. Since 2010, Armorock has been innovating in the wastewater industry, providing corrosion-resistant and sustainable solutions for municipalities across the United States.
           </div>
         </div>
