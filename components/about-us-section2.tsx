@@ -226,7 +226,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto mq450:gap-2">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto mq450:gap-2">
           <Image
             className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
@@ -234,20 +234,19 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             sizes="100vw"
             alt="Charlie Short"
             src="/charlie.png"
-            style={{ width: "268px" }}
           />
-          <div className="flex flex-row items-start justify-start py-0 pr-0 pl-1 mq450:pl-0 mq450:w-full mq450:justify-center">
-            <div className="flex flex-col items-start justify-start gap-[9px] mq450:items-center mq450:w-full">
-              <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
-                Charlie Short
-              </h3>
-              <i className="w-[273px] h-16 relative leading-[30px] flex items-center font-open-sans justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
+              Charlie Short
+            </h3>
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full mq450:justify-center">
+              <i className="w-[273px] h-16 relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
                 Director of Engineering
               </i>
             </div>
           </div>
         </section>
-        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto mq450:gap-2">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto mq450:gap-2">
           <Image
             className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
@@ -255,14 +254,13 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             sizes="100vw"
             alt="Brandon Roundy"
             src="/brandon.png"
-            style={{ width: "271.5px" }}
           />
-          <div className="flex flex-row items-start justify-start py-0 pr-0 pl-1 mq450:pl-0 mq450:w-full mq450:justify-center">
-            <div className="flex flex-col items-start justify-start gap-[9px] mq450:items-center mq450:w-full">
-              <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
-                Brandon Roundy
-              </h3>
-              <i className="w-[273px] h-16 relative leading-[30px] flex items-center font-open-sans justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
+          <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
+            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
+              Brandon Roundy
+            </h3>
+            <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full mq450:justify-center">
+              <i className="w-[273px] h-16 relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
                 Director of Quality
               </i>
             </div>
