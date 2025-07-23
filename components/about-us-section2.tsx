@@ -27,7 +27,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           />
           <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px] mq450:pr-0 mq450:w-full">
             <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
                 Ian Abernathy
               </h3>
               <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans mq450:pr-0 mq450:w-full">
@@ -50,7 +50,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           />
           <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px] mq450:pr-0 mq450:w-full" style={{ padding: "0px 1px 0px 0px" }}>
             <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
                 Thomas Liffrig, PE
               </h3>
               <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans mq450:pr-0 mq450:w-full" style={{ padding: "0px 8px 0px 0px" }}>
@@ -71,7 +71,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             src="/brad.png"
           />
           <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
               Brad Brei
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
@@ -91,7 +91,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             src="/robert.png"
           />
           <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
               Robert Guptill
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
@@ -112,7 +112,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             src="/john.png"
           />
           <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
               John Bilberry
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
@@ -133,7 +133,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             src="/brads.png"
           />
           <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+            <h3 className="m-0 w-[268px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
               Brad Swearingen
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full">
@@ -156,7 +156,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] mq450:pr-0 mq450:w-full mq450:items-center">
             <div className="flex flex-col items-start justify-start gap-1.5 mq450:items-center mq450:w-full">
               <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1 mq450:pl-0 mq450:pr-0 mq450:w-full">
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
                   Nichole Caldwell
                 </h3>
               </div>
@@ -178,7 +178,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             />
           </div>
           <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+            <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
               Lake O'Donnell
             </h3>
             <i className="w-[273px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
@@ -197,7 +197,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           />
           <div className="flex flex-row items-start justify-start py-0 pl-0.5 pr-0 mq450:items-center mq450:w-full mq450:pl-0">
             <div className="flex flex-col items-start justify-start gap-[9px] mq450:items-center mq450:w-full">
-              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
                 Dyanna Serrano
               </h3>
               <div className="flex flex-row items-start justify-start py-0 pl-px pr-0 font-open-sans mq450:pl-0 mq450:w-full">
@@ -218,7 +218,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             src="/josh.png"
           />
           <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
-            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+            <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
               Josh Elkins
             </h3>
             <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-[95px] mq450:h-auto">
@@ -239,7 +239,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-start py-0 pl-px pr-0" style={{ padding: "0px 0px 0px 1px" }}>
             <div className="flex flex-col items-start justify-start gap-[9px]">
               <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1" style={{ padding: "0px 3px" }}>
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
                   Charlie Short
                 </h3>
               </div>
@@ -262,7 +262,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-start py-0 pl-px pr-0" style={{ padding: "0px 0px 0px 3px" }}>
             <div className="flex flex-col items-start justify-start gap-[9px]">
               <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1" style={{ padding: "0px 3px" }}>
-                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-4 mq450:w-[95px] mq450:h-auto">
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-[95px] mq450:h-auto">
                   Brandon Roundy
                 </h3>
               </div>
