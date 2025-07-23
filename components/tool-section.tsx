@@ -77,7 +77,7 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
           </i>
         </div>
         <button
-          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-3 bg-firebrick w-auto min-w-[234.1px] h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:px-2 mq450:min-w-[220px]"
+          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-6 bg-firebrick w-auto min-w-[234.1px] h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:px-2 mq450:min-w-[220px]"
           onClick={onConnectWithUsButtonClick}
         >
           <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center whitespace-nowrap">
