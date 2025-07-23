@@ -9,15 +9,15 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
   return (
     <section
       id="meet-our-team"
-      className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-16 px-[53px] gap-[25px] text-left text-[65px] text-gray-100 font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq675:py-5 mq675:px-[26px] mq675:box-border mq825:pt-[27px] mq825:pb-[27px] mq825:box-border ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-16 px-[53px] gap-[25px] text-left text-[65px] text-gray-100 font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq675:py-5 mq675:px-[26px] mq675:box-border mq825:pt-[27px] mq825:pb-[27px] mq825:box-border mq450:pt-5 mq450:gap-[4px] ${className}`}
     >
       <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
         meet our team
       </h2>
       <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-[65px] mq675:gap-6 mq450:gap-3">
-        <section className="h-[505px] w-[289px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[289px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             loading="lazy"
             width={268}
             height={385}
@@ -38,9 +38,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[283px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[283px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             loading="lazy"
             width={268}
             height={385}
@@ -61,9 +61,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -81,9 +81,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -102,9 +102,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -123,9 +123,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -144,9 +144,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[519px] w-[281px] flex flex-col items-end justify-start gap-[15px] text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[519px] w-[281px] flex flex-col items-end justify-start gap-[15px] text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -166,10 +166,10 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[273px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[273px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <div className="flex flex-row items-start justify-end py-0 pl-[3px] pr-0.5">
             <Image
-              className="h-[385px] w-full relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+              className="h-[385px] w-full relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
               width={268}
               height={385}
               sizes="100vw"
@@ -186,9 +186,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </i>
           </div>
         </section>
-        <section className="h-[503px] w-[277px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[503px] w-[277px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -208,9 +208,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </div>
           </div>
         </section>
-        <section className="h-[505px] w-[274px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
+        <section className="h-[505px] w-[274px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[110px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -228,7 +228,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
         </section>
         <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
@@ -251,7 +251,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
         </section>
         <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald mq675:w-[240px] mq450:w-[100px] mq450:h-auto">
           <Image
-            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[105px] mq450:h-[160px]"
+            className="w-[268px] h-[385px] relative object-cover mq675:w-[220px] mq675:h-[320px] mq450:w-[95px] mq450:h-[160px] mq450:object-contain"
             width={268}
             height={385}
             sizes="100vw"
