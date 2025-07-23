@@ -45,7 +45,7 @@ const CTASection: NextPage<CTASectionType> = ({ className = "" }) => {
           </div>
         </button>
         <button
-          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-[15px] bg-firebrick h-[50px] min-w-[160px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:h-[45px] mq450:py-2"
+          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-[24px] bg-firebrick h-[50px] min-w-[160px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:h-[45px] mq450:py-2 mq450:px-[15px]"
           onClick={onConnectWithUsButtonClick}
         >
           <div className="text-xl leading-6 font-medium font-oswald text-white text-center mq450:text-lg">
