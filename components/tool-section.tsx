@@ -66,11 +66,10 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
           />
         </div>
         <button
-          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-px bg-firebrick w-[234.1px] h-[50px] box-border flex flex-row items-start justify-start hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-3 bg-firebrick w-auto min-w-[234.1px] h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
           onClick={onConnectWithUsButtonClick}
         >
-          <div className="w-[234.1px] relative bg-firebrick border-firebrick border-solid border-[3px] box-border h-[50px] hidden" />
-          <div className="w-[224.4px] relative text-xl leading-6 font-medium font-oswald text-white text-right inline-block shrink-0 z-[1]">
+          <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center whitespace-nowrap">
             CONDUCT YOUR OWN LCCA
           </div>
         </button>
