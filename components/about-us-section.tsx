@@ -63,7 +63,7 @@ const AboutUsSection: NextPage<AboutUsSectionType> = ({ className = "" }) => {
           <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[30px] uppercase font-medium font-[inherit] md:text-5xl md:leading-6 sm:text-4xl sm:leading-[18px]">
             proven in performance.
           </h2>
-          <h2 className="m-0 self-stretch relative text-[75px] leading-[30px] uppercase font-bold font-[inherit] md:text-6xl md:leading-6 sm:text-[35px] sm:leading-[17px] whitespace-nowrap mb-8 sm:mb-4 md:mb-5">
+          <h2 className="m-0 self-stretch relative text-[75px] leading-[30px] uppercase font-bold font-[inherit] lg:text-[75px] lg:leading-[30px] md:text-[55px] md:leading-[25px] sm:text-[35px] sm:leading-[17px] whitespace-nowrap mb-8 sm:mb-4 md:mb-5">
             trusted for the future.
           </h2>
         </div>
