@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import Ian from "./ian";
-import Chris from "./chris";
 
 export type AboutUsSection2Type = {
   className?: string;
@@ -17,19 +15,52 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
         meet our team
       </h2>
       <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start gap-[65px] mq450:gap-4 mq675:gap-8">
-        <Ian
-          ianAbernathy="Ian Abernathy"
-          chiefExecutiveOfficer="Chief Executive Officer"
-          image="/ian.png"
-        />
-        <Ian
-          ianWidth="283px"
-          ianAbernathy="Thomas Liffrig, PE"
-          chiefExecutiveOfficer="Chief Operating Officer"
-          image="/thomas.png"
-          frameDivPadding1="0px 1px 0px 0px"
-          memberRolesPadding="0px 8px 0px 0px"
-        />
+        <section className="h-[505px] w-[289px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            loading="lazy"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt="Ian Abernathy"
+            src="/ian.png"
+          />
+          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px]">
+            <div className="flex flex-col items-end justify-start gap-1.5">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+                Ian Abernathy
+              </h3>
+              <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans">
+                <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+                  Chief Executive Officer
+                </i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="h-[505px] w-[283px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            loading="lazy"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt="Thomas Liffrig"
+            src="/thomas.png"
+          />
+          <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[11px]" style={{ padding: "0px 1px 0px 0px" }}>
+            <div className="flex flex-col items-end justify-start gap-1.5">
+              <h3 className="m-0 w-[267px] h-[30px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+                Thomas Liffrig, PE
+              </h3>
+              <div className="flex flex-row items-start justify-end py-0 pl-0 pr-1 font-open-sans" style={{ padding: "0px 8px 0px 0px" }}>
+                <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
+                  Chief Operating Officer
+                </i>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="h-[505px] w-[281px] flex flex-col items-end justify-start gap-5 text-center text-xl text-gray-100 font-oswald">
           <Image
             className="w-[268px] h-[385px] relative object-cover"
@@ -195,24 +226,52 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </i>
           </div>
         </section>
-        <Chris
-          chrisHeight="497px"
-          chrisJuneman="Charlie Short"
-          directorOfEngineering="Director of Risk"
-          image="/charlie.png"
-          imageIconWidth="268px"
-          frameDivPadding2="0px 0px 0px 1px"
-          frameDivPadding3="0px 3px"
-        />
-        <Chris
-          chrisHeight="497px"
-          chrisJuneman="Brandon Roundy"
-          directorOfEngineering="Controller"
-          image="/brandon.png"
-          imageIconWidth="271.5px"
-          frameDivPadding2="0px 0px 0px 3px"
-          frameDivPadding3="0px 3px"
-        />
+        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt="Charlie Short"
+            src="/charlie.png"
+            style={{ width: "268px" }}
+          />
+          <div className="flex flex-row items-start justify-start py-0 pl-px pr-0" style={{ padding: "0px 0px 0px 1px" }}>
+            <div className="flex flex-col items-start justify-start gap-[9px]">
+              <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1" style={{ padding: "0px 3px" }}>
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+                  Charlie Short
+                </h3>
+              </div>
+              <i className="w-[274px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+                Director of Risk
+              </i>
+            </div>
+          </div>
+        </section>
+        <section className="h-[497px] w-[275px] flex flex-col items-start justify-start gap-3.5 text-center text-xl text-gray-100 font-oswald">
+          <Image
+            className="w-[268px] h-[385px] relative object-cover"
+            width={268}
+            height={385}
+            sizes="100vw"
+            alt="Brandon Roundy"
+            src="/brandon.png"
+            style={{ width: "271.5px" }}
+          />
+          <div className="flex flex-row items-start justify-start py-0 pl-px pr-0" style={{ padding: "0px 0px 0px 3px" }}>
+            <div className="flex flex-col items-start justify-start gap-[9px]">
+              <div className="flex flex-row items-start justify-start py-0 pl-[3px] pr-1" style={{ padding: "0px 3px" }}>
+                <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq450:text-base mq450:leading-6">
+                  Brandon Roundy
+                </h3>
+              </div>
+              <i className="w-[274px] h-[65px] relative leading-[30px] flex font-open-sans items-center justify-center mq450:text-base mq450:leading-6">
+                Controller
+              </i>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   );
