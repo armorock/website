@@ -37,7 +37,7 @@ const LandingPageSection3: NextPage<LandingPageSection3Type> = ({
         
         {/* Mobile-only paragraph that shows below image */}
         <div className="hidden md:block w-full">
-          <p className="m-0 text-xl leading-relaxed sm:text-xl xs:text-lg">
+          <p className="m-0 text-xl leading-relaxed sm:text-xl xs:text-lg md:text-center">
             Armorock polymer concrete is a sustainable, corrosion-resistant alternative to traditional precast concrete. With a mixture of resin, aggregate, sand, and FRP rebar for enhanced structure, our polymer concrete blend is 100% corrosion resistant. No matter the environment, our product will hold up against corrosion and keep wastewater systems strong over time.
           </p>
         </div>

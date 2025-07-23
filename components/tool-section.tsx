@@ -31,46 +31,56 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
         alt=""
         src="/rectangle-21@2x.png"
       />
-      <section className="w-[596px] flex flex-col items-end justify-start gap-5 max-w-full text-left text-[22px] text-black font-open-sans">
-        <div className="w-[607px] h-[380.3px] flex flex-col items-start justify-start pt-[43.2px] px-0 pb-[0.1px] box-border relative gap-[79px] max-w-[102%] mq450:gap-5 mq450:pt-7 mq450:pb-5 mq450:box-border mq675:gap-[39px]">
-          <div className="w-[607px] flex flex-row items-start justify-end py-0 px-[18px] box-border max-w-full">
-            <h3 className="m-0 h-[210px] w-[528px] relative text-[length:inherit] leading-[35px] font-normal font-[inherit] inline-block shrink-0 mq450:text-lg mq450:leading-7">
-              Going with an Armorock manhole, even though the base/risers are a
-              little more for material, it ends up being cheaper once you
-              consider the coating that’s required on the concrete manholes and
-              then the additional bypass time needed for this process. And given
-              the issues with coatings, it really makes more sense to go with an
-              Armorock manhole.
-            </h3>
+      <section className="w-full max-w-[596px] flex flex-col items-end justify-start gap-5 text-left text-[22px] text-black font-open-sans">
+        <div className="w-full flex flex-col items-start justify-start pt-12 px-4 pb-4 box-border relative gap-6 mq450:pt-10 mq450:pb-3 mq450:px-3 mq675:gap-4">
+          <div className="w-full relative">
+            {/* Opening quote mark */}
+            <Image
+              className="w-[65px] absolute top-[-30px] left-[-20px] object-cover z-[1] md:w-[45px] sm:w-[35px] mq450:w-[30px] mq450:top-[-16px] mq450:left-[-15px]"
+              loading="lazy"
+              width={65}
+              height={51}
+              sizes="(max-width: 450px) 30px, (max-width: 639px) 35px, (max-width: 767px) 45px, 65px"
+              alt="Opening quote"
+              src="/rectangle-22@2x.png"
+            />
+            
+            <div className="w-full pr-4 pl-16 md:pl-8 mq450:pl-8">
+              <h3 className="m-0 w-full relative text-[length:inherit] leading-[35px] font-normal font-[inherit] md:text-xl mq675:text-lg mq450:text-base mq450:leading-6">
+                Going with an Armorock manhole, even though the base/risers are a
+                little more for material, it ends up being cheaper once you
+                consider the coating that's required on the concrete manholes and
+                then the additional bypass time needed for this process. And given
+                the issues with coatings, it really makes more sense to go with an
+                Armorock manhole.
+              </h3>
+            </div>
+            
+            {/* Closing quote mark */}
+            <div className="w-full flex justify-end mt-3">
+              <div className="relative">
+                <Image
+                  className="w-[65px] object-contain z-[1] md:w-[45px] sm:w-[35px] mq450:w-[30px] transform rotate-180"
+                  loading="lazy"
+                  width={65}
+                  height={51}
+                  sizes="(max-width: 450px) 30px, (max-width: 639px) 35px, (max-width: 767px) 45px, 65px"
+                  alt="Closing quote"
+                  src="/rectangle-22@2x.png"
+                />
+              </div>
+            </div>
           </div>
-          <i className="w-[581px] h-12 relative text-xl leading-[35px] inline-block text-right mq450:text-base mq450:leading-7">
+          
+          <i className="w-full text-xl leading-[35px] text-right pr-6 mq675:text-lg mq450:text-sm mq450:leading-6 mq450:pr-3">
             Armorock Customer, Phoenix, AZ
           </i>
-          <Image
-            className="w-[65px] absolute !!m-[0 important] top-[0px] left-[0px] max-h-full object-cover z-[1]"
-            loading="lazy"
-            width={65}
-            height={51}
-            sizes="100vw"
-            alt=""
-            src="/rectangle-22@2x.png"
-          />
-          <Image
-            className="w-[65px] absolute !!m-[0 important] top-[249.1px] left-[542px] max-h-full object-contain z-[1]"
-            loading="lazy"
-            width={65}
-            height={51}
-            sizes="100vw"
-            alt=""
-            src="/rectangle-22@2x.png"
-          />
         </div>
         <button
-          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-px bg-firebrick w-[234.1px] h-[50px] box-border flex flex-row items-start justify-start hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
+          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-3 bg-firebrick w-auto min-w-[234.1px] h-[50px] box-border flex flex-row items-center justify-center hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:px-2 mq450:min-w-[220px]"
           onClick={onConnectWithUsButtonClick}
         >
-          <div className="w-[234.1px] relative bg-firebrick border-firebrick border-solid border-[3px] box-border h-[50px] hidden" />
-          <div className="w-[224.4px] relative text-xl leading-6 font-medium font-oswald text-white text-right inline-block shrink-0 z-[1]">
+          <div className="relative text-xl leading-6 font-medium font-oswald text-white text-center whitespace-nowrap">
             CONDUCT YOUR OWN LCCA
           </div>
         </button>
