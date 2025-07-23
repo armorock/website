@@ -37,7 +37,7 @@ const CTASection: NextPage<CTASectionType> = ({ className = "" }) => {
       </h3>
       <div className="w-full max-w-[1300px] flex flex-row items-center justify-center pt-8 px-0 pb-0 box-border gap-[38px] mq675:gap-[25px] mq450:gap-4 mq450:flex-wrap mq450:pt-6">
         <button
-          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-[22px] bg-firebrick h-[50px] min-w-[145px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:h-[45px] mq450:py-2"
+          className="cursor-pointer border-firebrick border-solid border-[3px] py-[9px] px-[22px] bg-firebrick h-[50px] min-w-[145px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border mq450:h-[45px] mq450:py-2 mq450:px-[10px] mq450:min-w-[130px]"
           onClick={onGetAQuoteButtonClick}
         >
           <div className="text-xl leading-6 font-medium font-oswald text-white text-center mq450:text-lg">
