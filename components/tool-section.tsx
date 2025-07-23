@@ -36,11 +36,11 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
           <div className="w-full relative">
             {/* Opening quote mark */}
             <Image
-              className="w-[65px] absolute top-[-30px] left-[-20px] object-cover z-[1] md:w-[50px] sm:w-[40px] mq450:w-[35px] mq450:top-[-20px] mq450:left-[-5px]"
+              className="w-[65px] absolute top-[-30px] left-[-20px] object-cover z-[1] md:w-[45px] sm:w-[35px] mq450:w-[30px] mq450:top-[-16px] mq450:left-[-5px]"
               loading="lazy"
               width={65}
               height={51}
-              sizes="(max-width: 450px) 35px, (max-width: 639px) 40px, (max-width: 767px) 50px, 65px"
+              sizes="(max-width: 450px) 30px, (max-width: 639px) 35px, (max-width: 767px) 45px, 65px"
               alt="Opening quote"
               src="/rectangle-22@2x.png"
             />
@@ -60,11 +60,11 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
             <div className="w-full flex justify-end mt-3">
               <div className="relative">
                 <Image
-                  className="w-[65px] object-contain z-[1] md:w-[50px] sm:w-[40px] mq450:w-[35px] transform rotate-180"
+                  className="w-[65px] object-contain z-[1] md:w-[45px] sm:w-[35px] mq450:w-[30px] transform rotate-180"
                   loading="lazy"
                   width={65}
                   height={51}
-                  sizes="(max-width: 450px) 35px, (max-width: 639px) 40px, (max-width: 767px) 50px, 65px"
+                  sizes="(max-width: 450px) 30px, (max-width: 639px) 35px, (max-width: 767px) 45px, 65px"
                   alt="Closing quote"
                   src="/rectangle-22@2x.png"
                 />
@@ -72,7 +72,7 @@ const ToolSection: NextPage<ToolSectionType> = ({ className = "" }) => {
             </div>
           </div>
           
-          <i className="w-full text-xl leading-[35px] text-right pr-6 mq450:text-base mq450:leading-7 mq450:pr-3">
+          <i className="w-full text-xl leading-[35px] text-right pr-6 mq675:text-lg mq450:text-sm mq450:leading-6 mq450:pr-3">
             Armorock Customer, Phoenix, AZ
           </i>
         </div>
