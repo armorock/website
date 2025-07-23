@@ -64,8 +64,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
               Robert Guptill
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
-                Plant Manager, Plant City, FL
+              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq450:text-base mq450:leading-6">
+                <span className="block">Plant Manager</span>
+                <span className="block">Plant City, FL</span>
               </i>
             </div>
           </div>
@@ -84,8 +85,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
               John Bilberry
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
-                Plant Manager, Boulder City, NV
+              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq450:text-base mq450:leading-6">
+                <span className="block">Plant Manager</span>
+                <span className="block">Boulder City, NV</span>
               </i>
             </div>
           </div>
@@ -104,8 +106,9 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
               Brad Swearingen
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans">
-              <i className="h-16 w-[274px] relative leading-[30px] flex items-center justify-center mq450:text-base mq450:leading-6">
-                Plant Manager, Sulphur Springs, TX
+              <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq450:text-base mq450:leading-6">
+                <span className="block">Plant Manager</span>
+                <span className="block">Sulphur Springs, TX</span>
               </i>
             </div>
           </div>
