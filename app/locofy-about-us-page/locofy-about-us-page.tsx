@@ -33,9 +33,9 @@ const LocofyAboutUsPage: NextPage = () => {
       <AboutUsSection2 />
       <AboutUsSection1 />
       <section className="self-stretch overflow-hidden flex flex-col items-center justify-start py-16 px-[49px] bg-[url('/awards-certs-section@3x.png')] bg-cover bg-no-repeat bg-[top] mq675:py-[42px] mq675:px-6 mq675:box-border">
-        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-0 mq450:flex-nowrap">
+        <div className="self-stretch flex flex-row items-center justify-center flex-nowrap content-center gap-0 mq450:flex-nowrap">
           <Image
-            className="w-[417px] relative max-h-full object-cover mq450:w-[125px]"
+            className="w-[417px] relative max-h-full object-cover mq1200:w-[340px] mq825:w-[220px] mq675:w-[160px] mq450:w-[125px]"
             width={417}
             height={326}
             sizes="100vw"
@@ -43,7 +43,7 @@ const LocofyAboutUsPage: NextPage = () => {
             src="/hs-20@2x.png"
           />
           <Image
-            className="w-[291px] relative max-h-full object-cover mq450:w-[100px]"
+            className="w-[291px] relative max-h-full object-cover mq1200:w-[210px] mq825:w-[140px] mq675:w-[100px] mq450:w-[100px]"
             width={291}
             height={291}
             sizes="100vw"
@@ -51,7 +51,7 @@ const LocofyAboutUsPage: NextPage = () => {
             src="/iso-9001@2x.png"
           />
           <Image
-            className="w-[445px] relative max-h-full object-cover mq450:w-[130px]"
+            className="w-[445px] relative max-h-full object-cover mq1200:w-[360px] mq825:w-[230px] mq675:w-[170px] mq450:w-[130px]"
             width={445}
             height={371}
             sizes="100vw"
