@@ -60,7 +60,7 @@ const LocofyOurProductsPage: NextPage = () => {
       </div>
       <OurProductsSection />
       <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
-        <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start pt-0 px-0 pb-0.5 box-border gap-16 max-w-full md:gap-8 sm:gap-6 xs:gap-4 md:flex-col md:items-center">
+        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start pt-0 px-0 pb-0.5 box-border gap-16 max-w-full md:gap-8 sm:gap-6 xs:gap-4 md:flex-col md:items-center">
           <div className="flex flex-col items-center justify-start gap-[38px] md:w-full md:gap-5 sm:gap-4">
             <div className="w-full flex justify-center">
               <Image
@@ -74,8 +74,8 @@ const LocofyOurProductsPage: NextPage = () => {
               />
             </div>
           </div>
-          <section className="flex flex-col items-end justify-start gap-[15px] max-w-full text-left text-[22px] text-gray-100 font-open-sans md:items-center md:w-full">
-            <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full md:items-center">
+          <section className="flex flex-col items-center justify-center gap-[15px] max-w-full text-left text-[22px] text-gray-100 font-open-sans md:w-full">
+            <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full">
               <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-xl xs:text-lg">
                 Armorock Polymer Concrete Structures are built to last, creating a more sustainable future for the the waste water industry. We believe in the sustainability of our product, standing behind the importance of offering a solution that meets the needs of our stakeholders. All of our structures come with a 50-year corrosion warranty, creating peace of mind for municipalities that invest in our high-quality, long-lasting solution to corrosion.
               </p>
