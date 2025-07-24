@@ -61,19 +61,18 @@ const LocofyOurProductsPage: NextPage = () => {
       <OurProductsSection />
       <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
         <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start pt-0 px-0 pb-0.5 box-border gap-16 max-w-full md:gap-8 sm:gap-6 xs:gap-4 md:flex-col md:items-center">
-          <div className="w-[495px] flex flex-col items-center justify-start gap-[38px] md:w-full md:gap-5 sm:gap-4">
-            <Image
-              className="w-[184.3px] relative max-h-full md:w-[150px] sm:w-[120px]"
-              loading="lazy"
-              width={184.3}
-              height={194}
-              sizes="(max-width: 767px) 150px, (max-width: 639px) 120px, 184.3px"
-              alt="50 Year Warranty Logo"
-              src="/50year-warranty-image.svg"
-            />
-            <h2 className="m-0 w-full text-[clamp(1rem,2vw,1.5rem)] leading-[clamp(21px,2vw,35px)] uppercase font-medium font-oswald inline-block text-center text-gray-100">
-              50 Year Warranty
-            </h2>
+          <div className="flex flex-col items-center justify-start gap-[38px] md:w-full md:gap-5 sm:gap-4">
+            <div className="w-full flex justify-center">
+              <Image
+                className="w-[340px] h-[340px] max-w-full object-contain mb-0"
+                loading="lazy"
+                width={340}
+                height={340}
+                sizes="(max-width: 767px) 200px, 340px"
+                alt="50 Year Warranty Logo"
+                src="/50year-warranty-image.svg"
+              />
+            </div>
           </div>
           <section className="flex flex-col items-end justify-start gap-[15px] max-w-full text-left text-[22px] text-gray-100 font-open-sans md:items-center md:w-full">
             <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full md:items-center">
