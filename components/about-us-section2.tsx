@@ -118,7 +118,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full mq450:justify-center">
               <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
                 <span className="block">Plant Manager</span>
-                <span className="block">Vegas, NV</span>
+                <span className="block">Boulder City, NV</span>
               </i>
             </div>
           </div>
@@ -138,8 +138,8 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full mq450:justify-center">
               <i className="h-16 w-[274px] relative leading-[30px] flex flex-col items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
-                <span className="block">Director of Operations</span>
-                <span className="block">Vegas, NV</span>
+                <span className="block">Plant Manager</span>
+                <span className="block">Sulphur Springs, TX</span>
               </i>
             </div>
           </div>
@@ -156,10 +156,10 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] mq450:pr-0 mq450:w-full mq450:items-center">
             <div className="flex flex-col items-end justify-start gap-1.5 mq450:items-center mq450:w-full">
                 <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
-                  Nicole Michels
+                  Nicole Caldwell
                 </h3>
               <i className="w-[274px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
-                Chief Administrative Officer
+                Director of Business Operations
               </i>
             </div>
           </div>
@@ -177,10 +177,10 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
           </div>
           <div className="flex flex-col items-end justify-start gap-[13px] mq450:gap-1">
             <h3 className="m-0 h-[30px] w-[267px] relative text-[length:inherit] leading-[30px] font-medium font-[inherit] flex items-center justify-center mq675:w-[220px] mq450:text-sm mq450:leading-5 mq450:w-full mq450:h-auto mq450:text-center">
-              Lake Bennett
+              Lake O'Donnell
             </h3>
             <i className="w-[273px] h-16 relative leading-[30px] flex font-open-sans items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
-              National Sales Director
+              Director of Project Management
             </i>
           </div>
         </section>
@@ -241,7 +241,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full mq450:justify-center">
               <i className="w-[273px] h-16 relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
-                Director of Engineering
+                Director of Risk/IT
               </i>
             </div>
           </div>
@@ -261,7 +261,7 @@ const AboutUsSection2: NextPage<AboutUsSection2Type> = ({ className = "" }) => {
             </h3>
             <div className="flex flex-row items-start justify-end py-0 pl-0 pr-[7px] font-open-sans mq450:pr-0 mq450:w-full mq450:justify-center">
               <i className="w-[273px] h-16 relative leading-[30px] flex items-center justify-center mq675:w-[220px] mq450:text-xs mq450:leading-3 mq450:w-full mq450:h-auto mq450:text-center">
-                Director of Quality
+                Controller
               </i>
             </div>
           </div>
