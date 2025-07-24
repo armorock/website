@@ -76,7 +76,7 @@ const LocofyOurProductsPage: NextPage = () => {
           </div>
           <section className="flex flex-col items-center justify-center gap-[15px] max-w-full text-left text-[22px] text-gray-100 font-open-sans md:w-full">
             <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full">
-              <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-xl xs:text-lg">
+              <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-xl xs:text-lg text-justify text-center">
                 Armorock Polymer Concrete Structures are built to last, creating a more sustainable future for the the waste water industry. We believe in the sustainability of our product, standing behind the importance of offering a solution that meets the needs of our stakeholders. All of our structures come with a 50-year corrosion warranty, creating peace of mind for municipalities that invest in our high-quality, long-lasting solution to corrosion.
               </p>
             </div>
