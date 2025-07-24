@@ -59,16 +59,16 @@ const LocofyOurProductsPage: NextPage = () => {
         <Header onFAQTextClick={onFAQTextClick} />
       </div>
       <OurProductsSection />
-      <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
+      <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-0 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-0 mq450:pb-0 mq450:box-border">
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-start pt-0 px-0 pb-0.5 box-border gap-16 max-w-full md:gap-8 sm:gap-6 xs:gap-4 md:flex-col md:items-center">
           <div className="flex flex-col items-center justify-start gap-[38px] md:w-full md:gap-5 sm:gap-4">
             <div className="w-full flex justify-center">
               <Image
-                className="w-[340px] h-[340px] max-w-full object-contain mb-0"
+                className="w-[420px] h-[420px] max-w-full object-contain mb-0"
                 loading="lazy"
-                width={340}
-                height={340}
-                sizes="(max-width: 767px) 200px, 340px"
+                width={420}
+                height={420}
+                sizes="(max-width: 767px) 240px, 420px"
                 alt="50 Year Warranty Logo"
                 src="/50year-warranty-image.svg"
               />
