@@ -60,17 +60,28 @@ const LocofyOurProductsPage: NextPage = () => {
       </div>
       <OurProductsSection />
       <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
-        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[50px] mq675:gap-[25px]">
-          <Image
-            className="w-[468px] relative max-h-full"
-            loading="lazy"
-            width={468}
-            height={306}
-            sizes="100vw"
-            alt=""
-            src="/50year-warranty-image.svg"
-          />
-          <p className="m-0 w-[756px] relative leading-[35px] inline-block shrink-0 mq450:text-lg mq450:leading-7">{`Armorock Polymer Concrete Structures are built to last, creating a more sustainable future for the the waste water industry. We believe in the sustainability of our product, standing behind the importance of offering a solution that meets the needs of our stakeholders. All of our structures come with a 50-year corrosion warranty, creating peace of mind for municipalities that invest in our high-quality, long-lasting solution to corrosion. `}</p>
+        <div className="self-stretch flex flex-row items-start justify-center flex-wrap content-start pt-0 px-0 pb-0.5 box-border gap-16 max-w-full md:gap-8 sm:gap-6 xs:gap-4 md:flex-col md:items-center">
+          <div className="w-[495px] flex flex-col items-center justify-start gap-[38px] md:w-full md:gap-5 sm:gap-4">
+            <Image
+              className="w-[184.3px] relative max-h-full md:w-[150px] sm:w-[120px]"
+              loading="lazy"
+              width={184.3}
+              height={194}
+              sizes="(max-width: 767px) 150px, (max-width: 639px) 120px, 184.3px"
+              alt="50 Year Warranty Logo"
+              src="/50year-warranty-image.svg"
+            />
+            <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[25px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl text-gray-100">
+              50 Year Warranty
+            </h2>
+          </div>
+          <section className="flex flex-col items-end justify-start gap-[15px] max-w-full text-left text-[22px] text-gray-100 font-open-sans md:items-center md:w-full">
+            <div className="w-[761px] flex flex-col items-start justify-start gap-[20px] max-w-full md:items-center">
+              <p className="m-0 w-[750px] relative leading-[30px] inline-block md:w-full md:text-center md:text-xl md:leading-relaxed sm:text-xl xs:text-lg">
+                Armorock Polymer Concrete Structures are built to last, creating a more sustainable future for the the waste water industry. We believe in the sustainability of our product, standing behind the importance of offering a solution that meets the needs of our stakeholders. All of our structures come with a 50-year corrosion warranty, creating peace of mind for municipalities that invest in our high-quality, long-lasting solution to corrosion.
+              </p>
+            </div>
+          </section>
         </div>
       </section>
       <section
