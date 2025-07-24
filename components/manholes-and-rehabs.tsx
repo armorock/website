@@ -49,11 +49,14 @@ const ManholesAndRehabs: NextPage<ManholesAndRehabsType> = ({
 
   return (
     <section
-      className={`h-[398px] w-[406px] flex flex-col items-start justify-start gap-8 cursor-pointer text-left text-3xl text-white font-oswald mq450:gap-4 ${className}`}
+      className={`h-[clamp(185px,24vw,275px)] w-[clamp(140px,22vw,215px)] flex flex-col items-center justify-start gap-4 cursor-pointer text-center text-3xl text-white font-oswald transition-all duration-300
+      sm:h-[clamp(145px,32vw,195px)] sm:w-[clamp(110px,30vw,155px)]
+      xs:h-[clamp(115px,40vw,145px)] xs:w-[clamp(90px,36vw,115px)]
+      ${className}`}
       onClick={onManholesAndRehabsClick}
     >
       <Image
-        className="w-[406px] h-[331px] relative"
+        className="w-full h-[clamp(90px,16vw,135px)] object-contain sm:h-[clamp(70px,24vw,105px)] xs:h-[clamp(55px,32vw,85px)]"
         loading="lazy"
         width={406}
         height={331}
@@ -61,17 +64,17 @@ const ManholesAndRehabs: NextPage<ManholesAndRehabsType> = ({
         alt=""
         src={manholes}
       />
-      <div
-        className="flex flex-row items-start justify-start py-0 pl-[121px] pr-[120px] mq450:pl-5 mq450:pr-5 mq450:box-border"
-        style={frameDivStyle}
+      <h2
+        className="m-0 w-full text-[clamp(1rem,2vw,1.5rem)] leading-[clamp(21px,2vw,35px)] uppercase font-medium font-[inherit] inline-block text-center"
+        style={liftStationsStyle}
       >
-        <h2
-          className="m-0 w-[164px] relative text-[length:inherit] leading-[35px] uppercase font-medium font-[inherit] inline-block mq450:text-lg mq450:leading-[21px] mq825:text-2xl mq825:leading-7"
-          style={liftStationsStyle}
-        >
-          {manholesRehabs}
-        </h2>
-      </div>
+        {manholesRehabs === 'rehabilitation inserts' ? (
+          <>
+            <span className="hidden xs:inline">rehabilitation<br />inserts</span>
+            <span className="xs:hidden">rehabilitation inserts</span>
+          </>
+        ) : manholesRehabs}
+      </h2>
     </section>
   );
 };
