@@ -50,27 +50,27 @@ const AboutUsSection1: NextPage<AboutUsSection1Type> = ({ className = "" }) => {
       </div>
       <section className="w-full max-w-[876px] flex flex-col items-center justify-start text-center text-[65px] text-firebrick font-oswald px-2">
         <div className="flex flex-row items-center justify-center w-full gap-[25px] mq450:gap-[10px]">
-          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px] px-4">
+          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
             <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">Q</h2>
             <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Quality</div>
           </div>
-          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
             <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">U</h2>
             <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Unified</div>
           </div>
-          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
             <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">E</h2>
             <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Efficient</div>
           </div>
-          <div className="flex flex-col items-center justify-center w-[125.4px] mq450:w-[36px]">
+          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
             <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">S</h2>
             <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Safe</div>
           </div>
-          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
             <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">S</h2>
             <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Sustainable</div>
           </div>
-          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
             <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">T</h2>
             <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Transparent</div>
           </div>
