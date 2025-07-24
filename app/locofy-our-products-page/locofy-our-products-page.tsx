@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import Header from "../../components/header";
@@ -9,10 +9,21 @@ import LiftStationsSection from "../../components/lift-stations-section";
 import CustomStructuresSection from "../../components/custom-structures-section";
 import EngineeringDocsSection from "../../components/engineering-docs-section";
 import Footer from "../../components/footer";
+import MobileNav from "../../components/mobile-nav";
 
 const LocofyOurProductsPage: NextPage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 767); // md breakpoint
+    };
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   useEffect(() => {
     // Handle hash navigation when page loads
@@ -39,6 +50,10 @@ const LocofyOurProductsPage: NextPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start gap-[3px] leading-[normal] tracking-[normal]">
+      {/* Mobile Navigation - Only visible on small screens */}
+      <div className="hidden md:block w-full">
+        <MobileNav />
+      </div>
       <Header onFAQTextClick={onFAQTextClick} />
       <OurProductsSection />
       <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
