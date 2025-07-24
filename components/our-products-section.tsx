@@ -44,7 +44,7 @@ const OurProductsSection: NextPage<OurProductsSectionType> = ({
 
   return (
     <section
-      className={`self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start pt-[27px] px-[53px] pb-16 text-left text-6xl text-white font-oswald mq675:pt-5 mq675:pb-[42px] mq675:box-border mq825:pl-[26px] mq825:pr-[26px] mq825:box-border ${className}`}
+      className={`self-stretch bg-gray-100 overflow-hidden flex flex-col items-start justify-start pt-[27px] px-[53px] pb-16 text-left text-6xl text-white font-oswald mq675:pt-2 mq675:pb-[12px] mq675:box-border mq825:pl-[26px] mq825:pr-[26px] mq825:box-border ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-start">
         <div className="flex-1 flex flex-col items-start justify-start gap-3">
