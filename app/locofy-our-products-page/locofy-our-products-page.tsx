@@ -71,7 +71,7 @@ const LocofyOurProductsPage: NextPage = () => {
               alt="50 Year Warranty Logo"
               src="/50year-warranty-image.svg"
             />
-            <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[25px] uppercase font-medium font-[inherit] md:text-5xl md:leading-tight sm:text-5xl xs:text-4xl text-gray-100">
+            <h2 className="m-0 w-full text-[clamp(1rem,2vw,1.5rem)] leading-[clamp(21px,2vw,35px)] uppercase font-medium font-oswald inline-block text-center text-gray-100">
               50 Year Warranty
             </h2>
           </div>
