@@ -54,7 +54,10 @@ const LocofyOurProductsPage: NextPage = () => {
       <div className="hidden md:block w-full">
         <MobileNav />
       </div>
-      <Header onFAQTextClick={onFAQTextClick} />
+      {/* Desktop Header - Only visible on md and up */}
+      <div className="block md:hidden w-full">
+        <Header onFAQTextClick={onFAQTextClick} />
+      </div>
       <OurProductsSection />
       <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
         <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[50px] mq675:gap-[25px]">
