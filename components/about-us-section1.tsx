@@ -9,92 +9,70 @@ const AboutUsSection1: NextPage<AboutUsSection1Type> = ({ className = "" }) => {
   return (
     <section
       id="mission-and-values"
-      className={`self-stretch bg-gray-100 overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-[100px] box-border gap-[25px] text-center text-6xl text-white font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq675:py-[27px] mq675:px-[50px] mq675:box-border ${className}`}
+      className={`self-stretch bg-gray-100 overflow-hidden shrink-0 flex flex-col items-center justify-start py-16 px-[100px] box-border gap-[25px] text-center text-6xl text-white font-oswald lg:pt-[42px] lg:pb-[42px] lg:box-border mq450:py-8 mq450:px-4 mq450:gap-[15px] mq450:box-border mq675:py-[27px] mq675:px-[50px] mq675:box-border ${className}`}
     >
       <h2 className="m-0 self-stretch relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
         our mission
       </h2>
-      <p className="m-0 w-[996px] h-[91px] relative text-[35px] leading-10 inline-block shrink-0 mq450:text-[21px] mq450:leading-6 mq825:text-[28px] mq825:leading-8">
+      <p className="m-0 w-full max-w-[996px] relative text-[35px] leading-10 inline-block mq450:text-[21px] mq450:leading-6 mq825:text-[28px] mq825:leading-8 px-2">
         {" "}
         At Armorock, we want to drive the future of sustainable infrastructure
         with high quality, innovative solutions that create lasting value.
       </p>
-      <div className="my-4">
-        <iframe 
-          style={{width: "843px", height: "474px", border: "0"}}
-          src="https://www.youtube.com/embed/pd46DYvsP3o" 
-          title="Armorock Values: QUESST" 
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerPolicy="strict-origin-when-cross-origin" 
-          allowFullScreen
-        ></iframe>
+      <div className="my-4 w-full max-w-[843px] px-2">
+        <div className="relative w-full pb-[56.25%]">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/pd46DYvsP3o"
+            title="Armorock Values: QUESST"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
-      <div className="w-[598px] h-[124px] flex flex-row items-start justify-start gap-[20.2px]">
+      <div className="w-full max-w-[598px] flex flex-row items-center justify-center gap-[20.2px] px-4">
         <Image
-          className="w-[117.8px] relative max-h-full"
+          className="w-[90px] relative max-h-full mq450:w-[60px]"
           loading="lazy"
-          width={117.8}
-          height={124}
+          width={90}
+          height={95}
           sizes="100vw"
-          alt=""
+          alt="Armorock Values Logo"
           src="/armorock-values-logo.svg"
         />
-        <div className="flex flex-col items-start justify-start pt-3 px-0 pb-0">
-          <h2 className="m-0 w-[460px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
-            armorock values
+        <div className="flex flex-col items-start justify-center pt-3 px-0 pb-0">
+          <h2 className="m-0 w-full max-w-[460px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-4xl mq450:leading-[60px] mq825:text-5xl mq825:leading-[80px]">
+            <span className="whitespace-nowrap">armorock values</span>
           </h2>
         </div>
       </div>
-      <section className="w-[876px] h-[168px] flex flex-col items-end justify-start text-center text-[65px] text-firebrick font-oswald mq825:h-auto">
-        <div className="flex flex-row items-start justify-end py-0 pl-0 pr-0.5">
-          <div className="flex flex-row items-start justify-start gap-[25px] shrink-0 mq825:flex-wrap">
-            <h2 className="m-0 h-[168px] w-[124.6px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
-              Q
-            </h2>
-            <h2 className="m-0 h-[168px] w-[124.6px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
-              U
-            </h2>
-            <h2 className="m-0 h-[168px] w-[124.6px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
-              E
-            </h2>
-            <h2 className="m-0 h-[168px] w-[125.4px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
-              S
-            </h2>
-            <h2 className="m-0 h-[168px] w-[124.6px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
-              S
-            </h2>
-            <h2 className="m-0 h-[168px] w-[124.6px] relative text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] inline-block mq450:text-[39px] mq450:leading-[60px] mq825:text-[52px] mq825:leading-[80px]">
-              T
-            </h2>
+      <section className="w-full max-w-[876px] flex flex-col items-center justify-start text-center text-[65px] text-firebrick font-oswald px-2">
+        <div className="flex flex-row items-center justify-center w-full gap-[25px] mq450:gap-[10px]">
+          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px] px-4">
+            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">Q</h2>
+            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Quality</div>
           </div>
-        </div>
-        <div className="flex flex-row items-start justify-start gap-[19px] shrink-0 z-[1] mt-[-69px] relative text-[25px] text-white mq825:flex-wrap">
-          <div className="w-[131px] flex flex-col items-start justify-start">
-            <div className="w-[85px] h-[69px] relative leading-[30px] font-medium flex items-center justify-center shrink-0 mq450:text-xl mq450:leading-6">
-              Quality
-            </div>
+          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">U</h2>
+            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Unified</div>
           </div>
-          <div className="w-[131px] flex flex-col items-start justify-start">
-            <div className="w-[86px] h-[69px] relative leading-[30px] font-medium flex items-center justify-center shrink-0 mq450:text-xl mq450:leading-6">
-              Unified
-            </div>
+          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">E</h2>
+            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Efficient</div>
           </div>
-          <div className="w-[131px] flex flex-col items-start justify-start">
-            <div className="w-[85px] h-[69px] relative leading-[30px] font-medium flex items-center justify-center shrink-0 mq450:text-xl mq450:leading-6">
-              Efficient
-            </div>
+          <div className="flex flex-col items-center justify-center w-[125.4px] mq450:w-[36px]">
+            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">S</h2>
+            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Safe</div>
           </div>
-          <div className="flex flex-col items-start justify-start py-0 pl-0 pr-[26px]">
-            <div className="w-[85px] h-[69px] relative leading-[30px] font-medium flex items-center justify-center mq450:text-xl mq450:leading-6">
-              Safe
-            </div>
+          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">S</h2>
+            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Sustainable</div>
           </div>
-          <div className="h-[69px] w-32 relative leading-[30px] font-medium flex items-center justify-center mq450:text-xl mq450:leading-6">
-            Sustainable
-          </div>
-          <div className="h-[69px] w-[129px] relative leading-[30px] font-medium flex items-center justify-center mq450:text-xl mq450:leading-6">
-            Transparent
+          <div className="flex flex-col items-center justify-center w-[124.6px] mq450:w-[36px]">
+            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">T</h2>
+            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Transparent</div>
           </div>
         </div>
       </section>
