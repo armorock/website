@@ -49,30 +49,32 @@ const AboutUsSection1: NextPage<AboutUsSection1Type> = ({ className = "" }) => {
         </div>
       </div>
       <section className="w-full max-w-[876px] flex flex-col items-center justify-start text-center text-[65px] text-firebrick font-oswald px-2">
-        <div className="flex flex-row items-center justify-center w-full gap-[25px] mq450:gap-[10px]">
-          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
-            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">Q</h2>
-            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Quality</div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
-            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">U</h2>
-            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Unified</div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
-            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">E</h2>
-            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Efficient</div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
-            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">S</h2>
-            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Safe</div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
-            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">S</h2>
-            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Sustainable</div>
-          </div>
-          <div className="flex flex-col items-center justify-center w-[124px] mq450:w-[70px] px-4">
-            <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq450:text-[24px] mq450:leading-[32px]">T</h2>
-            <div className="relative leading-[30px] font-medium text-white text-[25px] mq450:text-xl mq450:leading-6">Transparent</div>
+        <div className="flex justify-center">
+          <div className="flex flex-row items-center justify-between w-[900px] mq1200:gap-[40px] mq825:w-[700px] mq825:gap-[24px] mq675:w-[550px] mq675:gap-[16px] mq450:w-[320px] mq450:gap-[8px] gap-[56px]">
+            <div className="flex flex-col items-center justify-center w-[124px] mq825:w-[100px] mq675:w-[80px] mq450:w-[50px] text-center overflow-hidden">
+              <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq825:text-[32px] mq675:text-[28px] mq450:text-[22px] mq450:leading-[26px]">Q</h2>
+              <div className="relative leading-[30px] font-medium text-white text-[25px] mq825:text-lg mq675:text-base mq450:text-xs mq450:leading-4">Quality</div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-[124px] mq825:w-[100px] mq675:w-[80px] mq450:w-[50px] text-center overflow-hidden">
+              <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq825:text-[32px] mq675:text-[28px] mq450:text-[22px] mq450:leading-[26px]">U</h2>
+              <div className="relative leading-[30px] font-medium text-white text-[25px] mq825:text-lg mq675:text-base mq450:text-xs mq450:leading-4">Unified</div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-[124px] mq825:w-[100px] mq675:w-[80px] mq450:w-[50px] text-center overflow-hidden">
+              <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq825:text-[32px] mq675:text-[28px] mq450:text-[22px] mq450:leading-[26px]">E</h2>
+              <div className="relative leading-[30px] font-medium text-white text-[25px] mq825:text-lg mq675:text-base mq450:text-xs mq450:leading-4">Efficient</div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-[124px] mq825:w-[100px] mq675:w-[80px] mq450:w-[50px] text-center overflow-hidden">
+              <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq825:text-[32px] mq675:text-[28px] mq450:text-[22px] mq450:leading-[26px]">S</h2>
+              <div className="relative leading-[30px] font-medium text-white text-[25px] mq825:text-lg mq675:text-base mq450:text-xs mq450:leading-4">Safe</div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-[124px] mq825:w-[100px] mq675:w-[80px] mq450:w-[50px] text-center overflow-hidden">
+              <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq825:text-[32px] mq675:text-[28px] mq450:text-[22px] mq450:leading-[26px]">S</h2>
+              <div className="relative leading-[30px] font-medium text-white text-[25px] mq825:text-lg mq675:text-base mq450:text-xs mq450:leading-4">Sustainable</div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-[124px] mq825:w-[100px] mq675:w-[80px] mq450:w-[50px] text-center overflow-hidden">
+              <h2 className="m-0 text-[length:inherit] leading-[100px] uppercase font-medium font-[inherit] text-firebrick mq825:text-[32px] mq675:text-[28px] mq450:text-[22px] mq450:leading-[26px]">T</h2>
+              <div className="relative leading-[30px] font-medium text-white text-[25px] mq825:text-lg mq675:text-base mq450:text-xs mq450:leading-4">Transparent</div>
+            </div>
           </div>
         </div>
       </section>
