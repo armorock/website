@@ -40,8 +40,8 @@ const LiftStationsSection: NextPage<LiftStationsSectionType> = ({
             </div>
           </div>
         </div>
-        <section className="w-[498px] flex flex-col items-start justify-start gap-[6.3px] text-left text-[22px] text-white font-open-sans">
-          <p className="m-0 self-stretch h-[245px] relative leading-[35px] inline-block mq450:text-lg mq450:leading-7">
+        <section className="w-[498px] flex flex-col items-start justify-start gap-6 min-h-[auto] text-left text-[22px] text-white font-open-sans">
+          <p className="m-0 self-stretch min-h-[44.8px] relative leading-[35px] inline-block mq450:text-lg mq450:leading-7">
             Armorock Lift Stations stand up to intense, highly corrosive environments found in pump stations, wet wells, dry wells, and other structures. Polymer Concrete Lift Stations are available in 48” to 192” inside diameter sizes and can be customized to accommodate any pump supplier requirements.
           </p>
           <button

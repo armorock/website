@@ -27,8 +27,8 @@ const CustomStructuresSection: NextPage<CustomStructuresSectionType> = ({
             custom structures
           </h2>
         </div>
-        <section className="w-[498px] flex flex-col items-start justify-start gap-9 text-left text-[22px] text-black font-open-sans mq675:gap-[18px]">
-          <p className="m-0 self-stretch relative leading-[30px] mq450:text-lg mq450:leading-6">{`If it can be made it concrete, Armorock can make it in polymer. Armorock Precast Polymer Concrete Custom Structures are available to meet the needs of highly specific job requirements. `}</p>
+        <section className="w-[498px] flex flex-col items-start justify-start gap-6 min-h-[auto] text-left text-[22px] text-black font-open-sans mq675:gap-[18px]">
+          <p className="m-0 self-stretch min-h-[44.8px] relative leading-[30px] mq450:text-lg mq450:leading-6">{`If it can be made it concrete, Armorock can make it in polymer. Armorock Precast Polymer Concrete Custom Structures are available to meet the needs of highly specific job requirements. `}</p>
           <button
             className="cursor-pointer border-gray-100 border-solid border-[3px] py-2 px-0 bg-gray-100 w-[145px] h-[44.8px] box-border flex flex-row items-center justify-center hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
             onClick={onGetAQuoteButtonClick}
