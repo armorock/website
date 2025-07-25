@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import Header from "../../components/header";
@@ -9,21 +9,10 @@ import LiftStationsSection from "../../components/lift-stations-section";
 import CustomStructuresSection from "../../components/custom-structures-section";
 import EngineeringDocsSection from "../../components/engineering-docs-section";
 import Footer from "../../components/footer";
-import MobileNav from "../../components/mobile-nav";
 
 const LocofyOurProductsPage: NextPage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth <= 767); // md breakpoint
-    };
-    checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-    return () => window.removeEventListener('resize', checkIfMobile);
-  }, []);
 
   useEffect(() => {
     // Handle hash navigation when page loads
@@ -50,37 +39,20 @@ const LocofyOurProductsPage: NextPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start gap-[3px] leading-[normal] tracking-[normal]">
-      {/* Mobile Navigation - Only visible on small screens */}
-      <div className="hidden md:block w-full">
-        <MobileNav />
-      </div>
-      {/* Desktop Header - Only visible on md and up */}
-      <div className="block md:hidden w-full">
-        <Header onFAQTextClick={onFAQTextClick} />
-      </div>
+      <Header onFAQTextClick={onFAQTextClick} />
       <OurProductsSection />
-      <section className="w-full overflow-hidden flex flex-col items-center justify-center py-12 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-8 mq450:pb-8 mq450:box-border">
-        <div className="w-full flex flex-row items-center justify-center flex-wrap content-start pt-0 px-0 pb-0.5 box-border gap-16 max-w-full sm:gap-8 xs:gap-6 xs:flex-col xs:items-center xs:w-auto xs:mx-auto">
-          <div className="flex flex-col items-center justify-start gap-[38px] w-full max-w-[420px] sm:max-w-[300px] xs:max-w-[200px] xs:gap-5 xs:mb-6 xs:w-auto xs:mx-auto">
-            <div className="w-full flex justify-center">
-              <Image
-                className="w-full h-auto max-w-full object-contain mb-0"
-                loading="lazy"
-                width={420}
-                height={420}
-                sizes="(max-width: 480px) 140px, (max-width: 640px) 200px, (max-width: 900px) 300px, 420px"
-                alt="50 Year Warranty Logo"
-                src="/50year-warranty-image.svg"
-              />
-            </div>
-          </div>
-          <section className="flex flex-col items-center justify-center gap-[15px] w-full max-w-[600px] sm:max-w-[500px] xs:max-w-[350px] text-left text-[22px] text-gray-100 font-open-sans xs:w-auto xs:mx-auto">
-            <div className="w-full flex flex-col items-start justify-start gap-[20px]">
-              <p className="m-0 w-full max-w-[600px] relative leading-[30px] inline-block md:text-center md:text-xl md:leading-relaxed sm:text-xl xs:text-lg text-justify text-center">
-                Armorock Polymer Concrete Structures are built to last, creating a more sustainable future for the the waste water industry. We believe in the sustainability of our product, standing behind the importance of offering a solution that meets the needs of our stakeholders. All of our structures come with a 50-year corrosion warranty, creating peace of mind for municipalities that invest in our high-quality, long-lasting solution to corrosion.
-              </p>
-            </div>
-          </section>
+      <section className="self-stretch overflow-hidden flex flex-col items-end justify-start py-16 px-[15px] text-center text-[22px] text-gray-100 font-open-sans mq450:pt-[42px] mq450:pb-[42px] mq450:box-border">
+        <div className="self-stretch flex flex-row items-center justify-center flex-wrap content-center gap-[50px] mq675:gap-[25px]">
+          <Image
+            className="w-[468px] relative max-h-full"
+            loading="lazy"
+            width={468}
+            height={306}
+            sizes="100vw"
+            alt=""
+            src="/50year-warranty-image.svg"
+          />
+          <p className="m-0 w-[756px] relative leading-[35px] inline-block shrink-0 mq450:text-lg mq450:leading-7">{`Armorock Polymer Concrete Structures are built to last, creating a more sustainable future for the the waste water industry. We believe in the sustainability of our product, standing behind the importance of offering a solution that meets the needs of our stakeholders. All of our structures come with a 50-year corrosion warranty, creating peace of mind for municipalities that invest in our high-quality, long-lasting solution to corrosion. `}</p>
         </div>
       </section>
       <section

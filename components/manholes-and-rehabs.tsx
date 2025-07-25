@@ -64,17 +64,17 @@ const ManholesAndRehabs: NextPage<ManholesAndRehabsType> = ({
         alt=""
         src={manholes}
       />
-      <h2
-        className="m-0 w-full text-[clamp(1rem,2vw,1.5rem)] leading-[clamp(21px,2vw,35px)] uppercase font-medium font-[inherit] inline-block text-center"
-        style={liftStationsStyle}
+      <div
+        className="flex flex-row items-start justify-start py-0 pl-[121px] pr-[120px] mq450:pl-5 mq450:pr-5 mq450:box-border"
+        style={frameDivStyle}
       >
-        {manholesRehabs === 'rehabilitation inserts' ? (
-          <>
-            <span className="hidden xs:inline">rehabilitation<br />inserts</span>
-            <span className="xs:hidden">rehabilitation inserts</span>
-          </>
-        ) : manholesRehabs}
-      </h2>
+        <h2
+          className="m-0 w-[164px] relative text-[length:inherit] leading-[35px] uppercase font-medium font-[inherit] inline-block mq450:text-lg mq450:leading-[21px] mq825:text-2xl mq825:leading-7"
+          style={liftStationsStyle}
+        >
+          {manholesRehabs}
+        </h2>
+      </div>
     </section>
   );
 };
