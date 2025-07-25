@@ -106,8 +106,8 @@ const LocofyOurProductsPage: NextPage = () => {
               </div>
             </div>
           </div>
-          <section className="w-[498px] flex flex-col items-start justify-center gap-9 z-[0] text-left text-[22px] text-white font-open-sans mq675:gap-[18px]">
-            <p className="m-0 w-[537px] h-[243px] relative leading-[30px] whitespace-pre-wrap inline-block z-[1] mq450:text-lg mq450:leading-6">{`Armorock Manholes are the premiere corrosion-resistant option for various waste water systems across the US. Polymer concrete manholes have been proven to be the sustainable option in the waste water industry.  We produce manholes ranging from 48” to 192” and ensure that we meet custom job requirements with advanced machinery and technology. `}</p>
+          <section className="w-[498px] flex flex-col items-start justify-start gap-6 min-h-[auto] text-left text-[22px] text-white font-open-sans mq675:gap-[18px]">
+            <p className="m-0 w-[537px] min-h-[44.8px] relative leading-[30px] whitespace-pre-wrap inline-block z-[1] mq450:text-lg mq450:leading-6">{`Armorock Manholes are the premiere corrosion-resistant option for various waste water systems across the US. Polymer concrete manholes have been proven to be the sustainable option in the waste water industry.  We produce manholes ranging from 48” to 192” and ensure that we meet custom job requirements with advanced machinery and technology. `}</p>
             <button
               className="cursor-pointer border-firebrick border-solid border-[3px] py-2 px-0 bg-firebrick w-[145px] h-[44.8px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
               onClick={onGetAQuoteButtonClick}
@@ -142,8 +142,8 @@ const LocofyOurProductsPage: NextPage = () => {
               </div>
             </div>
           </div>
-          <section className="w-[498px] flex flex-col items-start justify-start gap-[11.3px] text-left text-[22px] text-gray-100 font-open-sans">
-            <p className="m-0 self-stretch h-60 relative leading-[30px] inline-block mq450:text-lg mq450:leading-6">
+          <section className="w-[498px] flex flex-col items-start justify-start gap-6 min-h-[auto] text-left text-[22px] text-gray-100 font-open-sans">
+            <p className="m-0 self-stretch min-h-[44.8px] relative leading-[30px] inline-block mq450:text-lg mq450:leading-6">
               Armorock Structural Rehabilitation Inserts combine the benefits of a corrosion resistant product with minimal excavation processes during installation. Polymer manholes are sleeved into existing precast concrete manholes, allowing municipalities to extend the life of their existing manholes without alternative fixes like liners, admixtures, and coatings.
             </p>
             <button
