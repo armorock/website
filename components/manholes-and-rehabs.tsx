@@ -49,14 +49,14 @@ const ManholesAndRehabs: NextPage<ManholesAndRehabsType> = ({
 
   return (
     <section
-      className={`h-[clamp(185px,24vw,275px)] w-[clamp(140px,22vw,215px)] flex flex-col items-center justify-start gap-4 cursor-pointer text-center text-3xl text-white font-oswald transition-all duration-300
+      className={`h-[clamp(240px,30vw,398px)] w-[clamp(180px,28vw,406px)] flex flex-col items-center justify-start gap-4 cursor-pointer text-center text-3xl text-white font-oswald transition-all duration-300
       sm:h-[clamp(145px,32vw,195px)] sm:w-[clamp(110px,30vw,155px)]
       xs:h-[clamp(115px,40vw,145px)] xs:w-[clamp(90px,36vw,115px)]
       ${className}`}
       onClick={onManholesAndRehabsClick}
     >
       <Image
-        className="w-full h-[clamp(90px,16vw,135px)] object-contain sm:h-[clamp(70px,24vw,105px)] xs:h-[clamp(55px,32vw,85px)]"
+        className="w-full h-[clamp(140px,25vw,331px)] object-contain sm:h-[clamp(70px,24vw,105px)] xs:h-[clamp(55px,32vw,85px)]"
         loading="lazy"
         width={406}
         height={331}
