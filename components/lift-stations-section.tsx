@@ -45,12 +45,12 @@ const LiftStationsSection: NextPage<LiftStationsSectionType> = ({
             Armorock Lift Stations stand up to intense, highly corrosive environments found in pump stations, wet wells, dry wells, and other structures. Polymer Concrete Lift Stations are available in 48” to 192” inside diameter sizes and can be customized to accommodate any pump supplier requirements.
           </p>
           <button
-            className="cursor-pointer border-white border-solid border-[3px] py-2 pl-[22px] pr-[17px] bg-white w-[145px] h-[44.8px] box-border flex flex-row items-start justify-start hover:bg-gainsboro-100 hover:border-gainsboro-100 hover:border-solid hover:hover:border-[3px] hover:box-border"
+            className="cursor-pointer border-white border-solid border-[3px] py-2 px-0 bg-white w-[145px] h-[44.8px] box-border flex flex-row items-center justify-center hover:bg-gainsboro-100 hover:border-gainsboro-100 hover:border-solid hover:hover:border-[3px] hover:box-border"
             onClick={onGetAQuoteButtonClick}
           >
-            <div className="h-[21.5px] w-[100px] relative text-xl leading-[21.5px] font-medium font-oswald text-firebrick text-right inline-block">
+            <span className="w-full text-xl leading-[21.5px] font-medium font-oswald text-firebrick text-center block">
               GET A QUOTE
-            </div>
+            </span>
           </button>
         </section>
       </div>

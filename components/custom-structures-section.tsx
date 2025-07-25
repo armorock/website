@@ -30,12 +30,12 @@ const CustomStructuresSection: NextPage<CustomStructuresSectionType> = ({
         <section className="w-[498px] flex flex-col items-start justify-start gap-9 text-left text-[22px] text-black font-open-sans mq675:gap-[18px]">
           <p className="m-0 self-stretch relative leading-[30px] mq450:text-lg mq450:leading-6">{`If it can be made it concrete, Armorock can make it in polymer. Armorock Precast Polymer Concrete Custom Structures are available to meet the needs of highly specific job requirements. `}</p>
           <button
-            className="cursor-pointer border-gray-100 border-solid border-[3px] py-2 pl-[22px] pr-[17px] bg-gray-100 w-[145px] h-[44.8px] box-border flex flex-row items-start justify-start hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+            className="cursor-pointer border-gray-100 border-solid border-[3px] py-2 px-0 bg-gray-100 w-[145px] h-[44.8px] box-border flex flex-row items-center justify-center hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
             onClick={onGetAQuoteButtonClick}
           >
-            <div className="h-[21.5px] w-[100px] relative text-xl leading-[21.5px] font-medium font-oswald text-white text-right inline-block">
+            <span className="w-full text-xl leading-[21.5px] font-medium font-oswald text-white text-center block">
               GET A QUOTE
-            </div>
+            </span>
           </button>
         </section>
       </div>

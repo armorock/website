@@ -109,13 +109,12 @@ const LocofyOurProductsPage: NextPage = () => {
           <section className="w-[498px] flex flex-col items-start justify-center gap-9 z-[0] text-left text-[22px] text-white font-open-sans mq675:gap-[18px]">
             <p className="m-0 w-[537px] h-[243px] relative leading-[30px] whitespace-pre-wrap inline-block z-[1] mq450:text-lg mq450:leading-6">{`Armorock Manholes are the premiere corrosion-resistant option for various waste water systems across the US. Polymer concrete manholes have been proven to be the sustainable option in the waste water industry.  We produce manholes ranging from 48” to 192” and ensure that we meet custom job requirements with advanced machinery and technology. `}</p>
             <button
-              className="cursor-pointer border-firebrick border-solid border-[3px] py-2 pl-[23px] pr-[22px] bg-firebrick w-[145px] h-[44.8px] box-border flex flex-row items-start justify-start whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
+              className="cursor-pointer border-firebrick border-solid border-[3px] py-2 px-0 bg-firebrick w-[145px] h-[44.8px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-indianred hover:border-indianred hover:border-solid hover:hover:border-[3px] hover:box-border"
               onClick={onGetAQuoteButtonClick}
             >
-              <div className="w-[145px] relative bg-firebrick border-firebrick border-solid border-[3px] box-border h-[44.8px] hidden" />
-              <div className="h-[21.5px] w-[100px] relative text-xl leading-[21.5px] font-medium font-oswald text-white text-right inline-block z-[1]">
+              <span className="w-full text-xl leading-[21.5px] font-medium font-oswald text-white text-center block z-[1]">
                 GET A QUOTE
-              </div>
+              </span>
             </button>
           </section>
         </div>
@@ -148,13 +147,12 @@ const LocofyOurProductsPage: NextPage = () => {
               Armorock Structural Rehabilitation Inserts combine the benefits of a corrosion resistant product with minimal excavation processes during installation. Polymer manholes are sleeved into existing precast concrete manholes, allowing municipalities to extend the life of their existing manholes without alternative fixes like liners, admixtures, and coatings.
             </p>
             <button
-              className="cursor-pointer border-gray-100 border-solid border-[3px] py-2 pl-[23px] pr-[22px] bg-gray-100 w-[145px] h-[44.8px] box-border flex flex-row items-start justify-start whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
+              className="cursor-pointer border-gray-100 border-solid border-[3px] py-2 px-0 bg-gray-100 w-[145px] h-[44.8px] box-border flex flex-row items-center justify-center whitespace-nowrap hover:bg-dimgray hover:border-dimgray hover:border-solid hover:hover:border-[3px] hover:box-border"
               onClick={onGetAQuoteButtonClick}
             >
-              <div className="w-[145px] relative bg-gray-100 border-gray-100 border-solid border-[3px] box-border h-[44.8px] hidden" />
-              <div className="h-[21.5px] w-[100px] relative text-xl leading-[21.5px] font-medium font-oswald text-white text-right inline-block z-[1]">
+              <span className="w-full text-xl leading-[21.5px] font-medium font-oswald text-white text-center block z-[1]">
                 GET A QUOTE
-              </div>
+              </span>
             </button>
           </section>
         </div>
